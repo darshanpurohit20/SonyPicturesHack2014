@@ -56,15 +56,6 @@ export default function Slide1() {
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-['Space_Grotesk'] uppercase">
             SONY_HACK.INTEL
         </div>
-<nav className="hidden md:flex gap-8">
-<a className="text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-sm" href="#">INTEL</a>
-<a className="text-white/40 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">BREACH</a>
-<a className="text-white/40 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">EXFIL</a>
-<a className="text-white/40 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">IMPACT</a>
-</nav>
-<div className="text-[#D32F2F]/60 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-xs tracking-[0.2em]">
-            SCENE 01 // THE BREACH
-        </div>
 </header>
 {/*  SideNavBar  */}
 <aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-black border-r border-[#D32F2F]/10 w-64 pt-24">

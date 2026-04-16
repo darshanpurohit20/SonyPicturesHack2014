@@ -19,15 +19,6 @@ export default function Slide7() {
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">
             SONY_HACK.INTEL
         </div>
-<nav className="hidden md:flex items-center gap-8 font-headline tracking-tighter uppercase font-bold text-xs">
-<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">INTEL</a>
-<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">BREACH</a>
-<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">EXFIL</a>
-<a className="text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1" href="#">IMPACT</a>
-</nav>
-<div className="text-[#D32F2F] font-headline tracking-tighter uppercase font-bold text-xs">
-            SCENE 01 // THE BREACH
-        </div>
 </header>
 {/*  SideNavBar Shell  */}
 <aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] dark:bg-[#0A0A0A] w-64 border-r border-[#D32F2F]/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] pt-10 xl:pt-20">

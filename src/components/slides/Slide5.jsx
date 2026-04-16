@@ -23,15 +23,6 @@ export default function Slide5() {
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">
             SONY_HACK.INTEL
         </div>
-<nav className="hidden md:flex items-center gap-8">
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">INTEL</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1 text-sm" href="#">BREACH</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">EXFIL</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">IMPACT</a>
-</nav>
-<div className="font-headline tracking-tighter uppercase font-bold text-[#D32F2F] text-xs px-3 py-1 border border-[#D32F2F]/30 bg-[#D32F2F]/5">
-            SCENE 01 // THE BREACH
-        </div>
 </header>
 {/*  SideNavBar  */}
 <aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] border-r border-[#D32F2F]/15 w-64 pt-10 xl:pt-20 hidden lg:flex">

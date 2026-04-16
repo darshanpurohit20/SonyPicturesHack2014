@@ -20,15 +20,6 @@ export default function Slide8() {
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase animate-flicker">
         SONY_HACK.INTEL
     </div>
-<nav className="hidden md:flex gap-8 items-center">
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm px-2" href="#">INTEL</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm px-2" href="#">BREACH</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm px-2" href="#">EXFIL</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1 text-sm px-2" href="#">IMPACT</a>
-</nav>
-<div className="text-[#D32F2F] font-headline font-bold text-xs tracking-widest bg-white/5 px-3 py-1 border border-[#D32F2F]/30">
-        SCENE 01 // THE BREACH
-    </div>
 </header>
 {/*  SideNavBar  */}
 <aside className="fixed left-0 top-0 h-full z-40 flex flex-col w-64 bg-[#0A0A0A] border-r border-[#D32F2F]/15 pt-10 xl:pt-20 shadow-[20px_0_50px_rgba(0,0,0,0.8)]">

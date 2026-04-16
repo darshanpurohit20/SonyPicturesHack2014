@@ -25,16 +25,6 @@ export default function Slide10() {
 <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] dark:bg-[#0A0A0A] border-b border-[#D32F2F]/15">
 <div className="flex items-center gap-8">
 <span className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">SONY_HACK.INTEL</span>
-<nav className="hidden md:flex gap-6 items-center">
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">INTEL</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">BREACH</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">EXFIL</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">IMPACT</a>
-</nav>
-</div>
-<div className="flex items-center gap-4">
-<span className="font-headline tracking-tighter uppercase font-bold text-[#D32F2F] text-xs px-3 py-1 border border-[#D32F2F]/30 bg-[#D32F2F]/5">SCENE 10 // Q&amp;A</span>
-</div>
 </header>
 {/*  SideNavBar  */}
 <aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] dark:bg-[#0A0A0A] w-64 border-r border-[#D32F2F]/15 pt-10 xl:pt-20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
@@ -89,8 +79,8 @@ export default function Slide10() {
 <div className="h-[2px] w-12 bg-[#D32F2F]"></div>
 <span className="font-headline text-xs tracking-[0.4em] text-[#D32F2F] uppercase">System Exit Protocol</span>
 </div>
-<h1 className="font-headline text-7xl md:text-[8vw] xl:text-[7vw] font-black tracking-tighter uppercase leading-none glitch-effect" data-text="ANY QUESTIONS?">
-                    ANY <span className="text-[#D32F2F] italic">QUESTIONS</span>?
+<h1 className="font-headline text-7xl md:text-[8vw] xl:text-[7vw] font-black tracking-tighter uppercase leading-none" data-text="THANK YOU">
+                    THANK <span className="text-[#D32F2F] italic">YOU</span>
                 </h1>
 <div className="mt-8 flex flex-wrap gap-8 items-center border-l-4 border-[#D32F2F] pl-8 py-4">
 <p className="font-body text-xl text-on-surface max-w-xl leading-relaxed">
@@ -98,47 +88,20 @@ export default function Slide10() {
                     </p>
 </div>
 </div>
-{/*  Right Side: Secondary Info/Bento Style  */}
-<div className="col-span-12 lg:col-span-4 flex flex-col gap-4">
-{/*  Discussion Topics Module  */}
-<div className="bg-surface-container-high border border-outline-variant p-6 space-y-4 shadow-[inset_0_0_50px_rgba(0,0,0,0.5)]">
-<div className="flex justify-between items-center border-b border-outline-variant pb-2">
-<span className="text-[10px] font-headline font-bold text-[#D32F2F] uppercase tracking-widest">TOPICS_FOR_DISCUSSION</span>
-<span className="material-symbols-outlined text-xs text-white/40" data-icon="forum">forum</span>
-</div>
-<ul className="space-y-3">
-<li className="flex items-start gap-3 group reveal-item delay-1">
-<span className="text-[#D32F2F] font-headline text-sm font-bold mt-1">01</span>
-<span className="text-sm font-body text-white/80 group-hover:text-[#D32F2F] transition-colors cursor-default">Attribution &amp; Geopolitical Alignment</span>
-</li>
-<li className="flex items-start gap-3 group reveal-item delay-2">
-<span className="text-[#D32F2F] font-headline text-sm font-bold mt-1">02</span>
-<span className="text-sm font-body text-white/80 group-hover:text-[#D32F2F] transition-colors cursor-default">Evolution of Wiper-Class Payloads</span>
-</li>
-<li className="flex items-start gap-3 group reveal-item delay-3">
-<span className="text-[#D32F2F] font-headline text-sm font-bold mt-1">03</span>
-<span className="text-sm font-body text-white/80 group-hover:text-[#D32F2F] transition-colors cursor-default">Corporate Duty of Care &amp; Liability</span>
-</li>
-</ul>
-</div>
-{/*  Forensic Logo Module  */}
-<div className="bg-surface-container-lowest p-8 flex flex-col items-center justify-center border border-outline-variant/30 text-center relative ">
-<div className="absolute inset-0 opacity-10 flex items-center justify-center">
-<span className="material-symbols-outlined text-[120px]" data-icon="gpp_maybe">gpp_maybe</span>
-</div>
-<div className="relative z-10">
-<span className="material-symbols-outlined text-5xl text-[#D32F2F] mb-4 pulse-glow" data-icon="emergency_home">emergency_home</span>
-<h3 className="font-headline font-black text-xl uppercase tracking-tighter text-white">ZERO_DAY_PROTOCOL</h3>
-<p className="text-[10px] font-label text-white/30 uppercase mt-2 tracking-widest">EST. 2014 // CASE_ID: GOP_DESTRUCTION</p>
+{/*  Right Side: Thank You Message  */}
+<div className="col-span-12 lg:col-span-4 flex flex-col justify-center">
+<div className="bg-[#0A0A0A] border border-[#D32F2F]/20 p-8 relative">
+<div className="absolute -top-2 -left-2 w-full h-full border border-[#D32F2F]/10"></div>
+<div className="relative z-10 text-center">
+<span className="material-symbols-outlined text-4xl text-[#D32F2F] mb-4 block" data-icon="check_circle">check_circle</span>
+<p className="text-sm font-body text-white/70 leading-relaxed">
+                            Briefing complete. All intelligence files have been processed and transmitted.
+                        </p>
+<div className="mt-6 pt-6 border-t border-white/10">
+<span className="text-[10px] font-mono text-white/40 uppercase tracking-widest">END_OF_TRANSMISSION</span>
 </div>
 </div>
 </div>
-</div>
-{/*  Terminal Ticker Tape (Custom Component)  */}
-<div className="absolute bottom-16 left-0 right-0  bg-[#D32F2F]/5 py-3 border-y border-[#D32F2F]/10">
-<div className="flex whitespace-nowrap animate-marquee gap-8">
-<span className="text-[10px] font-headline text-[#D32F2F] uppercase tracking-[0.3em]">END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // </span>
-<span className="text-[10px] font-headline text-[#D32F2F] uppercase tracking-[0.3em]">END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // </span>
 </div>
 </div>
 </main>

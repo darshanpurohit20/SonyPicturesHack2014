@@ -25,13 +25,6 @@ export default function Slide6() {
 {/*  TOP APP BAR  */}
 <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] border-b border-[#D32F2F]/15 font-['Space_Grotesk'] tracking-tighter uppercase font-bold">
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F]">SONY_HACK.INTEL</div>
-<nav className="hidden md:flex gap-8">
-<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">INTEL</a>
-<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">BREACH</a>
-<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">EXFIL</a>
-<a className="text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1" href="#">IMPACT</a>
-</nav>
-<div className="text-[#D32F2F] text-xs font-mono tracking-widest bg-[#D32F2F]/10 px-3 py-1">SCENE 01 // THE BREACH</div>
 </header>
 {/*  SIDE NAV BAR  */}
 <aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] border-r border-[#D32F2F]/15 w-64 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">

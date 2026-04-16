@@ -20,16 +20,6 @@ export default function Slide9() {
             {/*  TopAppBar  */}
             <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#050505]/90 backdrop-blur-sm border-b border-[#D32F2F]/20">
                 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">SONY_HACK.INTEL</div>
-                <nav className="hidden md:flex items-center space-x-8">
-                    <a className="text-white/60 font-headline tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">INTEL</a>
-                    <a className="text-white/60 font-headline tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">BREACH</a>
-                    <a className="text-white/60 font-headline tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">EXFIL</a>
-                    <a className="text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1 font-headline tracking-tighter uppercase font-bold text-sm" href="#">IMPACT</a>
-                </nav>
-                <div className="text-[#D32F2F] font-headline tracking-tighter uppercase font-bold text-xs flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 bg-[#D32F2F] animate-pulse"></span>
-                    SCENE 01 / THE BREACH
-                </div>
             </header>
             {/*  SideNavBar  */}
             <aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#050505] w-64 border-r border-[#D32F2F]/15 hidden md:flex">

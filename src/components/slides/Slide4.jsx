@@ -40,17 +40,6 @@ export default function Slide4() {
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase group cursor-pointer">
 <span className="inline-block group-hover:animate-pulse">SONY_HACK.INTEL</span>
 </div>
-<div className="hidden md:flex items-center space-x-1 font-headline tracking-tighter uppercase font-bold">
-<a className="text-white/40 hover:text-[#D32F2F] hover:bg-white/5 transition-all px-4 py-1" href="#">INTEL</a>
-<a className="text-white/40 hover:text-[#D32F2F] hover:bg-white/5 transition-all px-4 py-1" href="#">BREACH</a>
-<a className="text-[#D32F2F] bg-[#D32F2F]/10 border-b-2 border-[#D32F2F] px-4 py-1" href="#">EXFIL</a>
-<a className="text-white/40 hover:text-[#D32F2F] hover:bg-white/5 transition-all px-4 py-1" href="#">IMPACT</a>
-</div>
-<div className="flex items-center gap-2">
-<div className="text-[#D32F2F] font-headline text-xs font-bold tracking-[0.2em] bg-[#D32F2F]/10 px-4 py-2 border border-[#D32F2F]/20">
-            SCENE 01 // THE BREACH
-        </div>
-</div>
 </nav>
 {/*  Side Navigation  */}
 <aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#050505] border-r border-[#D32F2F]/20 w-64 pt-24">
