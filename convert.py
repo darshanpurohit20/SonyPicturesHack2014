@@ -38,11 +38,15 @@ def convert_to_jsx(html_str):
     html_str = re.sub(r'<!--(.*?)-->', r'{/* \1 */}', html_str, flags=re.DOTALL)
     return html_str
 
-slides = glob.glob('slide_*')
-slides.sort()
+slides = glob.glob('original_prototypes/slide_*')
 
-imports = []
-components = []
+# Sort numerically
+def sort_key(s):
+    match = re.search(r'slide_(\d+)', s)
+    return int(match.group(1)) if match else 0
+
+slides.sort(key=sort_key)
+
 all_css = []
 
 for i, slide_dir in enumerate(slides):
@@ -65,19 +69,33 @@ for i, slide_dir in enumerate(slides):
     jsx_content = convert_to_jsx(body_html)
     
     comp_name = f"Slide{i+1}"
-    
-    # Optional CSS extraction for scoped css could be done here, but we put it in index.css
-    # Write JSX file
     out_file = os.path.join('src', 'components', 'slides', f'{comp_name}.jsx')
     
-    jsx_code = f"""import React from 'react';\nimport {{ motion }} from 'framer-motion';\n\nexport default function {comp_name}() {{\n    return (\n        <motion.div\n            initial={{{{ opacity: 0, scale: 0.98, x: 50 }}}}\n            animate={{{{ opacity: 1, scale: 1, x: 0 }}}}\n            exit={{{{ opacity: 0, scale: 1.02, x: -50 }}}}\n            transition={{{{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}}}\n            className="relative w-full h-full"\n        >\n            {jsx_content}\n        </motion.div>\n    );\n}}\n"""
+    # Custom transitions for Hack-related slides (Slide 2, Slide 5, Slide 6)
+    if i + 1 in [2, 5, 6]:
+        # Glitch / Hard Cut Transition
+        motion_props = """
+            initial={{ opacity: 0, filter: 'blur(10px)', skewX: '20deg', scale: 1.1 }}
+            animate={{ opacity: 1, filter: 'blur(0px)', skewX: '0deg', scale: 1 }}
+            exit={{ opacity: 0, filter: 'blur(10px)', x: -100, scale: 0.9 }}
+            transition={{ duration: 0.4, type: 'spring', bounce: 0.5 }}
+        """
+    else:
+        # Smooth Cinematic Transition
+        motion_props = """
+            initial={{ opacity: 0, scale: 0.98, x: 50 }}
+            animate={{ opacity: 1, scale: 1, x: 0 }}
+            exit={{ opacity: 0, scale: 1.02, x: -50 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        """
+    
+    jsx_code = f"""import React from 'react';\nimport {{ motion }} from 'framer-motion';\n\nexport default function {comp_name}() {{\n    return (\n        <motion.div\n{motion_props}\n            className="relative w-full h-full"\n        >\n            {jsx_content}\n        </motion.div>\n    );\n}}\n"""
     
     with open(out_file, 'w', encoding='utf-8') as f:
         f.write(jsx_code)
         
     print(f"Generated {out_file}")
 
-with open('src/index.css', 'a', encoding='utf-8') as f:
-    f.write("\n\n" + "\n\n".join(all_css))
-
-print("Done generating slides and appending css.")
+# We don't need to append CSS again because we already appended it in the previous step to index.css
+# But to be safe, we won't rewrite index.css, just regenerate the Slide files.
+print("Done regenerating slides with correct sort order and transitions.")

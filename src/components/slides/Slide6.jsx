@@ -4,230 +4,274 @@ import { motion } from 'framer-motion';
 export default function Slide6() {
     return (
         <motion.div
-            initial={{ opacity: 0, scale: 0.98, x: 50 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            exit={{ opacity: 0, scale: 1.02, x: -50 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+
+            initial={{ opacity: 0, filter: 'blur(10px)', skewX: '20deg', scale: 1.1 }}
+            animate={{ opacity: 1, filter: 'blur(0px)', skewX: '0deg', scale: 1 }}
+            exit={{ opacity: 0, filter: 'blur(10px)', x: -100, scale: 0.9 }}
+            transition={{ duration: 0.4, type: 'spring', bounce: 0.5 }}
+        
             className="relative w-full h-full"
         >
             
-<div className="grain-overlay fixed inset-0 z-[100]"></div>
-{/*  Cinematic Particles  */}
-<div className="particles-container">
-
+{/*  Moving Particle Background Container  */}
+<div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+<div className="absolute inset-0 bg-[#0A0A0A]"></div>
+<div className="particle w-1 h-1 top-[10%] left-[20%] animate-particle-move"></div>
+<div className="particle w-[2px] h-[2px] top-[30%] left-[80%] animate-particle-move" style={{ animationDelay: '-5s' }}></div>
+<div className="particle w-1 h-1 top-[70%] left-[40%] animate-particle-move" style={{ animationDelay: '-12s' }}></div>
+<div className="particle w-[2px] h-[2px] top-[85%] left-[15%] animate-particle-move" style={{ animationDelay: '-8s' }}></div>
+<div className="particle w-1 h-1 top-[50%] left-[60%] animate-particle-move" style={{ animationDelay: '-3s' }}></div>
 </div>
-{/*  TopAppBar  */}
-<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] border-b border-[#D32F2F]/15">
-<div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">
-            SONY_HACK.INTEL
-        </div>
-<nav className="hidden md:flex items-center gap-8">
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">INTEL</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1 text-sm" href="#">BREACH</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">EXFIL</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">IMPACT</a>
+{/*  TOP APP BAR  */}
+<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] border-b border-[#D32F2F]/15 font-['Space_Grotesk'] tracking-tighter uppercase font-bold">
+<div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F]">SONY_HACK.INTEL</div>
+<nav className="hidden md:flex gap-8">
+<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">INTEL</a>
+<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">BREACH</a>
+<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">EXFIL</a>
+<a className="text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1" href="#">IMPACT</a>
 </nav>
-<div className="font-headline tracking-tighter uppercase font-bold text-[#D32F2F] text-xs px-3 py-1 border border-[#D32F2F]/30 bg-[#D32F2F]/5">
-            SCENE 01 // THE BREACH
-        </div>
+<div className="text-[#D32F2F] text-xs font-mono tracking-widest bg-[#D32F2F]/10 px-3 py-1">SCENE 01 // THE BREACH</div>
 </header>
-{/*  SideNavBar  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] border-r border-[#D32F2F]/15 w-64 pt-20 hidden lg:flex">
-<div className="px-6 py-8 border-b border-[#D32F2F]/10">
-<div className="flex items-center gap-3 mb-4">
-<div className="w-10 h-10 bg-surface-container-high flex items-center justify-center">
-<span className="material-symbols-outlined text-primary text-2xl">shield_person</span>
+{/*  SIDE NAV BAR  */}
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] border-r border-[#D32F2F]/15 w-64 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<div className="p-6 pt-24">
+<div className="flex items-center gap-3 mb-8">
+<div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center">
+<span className="material-symbols-outlined text-[#D32F2F]">analytics</span>
 </div>
 <div>
-<div className="text-lg font-bold text-white font-headline leading-tight">OPERATIONS</div>
-<div className="text-[10px] text-primary font-mono tracking-widest flex items-center gap-1">
-<span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
-                        LIVE_TRACING_ON
-                    </div>
+<div className="text-lg font-bold text-white leading-none font-headline">OPERATIONS</div>
+<div className="text-[10px] text-[#D32F2F] font-mono animate-pulse">LIVE_TRACING_ON</div>
 </div>
 </div>
+<nav className="flex flex-col gap-1">
+<div className="flex items-center gap-3 text-white/40 hover:text-white/80 px-4 py-3 font-['Space_Grotesk'] text-xs font-medium cursor-pointer transition-all duration-75 group">
+<span className="material-symbols-outlined text-lg">skull</span>
+<span>THREAT_ACTOR</span>
 </div>
-<nav className="flex-1 py-4 overflow-y-auto">
-<div className="flex flex-col">
-<a className="group flex items-center gap-4 text-white/40 hover:text-white/80 px-6 py-3 font-headline text-xs font-medium transition-all hover:bg-white/5" href="#">
-<span className="material-symbols-outlined text-xl" data-icon="skull">skull</span>
-                    THREAT_ACTOR
-                </a>
-<a className="group flex items-center gap-4 text-white/40 hover:text-white/80 px-6 py-3 font-headline text-xs font-medium transition-all hover:bg-white/5" href="#">
-<span className="material-symbols-outlined text-xl" data-icon="hook">anchor</span>
-                    PHISHING
-                </a>
-<a className="group flex items-center gap-4 bg-[#D32F2F] text-white font-bold px-6 py-3 font-headline text-xs" href="#">
-<span className="material-symbols-outlined text-xl" data-icon="network_check" style={{ fontVariationSettings: '\'FILL\' 1' }}>network_check</span>
-                    NETWORK
-                </a>
-<a className="group flex items-center gap-4 text-white/40 hover:text-white/80 px-6 py-3 font-headline text-xs font-medium transition-all hover:bg-white/5" href="#">
-<span className="material-symbols-outlined text-xl" data-icon="dns">dns</span>
-                    SERVER
-                </a>
-<a className="group flex items-center gap-4 text-white/40 hover:text-white/80 px-6 py-3 font-headline text-xs font-medium transition-all hover:bg-white/5" href="#">
-<span className="material-symbols-outlined text-xl" data-icon="public">public</span>
-                    GLOBAL
-                </a>
+<div className="flex items-center gap-3 text-white/40 hover:text-white/80 px-4 py-3 font-['Space_Grotesk'] text-xs font-medium cursor-pointer transition-all duration-75">
+<span className="material-symbols-outlined text-lg">anchor</span>
+<span>PHISHING</span>
+</div>
+<div className="flex items-center gap-3 text-white/40 hover:text-white/80 px-4 py-3 font-['Space_Grotesk'] text-xs font-medium cursor-pointer transition-all duration-75">
+<span className="material-symbols-outlined text-lg">network_check</span>
+<span>NETWORK</span>
+</div>
+<div className="flex items-center gap-3 text-white/40 hover:text-white/80 px-4 py-3 font-['Space_Grotesk'] text-xs font-medium cursor-pointer transition-all duration-75">
+<span className="material-symbols-outlined text-lg">dns</span>
+<span>SERVER</span>
+</div>
+<div className="flex items-center gap-3 bg-[#D32F2F] text-white font-bold px-4 py-3 font-['Space_Grotesk'] text-xs cursor-pointer">
+<span className="material-symbols-outlined text-lg">public</span>
+<span>GLOBAL</span>
 </div>
 </nav>
-<div className="p-6 mt-auto">
-<button className="w-full bg-primary-container text-on-primary-container font-headline font-bold py-3 text-xs tracking-widest hover:bg-primary transition-all uppercase">
-                DOWNLOAD EVIDENCE
-            </button>
+</div>
+<div className="mt-auto p-6">
+<button className="w-full py-3 bg-white/5 border border-white/10 text-white text-[10px] tracking-widest font-bold hover:bg-[#D32F2F] hover:border-[#D32F2F] transition-all duration-150">
+            DOWNLOAD EVIDENCE
+        </button>
 </div>
 </aside>
-{/*  Main Content Canvas  */}
-<main className="lg:pl-64 pt-24 pb-24 px-6 min-h-screen relative z-10">
-<div className="max-w-7xl mx-auto space-y-12">
+{/*  MAIN CANVAS  */}
+<main className="ml-64 pt-20 pb-12 min-h-screen relative overflow-hidden">
+{/*  Background Asset  */}
+<div className="absolute inset-0 z-0 overflow-hidden">
+<div className="absolute inset-0 bg-[#131313] opacity-80"></div>
+<img className="w-full h-full object-cover mix-blend-overlay grayscale opacity-40" data-alt="Abstract digital background with glowing red binary code streaming over dark server rack shapes, grainy film texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwQUL_SGcXDnQarJqVZUeCfUftm5B4Z-24XnlMvCqdBuzUH-YbFjIKDL5_ypNVvmtCjAYGGMY_Ede8dy6XKDkusS-1XRNUF75ir1HO4BMI3ez2Sht0QS8R8fhHdkRsyEoa2rVE9Wt6mfNu5FbGK0RteawrQRAww9KFsfzSNL2nTbIWHKKV6YFNNpfzS2sHManZTTiRtF_aQWSP2JrkQ_fuWeXsAiOjMj-_17iI_1wEhV1syrU0Be263-Z95IsWa8ht_ksbS-ecWRY"/>
+<div className="grain-overlay absolute inset-0"></div>
+</div>
+<div className="relative z-10 px-12 py-8">
 {/*  Header Section  */}
-<section className="space-y-4">
-<div className="flex items-center gap-3 text-primary animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-<span className="text-[10px] font-mono tracking-[0.4em] uppercase">Phase_Analysis_005</span>
-<div className="h-[1px] w-12 bg-primary/30"></div>
+<div className="mb-16">
+<div className="flex items-center gap-4 mb-2">
+<span className="h-px w-12 bg-[#D32F2F]"></span>
+<span className="text-[#D32F2F] font-mono text-xs tracking-widest uppercase">Investigation Phase 06</span>
 </div>
-<h1 className="text-6xl md:text-8xl font-headline font-black tracking-tighter uppercase leading-none group cursor-default">
-<span className="inline-block animate-fade-in-up hover:animate-glitch" style={{ animationDelay: '0.2s' }}>THE KILL</span>
-<span className="text-primary inline-block animate-fade-in-up hover:animate-glitch" style={{ animationDelay: '0.3s' }}>CHAIN</span>
+<h1 className="text-8xl font-black font-headline tracking-tighter text-white uppercase mb-4 leading-[0.8] animate-glitch-in">
+                THE <span className="text-[#D32F2F]">FALLOUT</span>
 </h1>
-<p className="max-w-2xl text-on-surface-variant font-body text-lg leading-relaxed border-l-2 border-primary/20 pl-6 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                    A multi-stage intrusion strategy executed with clinical precision. This forensic timeline decomposes the Sony breach into five distinct tactical vectors.
+<div className="flex items-center gap-6">
+<p className="text-on-surface-variant max-w-xl font-light text-lg border-l-2 border-[#D32F2F] pl-6 py-2 opacity-0 animate-reveal-up reveal-delay-1">
+                    System-wide compromise has transitioned from digital breach to real-world devastation. Intelligence analysis indicates irreversible kinetic and brand damage.
                 </p>
-</section>
-{/*  Kill Chain Visual Flow  */}
-<div className="grid grid-cols-1 md:grid-cols-12 gap-1 gap-y-8">
-{/*  Step 1: PHISHING  */}
-<div className="md:col-span-4 bg-surface-container-low p-8 relative border-t-2 border-primary/40 reveal-step opacity-0" id="step-1">
-<div className="absolute -top-4 right-8 bg-surface-container-highest px-3 py-1 font-headline text-[10px] text-primary-fixed-dim border border-primary/10">01_INIT</div>
-<div className="space-y-4">
-<span className="material-symbols-outlined text-primary text-4xl" data-icon="mail" style={{ fontVariationSettings: '\'FILL\' 1' }}>mail</span>
-<h3 className="font-headline text-2xl font-bold uppercase tracking-tight">PHISHING</h3>
-<p className="text-sm text-on-surface-variant leading-relaxed">
-                            Fake Apple ID emails targeting high-level administrators. High-fidelity replicas used to harvest privileged credentials via credential-leak landing pages.
-                        </p>
-</div>
-</div>
-{/*  Connector 1  */}
-<div className="hidden md:flex md:col-span-1 items-center justify-center">
-<span className="material-symbols-outlined text-outline/30 text-3xl draw-connector" id="connector-1">arrow_forward_ios</span>
-</div>
-{/*  Step 2: ACCESS  */}
-<div className="md:col-span-4 bg-surface-container-high p-8 relative border-t-2 border-primary/40 reveal-step opacity-0" id="step-2">
-<div className="absolute -top-4 right-8 bg-surface-container-highest px-3 py-1 font-headline text-[10px] text-primary-fixed-dim border border-primary/10">02_ENTRY</div>
-<div className="space-y-4">
-<span className="material-symbols-outlined text-primary text-4xl" data-icon="key">key</span>
-<h3 className="font-headline text-2xl font-bold uppercase tracking-tight">ACCESS</h3>
-<p className="text-sm text-on-surface-variant leading-relaxed">
-                            Attackers leverage valid harvested logins to bypass edge security. Initial foothold established through compromised VPN endpoints.
-                        </p>
-</div>
-</div>
-{/*  Connector 2  */}
-<div className="hidden md:flex md:col-span-3 items-center justify-end pr-8">
-<div className="w-full h-[1px] bg-outline/20 relative overflow-hidden">
-<div className="absolute inset-0 bg-primary/40 draw-connector h-full" id="connector-2"></div>
-<div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rotate-45 opacity-0 reveal-step" id="node-2"></div>
-</div>
-</div>
-{/*  Step 3: MOVEMENT  */}
-<div className="md:col-span-7 bg-surface-container-highest p-8 relative border-t-2 border-primary/40 overflow-hidden reveal-step opacity-0" id="step-3">
-<div className="absolute -top-4 right-8 bg-primary-container px-3 py-1 font-headline text-[10px] text-on-primary-container">03_LATERAL</div>
-<div className="grid md:grid-cols-2 gap-8 items-center">
-<div className="space-y-4">
-<span className="material-symbols-outlined text-primary text-4xl" data-icon="account_tree">account_tree</span>
-<h3 className="font-headline text-2xl font-bold uppercase tracking-tight">MOVEMENT</h3>
-<p className="text-sm text-on-surface-variant leading-relaxed">
-                                Systematic expansion across the internal topology. Custom malware payload spread via SMB network shares, infecting domain controllers and file servers.
-                            </p>
-</div>
-<div className="h-40 bg-black/40 border border-white/5 flex items-center justify-center relative">
-<img className="absolute inset-0 w-full h-full object-cover opacity-30 grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKwA_RZJPEKlxspJ90vtzlWd0XK_4op27mYf8mhsXqHfvYSoDHyLuOZOZeHhKZ_QIjBAGRRNGV108sbB_LgZEzyxwuwX8lsDzhiusqqqO3k8PU0gqlnYABlnZwfIjNaoVb6GYFqFyFaTZev6AANeGxCS50cj7CBsHQgdOI6mEeMUhVyS9pUAn9ltoRXgUCNpHBkTYW_T1KY2kWbQnlKxQTG90sMpcdQaM0bUQyVkHDHYWd5JUnyWLPTvlOtUjcg_t9r7htz23hnHY"/>
-<div className="relative z-10 font-mono text-[10px] text-primary p-4 bg-black/60 backdrop-blur-sm border border-primary/20">
-                                SCANNING_NET_RANGE: 10.0.4.0/24<br/>
-                                PAYLOAD_STATUS: INJECTED<br/>
-                                SHARES_MOUNTED: 142
-                            </div>
+<div className="bg-error-container/20 border border-error/30 p-4 inline-flex flex-col gap-1 max-w-[240px] opacity-0 animate-reveal-up reveal-delay-2">
+<div className="flex items-center gap-2 text-error font-bold text-xs tracking-widest uppercase animate-flicker">
+<span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: '\'FILL\' 1' }}>warning</span>
+                        Critical Irreversible Damage
+                    </div>
+<div className="text-[10px] text-error/60 font-mono">ENCRYPTION_STATUS: TERMINATED</div>
 </div>
 </div>
 </div>
-{/*  Step 4: EXFILTRATION  */}
-<div className="md:col-span-5 bg-surface-container-low p-8 relative border-t-2 border-primary/40 reveal-step opacity-0" id="step-4">
-<div className="absolute -top-4 right-8 bg-surface-container-highest px-3 py-1 font-headline text-[10px] text-primary-fixed-dim border border-primary/10">04_DATA</div>
-<div className="space-y-4">
+{/*  Bento Grid Impact Analysis  */}
+<div className="grid grid-cols-12 gap-px bg-[#D32F2F]/15 border border-[#D32F2F]/15">
+{/*  Category: EMPLOYEES  */}
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-1 relative overflow-hidden scanline-effect">
 <div className="flex justify-between items-start">
-<span className="material-symbols-outlined text-primary text-4xl" data-icon="upload_file">upload_file</span>
-<div className="text-right">
-<div className="text-[10px] font-mono text-primary">ENCRYPTION: AES-256</div>
-<div className="text-[10px] font-mono text-primary">SIZE: 100TB+</div>
+<span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>badge</span>
+<div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_01</div>
+</div>
+<div>
+<h3 className="text-2xl font-bold font-headline text-white mb-4 uppercase tracking-tighter group-hover:text-[#D32F2F]">Employees</h3>
+<div className="space-y-4">
+<div className="flex items-start gap-3">
+<span className="material-symbols-outlined text-sm text-[#D32F2F] mt-1">close</span>
+<p className="text-xs text-on-surface-variant uppercase tracking-wide leading-relaxed">Personal financial records and SSNs exfiltrated and published.</p>
+</div>
+<div className="flex items-start gap-3">
+<span className="material-symbols-outlined text-sm text-[#D32F2F] mt-1">close</span>
+<p className="text-xs text-on-surface-variant uppercase tracking-wide leading-relaxed">Internal toxic culture memos leaked, sparking mass resignations.</p>
 </div>
 </div>
-<h3 className="font-headline text-2xl font-bold uppercase tracking-tight">EXFILTRATION</h3>
-<p className="text-sm text-on-surface-variant leading-relaxed">
-                            Massive data staging. Gigabytes of internal emails and unreleased motion pictures were compressed and funneled to offshore servers over several weeks.
+</div>
+</div>
+{/*  Category: CORPORATE  */}
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-2 relative overflow-hidden scanline-effect">
+<div className="flex justify-between items-start">
+<span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>business_center</span>
+<div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_02</div>
+</div>
+<div>
+<h3 className="text-2xl font-bold font-headline text-white mb-4 uppercase tracking-tighter group-hover:text-[#D32F2F]">Corporate</h3>
+<div className="space-y-4">
+<div className="flex items-start gap-3">
+<span className="material-symbols-outlined text-sm text-[#D32F2F] mt-1">close</span>
+<p className="text-xs text-on-surface-variant uppercase tracking-wide leading-relaxed">$35M initial cleanup cost estimated within first 72 hours.</p>
+</div>
+<div className="flex items-start gap-3">
+<span className="material-symbols-outlined text-sm text-[#D32F2F] mt-1">close</span>
+<p className="text-xs text-on-surface-variant uppercase tracking-wide leading-relaxed">Total infrastructure collapse: 100TB of internal data deleted.</p>
+</div>
+</div>
+</div>
+</div>
+{/*  Category: MOVIES  */}
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-3 relative overflow-hidden scanline-effect">
+<div className="flex justify-between items-start">
+<span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>movie</span>
+<div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_03</div>
+</div>
+<div>
+<h3 className="text-2xl font-bold font-headline text-white mb-4 uppercase tracking-tighter group-hover:text-[#D32F2F]">Movies</h3>
+<div className="space-y-4">
+<div className="flex items-start gap-3">
+<span className="material-symbols-outlined text-sm text-[#D32F2F] mt-1">close</span>
+<p className="text-xs text-on-surface-variant uppercase tracking-wide leading-relaxed">Five major unreleased film scripts leaked to public torrents.</p>
+</div>
+<div className="flex items-start gap-3">
+<span className="material-symbols-outlined text-sm text-[#D32F2F] mt-1">close</span>
+<p className="text-xs text-on-surface-variant uppercase tracking-wide leading-relaxed">Distribution partner contracts exposed, causing legal gridlock.</p>
+</div>
+</div>
+</div>
+</div>
+{/*  Category: GEOPOLITICS  */}
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-4 relative overflow-hidden scanline-effect">
+<div className="flex justify-between items-start">
+<span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>language</span>
+<div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_04</div>
+</div>
+<div>
+<h3 className="text-2xl font-bold font-headline text-white mb-4 uppercase tracking-tighter group-hover:text-[#D32F2F]">Geopolitics</h3>
+<div className="space-y-4">
+<div className="flex items-start gap-3">
+<span className="material-symbols-outlined text-sm text-[#D32F2F] mt-1">close</span>
+<p className="text-xs text-on-surface-variant uppercase tracking-wide leading-relaxed">Diplomatic crisis ignited between US and North Korean agencies.</p>
+</div>
+<div className="flex items-start gap-3">
+<span className="material-symbols-outlined text-sm text-[#D32F2F] mt-1">close</span>
+<p className="text-xs text-on-surface-variant uppercase tracking-wide leading-relaxed">Sanctions escalated against identified threat-actor nations.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+{/*  Visual Evidence Section  */}
+<div className="mt-px grid grid-cols-12 gap-px bg-[#D32F2F]/15 border border-[#D32F2F]/15 border-t-0">
+<div className="col-span-12 lg:col-span-8 p-12 bg-surface-container-lowest overflow-hidden relative group">
+<div className="absolute top-4 right-4 z-20 flex gap-2">
+<div className="bg-[#D32F2F] px-2 py-1 text-[8px] font-bold uppercase tracking-tighter">Live Capture</div>
+<div className="bg-white/10 px-2 py-1 text-[8px] font-bold uppercase tracking-tighter">Cam_ID: 9942</div>
+</div>
+<img className="w-full h-[400px] object-cover opacity-60 filter grayscale contrast-150 transition-all duration-700 group-hover:scale-105" data-alt="Interior of a massive server room with glowing red emergency lights reflecting on metallic surfaces, heavy contrast, forensic aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW1cQPmfotthVayrwYqaQ-0YRLU9u-YFBSevhw3pI_7tih-JEnnCN7kI5hmei0d69-4-iNXZn_ddnTZk1X6uFW1lgeS4nJHGcKtK_l3eaYk6O96O4yhmRdDPvek-3k1WtjQ2OwMHh3IakLK_pEvhLP0mE1qWu3QzdSuq9psXXMequC-KyXSB_ynOFHjsbLNsv9ZiaaonbEQMD8WDmKP4V7W671EcxDnh4FPaEaxDxxHYyxoFDbu_Z6gXtROzrp6EUAC3DWONZIEhw"/>
+<div className="absolute bottom-12 left-12 right-12">
+<div className="bg-[#0A0A0A]/90 p-6 backdrop-blur-md border-l-4 border-[#D32F2F]">
+<div className="flex justify-between items-center mb-2">
+<h4 className="text-white font-bold tracking-widest uppercase text-sm font-headline">Server Room Alpha // Physical Lockdown</h4>
+<span className="text-[#D32F2F] font-mono text-[10px] animate-flicker">AUTH_FAILED</span>
+</div>
+<p className="text-white/40 text-[10px] font-mono leading-relaxed">
+                            CRITICAL: Physical access control systems compromised at Culver City HQ. All server racks initiated automated wipe protocols upon detection of foreign IP injection.
                         </p>
 </div>
 </div>
-{/*  Step 5: DESTRUCTION (Aggressive Reveal)  */}
-<div className="md:col-span-12 bg-[#0A0A0A] border border-[#D32F2F]/30 p-10 relative overflow-hidden group reveal-step opacity-0" id="step-5">
-<div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
-<div className="absolute -top-4 right-12 bg-primary px-4 py-1 font-headline text-xs text-white font-bold">05_TERMINATE</div>
-<div className="flex flex-col md:flex-row gap-12 items-center">
-<div className="flex-1 space-y-6">
-<div className="flex items-center gap-4">
-<span className="material-symbols-outlined text-[#D32F2F] text-6xl animate-pulse-red" data-icon="bolt">bolt</span>
-<h3 className="font-headline text-4xl font-black uppercase tracking-tighter">DESTRUCTION</h3>
 </div>
-<p className="text-on-surface text-lg leading-relaxed">
-                                The final payload: <span className="bg-[#D32F2F] px-2 py-0.5 font-bold animate-flicker">DESTOVER</span>. A highly aggressive wiper malware designed to overwrite the Master Boot Record (MBR), rendering entire hardware fleets permanently inoperable.
-                            </p>
-<div className="flex gap-4">
-<div className="px-4 py-2 bg-surface-container-highest font-mono text-[10px] text-primary border border-primary/20">WIPER_ID: 0x9928</div>
-<div className="px-4 py-2 bg-surface-container-highest font-mono text-[10px] text-primary border border-primary/20">OS_TARGET: WIN_NT</div>
+<div className="col-span-12 lg:col-span-4 bg-surface-container-lowest p-12 flex flex-col justify-center opacity-0 animate-reveal-up reveal-delay-4">
+<div className="space-y-8">
+<div>
+<div className="text-[10px] text-[#D32F2F] font-mono mb-2">METRIC_IMPACT_RATING</div>
+<div className="text-6xl font-black text-white font-headline tracking-tighter leading-none flex items-baseline">
+<span id="impact-rating-value">0.0</span>
+<span className="text-xl text-white/20 ml-1">/10</span>
 </div>
 </div>
-<div className="w-full md:w-96 aspect-video bg-surface-container flex items-center justify-center border border-white/5 relative overflow-hidden" id="destruction-viz">
-<img className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7w0DJ9PYO3k0qjYjSJbqnEH6PnDuWxe-2caDWgyhJ08A_0IAefozO_PjDb0wtcKX_j34ZcH5673gxd6aPaUKxXmhScAWrJTxppGjiTplUu19vwWWAparsL-sX3iD6qyysiluzPwWrByOlXpyGvcsZk44J7ZHZe72bGPiPnrBikEecvFCX1w73ssJPhzsBnY8-mBrrPEhbociZs4ZX87Toq1P-QD1tmRViU7mgW-oPfEgkRlkvri9_8-EF5naWeqjv925yu1dXVrY"/>
-<div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-<div className="relative z-10 text-center space-y-2">
-<span className="material-symbols-outlined text-primary text-5xl animate-pulse" data-icon="warning">warning</span>
-<div className="font-headline font-black text-xl tracking-widest text-primary">SYSTEM HALTED</div>
+<div className="space-y-6">
+<div className="flex flex-col gap-2">
+<div className="flex justify-between text-[10px] uppercase tracking-widest text-white/60">
+<span>Brand Equity Erosion</span>
+<span>-84%</span>
+</div>
+<div className="h-1 bg-white/5 w-full">
+<div className="h-full bg-[#D32F2F] transition-all duration-[2000ms] ease-out w-0" id="stat-bar-1"></div>
+</div>
+</div>
+<div className="flex flex-col gap-2">
+<div className="flex justify-between text-[10px] uppercase tracking-widest text-white/60">
+<span>Infrastructure Integrity</span>
+<span>12%</span>
+</div>
+<div className="h-1 bg-white/5 w-full">
+<div className="h-full bg-[#D32F2F] transition-all duration-[2000ms] ease-out w-0" id="stat-bar-2"></div>
+</div>
+</div>
+<div className="flex flex-col gap-2">
+<div className="flex justify-between text-[10px] uppercase tracking-widest text-white/60">
+<span>Global Sentiment</span>
+<span className="animate-flicker text-error">HOSTILE</span>
+</div>
+<div className="h-1 bg-white/5 w-full">
+<div className="h-full bg-[#D32F2F] transition-all duration-[2000ms] ease-out w-0" id="stat-bar-3"></div>
 </div>
 </div>
 </div>
 </div>
-</div>
-{/*  Forensic Context Footer  */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 reveal-step opacity-0" id="forensic-footer">
-<div className="p-6 bg-surface-container-low border-l border-primary/20">
-<h4 className="text-[10px] font-mono uppercase tracking-widest text-white/40 mb-2">Target_Infrastructure</h4>
-<p className="font-headline text-sm font-bold">CROSS-CONTINENT HYBRID CLOUD</p>
-</div>
-<div className="p-6 bg-surface-container-low border-l border-primary/20">
-<h4 className="text-[10px] font-mono uppercase tracking-widest text-white/40 mb-2">Weaponization_Type</h4>
-<p className="font-headline text-sm font-bold">COMMERCIAL-GRADE OFFENSIVE TOOLS</p>
-</div>
-<div className="p-6 bg-surface-container-low border-l border-primary/20">
-<h4 className="text-[10px] font-mono uppercase tracking-widest text-white/40 mb-2">Recovery_Estimated</h4>
-<p className="font-headline text-sm font-bold">6 - 12 MONTHS (PARTIAL)</p>
 </div>
 </div>
 </div>
 </main>
-{/*  Footer  */}
-<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/80 backdrop-blur-md border-t border-[#D32F2F]/15">
-<div className="font-headline text-[10px] uppercase tracking-widest text-white/30">
-            CONFIDENTIAL // CLASSIFIED INTEL
-        </div>
+{/*  FOOTER  */}
+<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/80 backdrop-blur-md border-t border-[#D32F2F]/15 font-['Inter'] text-[10px] uppercase tracking-widest">
+<div className="text-white/30">CONFIDENTIAL // CLASSIFIED INTEL</div>
 <div className="flex gap-8">
-<a className="font-headline text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">TIMELINE</a>
-<a className="font-headline text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">SOURCES</a>
-<a className="font-headline text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">RECOVERY</a>
+<a className="text-white/30 hover:text-white transition-opacity" href="#">TIMELINE</a>
+<a className="text-white/30 hover:text-white transition-opacity" href="#">SOURCES</a>
+<a className="text-white/30 hover:text-white transition-opacity" href="#">RECOVERY</a>
 </div>
-<div className="flex items-center gap-2">
-<span className="w-1.5 h-1.5 bg-[#D32F2F] rounded-full"></span>
-<span className="font-headline text-[10px] uppercase tracking-widest text-[#D32F2F]">DATA_FLOW_STABLE</span>
-</div>
+<div className="text-[#D32F2F] font-mono animate-pulse">04:22:11 // UTC-5</div>
 </footer>
+{/*  Terminal Overlay Decor  */}
+<div className="fixed top-24 right-12 z-20 pointer-events-none opacity-30 text-white/20 font-mono text-[8px] space-y-1">
+<p>sys_log: breach detected</p>
+<p>ip_src: 192.168.0.104</p>
+<p>packet_loss: 0%</p>
+<p>exfiltration_status: COMPLETE</p>
+<p>-------------------------</p>
+<p>Wiping sector 0x822...</p>
+<p>Wiping sector 0x823...</p>
+<p>Wiping sector 0x824...</p>
+</div>
 
 
         </motion.div>

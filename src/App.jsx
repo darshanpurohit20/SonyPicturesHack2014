@@ -1,16 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, Suspense } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
-import Slide1 from './components/slides/Slide1';
-import Slide2 from './components/slides/Slide2';
-import Slide3 from './components/slides/Slide3';
-import Slide4 from './components/slides/Slide4';
-import Slide5 from './components/slides/Slide5';
-import Slide6 from './components/slides/Slide6';
-import Slide7 from './components/slides/Slide7';
-import Slide8 from './components/slides/Slide8';
-import Slide9 from './components/slides/Slide9';
-import Slide10 from './components/slides/Slide10';
+const Slide1 = React.lazy(() => import('./components/slides/Slide1'));
+const Slide2 = React.lazy(() => import('./components/slides/Slide2'));
+const Slide3 = React.lazy(() => import('./components/slides/Slide3'));
+const Slide4 = React.lazy(() => import('./components/slides/Slide4'));
+const Slide5 = React.lazy(() => import('./components/slides/Slide5'));
+const Slide6 = React.lazy(() => import('./components/slides/Slide6'));
+const Slide7 = React.lazy(() => import('./components/slides/Slide7'));
+const Slide8 = React.lazy(() => import('./components/slides/Slide8'));
+const Slide9 = React.lazy(() => import('./components/slides/Slide9'));
+const Slide10 = React.lazy(() => import('./components/slides/Slide10'));
 
 const slides = [
   Slide1,
@@ -24,6 +24,18 @@ const slides = [
   Slide9,
   Slide10,
 ];
+
+// Fallback skeleton for cinematic lazy loading
+const SlideLoadingFallback = () => (
+  <div className="w-full h-full flex flex-col items-center justify-center bg-black font-mono text-[#D32F2F]">
+    <div className="animate-pulse flex flex-col items-center gap-4">
+      <span className="material-symbols-outlined text-4xl animate-spin" style={{ animationDuration: '3s' }}>
+        hourglass_empty
+      </span>
+      <p className="text-xs uppercase tracking-[0.3em]">Decypting Next Scene...</p>
+    </div>
+  </div>
+);
 
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -63,7 +75,7 @@ export default function App() {
     };
 
     const handleWheel = (e) => {
-      if (Math.abs(e.deltaY) > 20) {
+      if (Math.abs(e.deltaY) > 30) {
         if (e.deltaY > 0) nextSlide();
         else prevSlide();
       }
@@ -83,10 +95,12 @@ export default function App() {
   return (
     <div className="w-screen h-screen bg-black overflow-hidden relative">
       <AnimatePresence mode="wait">
-        <CurrentSlideComponent key={currentSlide} />
+        <Suspense fallback={<SlideLoadingFallback />}>
+          <CurrentSlideComponent key={currentSlide} />
+        </Suspense>
       </AnimatePresence>
 
-      {/* Global Navigation HUD overlay (optional if slide headers aren't enough) */}
+      {/* Global Navigation HUD overlay */}
       <div className="fixed bottom-4 right-4 z-[9999] bg-black/50 backdrop-blur-md border border-[#D32F2F]/20 px-3 py-1 flex items-center gap-4 text-xs font-mono select-none">
         <button
           onClick={prevSlide}

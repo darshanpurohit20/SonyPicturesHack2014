@@ -4,173 +4,284 @@ import { motion } from 'framer-motion';
 export default function Slide4() {
     return (
         <motion.div
+
             initial={{ opacity: 0, scale: 0.98, x: 50 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        
             className="relative w-full h-full"
         >
             
-<div className="grain-overlay"></div>
-<div className="system-scan-line animate-scan"></div>
-<div className="cyber-grid animate-pulse-grid"></div>
-<div className="terminal-background animate-terminal-scroll" id="terminal-text"></div>
-<div className="particle-bg" id="particle-container"></div>
-{/*  TopAppBar  */}
-<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A]/90 backdrop-blur-xl border-b border-[#D32F2F]/20">
-<div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">SONY_HACK.INTEL</div>
-<nav className="hidden md:flex items-center gap-8">
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">INTEL</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">BREACH</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1 text-sm" href="#">EXFIL</a>
-<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm" href="#">IMPACT</a>
-</nav>
-<div className="font-headline tracking-tighter uppercase font-bold text-[#D32F2F] text-xs px-3 py-1 border border-[#D32F2F]/30 bg-[#D32F2F]/5">
-            SCENE 03 // THE TRIPLE THREAT
+{/*  Cyber-Noir Background Layer  */}
+<div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+{/*  Scrolling Forensic Logs  */}
+<div className="absolute right-10 top-0 h-[200%] w-48 opacity-[0.03] font-mono text-[10px] whitespace-nowrap leading-none animate-data-scroll">
+<div className="flex flex-col gap-1">
+<p>TRACE_ID: 992-X-11</p><p>GET /api/v1/auth/internal</p><p>STATUS: 403 Forbidden</p>
+<p>LATENCY: 12ms</p><p>IP: 10.0.82.19</p><p>UA: Mozilla/5.0 (Proxy)</p>
+<p>EXFIL_START: 12:00:01</p><p>BLOCK_SIZE: 4096KB</p><p>CRC: 0x8F2A</p>
+{/*  Duplicated for seamless loop  */}
+<p>TRACE_ID: 992-X-11</p><p>GET /api/v1/auth/internal</p><p>STATUS: 403 Forbidden</p>
+<p>LATENCY: 12ms</p><p>IP: 10.0.82.19</p><p>UA: Mozilla/5.0 (Proxy)</p>
+<p>EXFIL_START: 12:00:01</p><p>BLOCK_SIZE: 4096KB</p><p>CRC: 0x8F2A</p>
+<p>TRACE_ID: 992-X-11</p><p>GET /api/v1/auth/internal</p><p>STATUS: 403 Forbidden</p>
+<p>LATENCY: 12ms</p><p>IP: 10.0.82.19</p><p>UA: Mozilla/5.0 (Proxy)</p>
+<p>EXFIL_START: 12:00:01</p><p>BLOCK_SIZE: 4096KB</p><p>CRC: 0x8F2A</p>
+</div>
+</div>
+{/*  Moving Scanline  */}
+<div className="absolute inset-0 scanlines opacity-40 animate-scanline"></div>
+{/*  Glow and Particles  */}
+<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_rgba(211,47,47,0.08)_0%,_transparent_70%)]"></div>
+</div>
+{/*  Top Navigation  */}
+<nav className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#050505] border-b border-[#D32F2F]/20">
+<div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase group cursor-pointer">
+<span className="inline-block group-hover:animate-pulse">SONY_HACK.INTEL</span>
+</div>
+<div className="hidden md:flex items-center space-x-1 font-headline tracking-tighter uppercase font-bold">
+<a className="text-white/40 hover:text-[#D32F2F] hover:bg-white/5 transition-all px-4 py-1" href="#">INTEL</a>
+<a className="text-white/40 hover:text-[#D32F2F] hover:bg-white/5 transition-all px-4 py-1" href="#">BREACH</a>
+<a className="text-[#D32F2F] bg-[#D32F2F]/10 border-b-2 border-[#D32F2F] px-4 py-1" href="#">EXFIL</a>
+<a className="text-white/40 hover:text-[#D32F2F] hover:bg-white/5 transition-all px-4 py-1" href="#">IMPACT</a>
+</div>
+<div className="flex items-center gap-2">
+<div className="text-[#D32F2F] font-headline text-xs font-bold tracking-[0.2em] bg-[#D32F2F]/10 px-4 py-2 border border-[#D32F2F]/20">
+            SCENE 01 // THE BREACH
         </div>
-</header>
-{/*  SideNavBar  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A]/95 backdrop-blur-sm border-r border-[#D32F2F]/20 w-64 hidden lg:flex shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
-<div className="p-8 pt-24">
-<div className="flex items-center gap-3 mb-8">
-<div className="w-10 h-10 bg-surface-container-high flex items-center justify-center border border-outline-variant/30">
-<span className="material-symbols-outlined text-[#D32F2F]">shield_person</span>
+</div>
+</nav>
+{/*  Side Navigation  */}
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#050505] border-r border-[#D32F2F]/20 w-64 pt-24">
+<div className="px-6 mb-12">
+<div className="flex items-center gap-3 mb-2">
+<div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center border border-[#D32F2F]/30 group overflow-hidden">
+<span className="material-symbols-outlined text-primary group-hover:scale-125 transition-transform" data-icon="skull">skull</span>
 </div>
 <div>
-<div className="text-lg font-bold text-white font-headline">OPERATIONS</div>
-<div className="text-[10px] text-[#D32F2F] font-mono tracking-widest animate-pulse">LIVE_TRACING_ON</div>
+<div className="text-lg font-bold text-white font-headline leading-tight tracking-tight">OPERATIONS</div>
+<div className="text-[10px] text-primary tracking-widest uppercase flex items-center gap-1">
+<span className="w-1.5 h-1.5 bg-primary animate-pulse"></span> LIVE_TRACING_ON
+                </div>
 </div>
 </div>
-<nav className="flex flex-col gap-1">
-<a className="flex items-center gap-3 font-headline text-xs font-medium text-white/40 hover:text-white/80 px-4 py-3 hover:bg-white/5 transition-all" href="#">
-<span className="material-symbols-outlined text-sm">skull</span> THREAT_ACTOR
-                </a>
-<a className="flex items-center gap-3 font-headline text-xs font-medium text-white/40 hover:text-white/80 px-4 py-3 hover:bg-white/5 transition-all" href="#">
-<span className="material-symbols-outlined text-sm">anchor</span> PHISHING
-                </a>
-<a className="flex items-center gap-3 font-headline text-xs font-medium bg-[#D32F2F] text-white font-bold px-4 py-3" href="#">
-<span className="material-symbols-outlined text-sm">network_check</span> NETWORK
-                </a>
-<a className="flex items-center gap-3 font-headline text-xs font-medium text-white/40 hover:text-white/80 px-4 py-3 hover:bg-white/5 transition-all" href="#">
-<span className="material-symbols-outlined text-sm">dns</span> SERVER
-                </a>
-<a className="flex items-center gap-3 font-headline text-xs font-medium text-white/40 hover:text-white/80 px-4 py-3 hover:bg-white/5 transition-all" href="#">
-<span className="material-symbols-outlined text-sm">public</span> GLOBAL
-                </a>
+</div>
+<nav className="flex-1">
+<a className="flex items-center gap-4 text-white/30 hover:text-white px-6 py-4 font-headline text-[11px] font-bold tracking-[0.15em] border-l-2 border-transparent hover:border-primary/50 transition-all uppercase" href="#">
+<span className="material-symbols-outlined text-sm opacity-50" data-icon="skull">skull</span> THREAT_ACTOR
+        </a>
+<a className="flex items-center gap-4 text-white/30 hover:text-white px-6 py-4 font-headline text-[11px] font-bold tracking-[0.15em] border-l-2 border-transparent hover:border-primary/50 transition-all uppercase" href="#">
+<span className="material-symbols-outlined text-sm opacity-50" data-icon="hook">anchor</span> PHISHING
+        </a>
+<a className="flex items-center gap-4 text-white/30 hover:text-white px-6 py-4 font-headline text-[11px] font-bold tracking-[0.15em] border-l-2 border-transparent hover:border-primary/50 transition-all uppercase" href="#">
+<span className="material-symbols-outlined text-sm opacity-50" data-icon="network_check">network_check</span> NETWORK
+        </a>
+<a className="flex items-center gap-4 text-white/30 hover:text-white px-6 py-4 font-headline text-[11px] font-bold tracking-[0.15em] border-l-2 border-transparent hover:border-primary/50 transition-all uppercase" href="#">
+<span className="material-symbols-outlined text-sm opacity-50" data-icon="dns">dns</span> SERVER
+        </a>
+<a className="flex items-center gap-4 bg-[#D32F2F] text-white font-black px-6 py-4 font-headline text-[11px] tracking-[0.15em] transition-all uppercase" href="#">
+<span className="material-symbols-outlined text-sm" data-icon="public">public</span> GLOBAL
+        </a>
 </nav>
-</div>
-<div className="mt-auto p-8">
-<button className="w-full bg-[#D32F2F] text-white font-headline text-[10px] font-black uppercase py-4 tracking-tighter transition-all hover:brightness-110 active:scale-95 shadow-[0_0_20px_rgba(211,47,47,0.3)]">
-                DOWNLOAD EVIDENCE
-            </button>
+<div className="p-6">
+<button className="w-full bg-transparent border border-[#D32F2F]/50 text-[#D32F2F] py-3 font-headline text-[10px] tracking-[0.2em] font-black hover:bg-[#D32F2F] hover:text-white transition-all duration-300">
+            DOWNLOAD EVIDENCE
+        </button>
 </div>
 </aside>
-{/*  Main Content  */}
-<main className="lg:pl-64 pt-24 pb-16 min-h-screen px-6 md:px-12 relative z-10">
-<div className="max-w-6xl mx-auto">
+{/*  Main Content Canvas  */}
+<main className="pl-64 pt-20 pb-16 h-screen relative z-10 overflow-hidden bg-transparent">
+<div className="relative h-full px-16 flex flex-col justify-center">
 {/*  Header Section  */}
-<div className="mb-12 border-l-4 border-[#D32F2F] pl-6 py-2 animate-reveal">
-<span className="text-[#D32F2F] font-headline text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Background Analysis</span>
-<h1 className="font-headline text-5xl md:text-7xl font-black text-white tracking-tighter uppercase leading-none">
-                    UNDERSTANDING <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">THE ARSENAL</span>
+<div className="mb-14 opacity-0 animate-reveal">
+<div className="text-primary font-headline tracking-[0.6em] mb-4 uppercase flex items-center gap-4 text-[10px] font-black">
+<span className="h-[2px] w-12 bg-primary"></span>
+                Intelligence Sequence 04
+            </div>
+<h1 className="text-[7rem] font-black font-headline tracking-tighter uppercase leading-[0.75] mb-6">
+                CHRONOLOGY OF A<br/>
+<span className="text-primary italic relative inline-block">
+                    CATASTROPHE
+                    <span className="absolute -inset-1 bg-primary/10 blur-xl"></span>
+</span>
 </h1>
+<div className="flex items-center gap-10 mt-10">
+<div className="flex flex-col">
+<span className="text-[9px] text-white/40 tracking-[0.3em] font-headline uppercase font-bold mb-1">Status</span>
+<span className="text-xs font-black text-on-surface flex items-center gap-2">
+<span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        RECONSTRUCTING_HISTORY
+                    </span>
 </div>
-{/*  The Triple Threat Grid  */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/15 overflow-hidden backdrop-blur-sm bg-black/40">
-{/*  DATA BREACH  */}
-<div className="stagger-reveal group relative p-8 md:p-12 border-b md:border-b-0 md:border-r border-outline-variant/15 hover:bg-[#D32F2F]/5 transition-colors" style={{ animation: 'reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards', animationDelay: '0.2s' }}>
-<div className="mb-10 transform group-hover:scale-110 transition-transform duration-500">
-<span className="material-symbols-outlined text-5xl text-[#D32F2F]" style={{ fontVariationSettings: '\'FILL\' 0' }}>lock_open</span>
-</div>
-<h3 className="font-headline text-2xl font-bold text-white mb-4 tracking-tight uppercase">DATA BREACH</h3>
-<div className="space-y-4">
-<div className="h-px w-12 bg-[#D32F2F]"></div>
-<p className="text-on-surface-variant text-sm leading-relaxed">
-                            Tens of gigabytes of sensitive data including internal emails, personal HR records, and unreleased films were exfiltrated.
-                        </p>
-<div className="bg-[#D32F2F]/10 p-4 font-mono text-[10px] text-[#D32F2F] border-l-2 border-[#D32F2F]">
-                            STATUS: COMPROMISED // SIZE: 100GB+
-                        </div>
-</div>
-<div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-40 transition-opacity">
-<span className="font-headline font-black text-6xl">01</span>
-</div>
-</div>
-{/*  WIPER MALWARE  */}
-<div className="stagger-reveal group relative p-8 md:p-12 border-b md:border-b-0 md:border-r border-outline-variant/15 hover:bg-[#D32F2F]/5 transition-colors" style={{ animation: 'reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards', animationDelay: '0.4s' }}>
-<div className="mb-10 transform group-hover:scale-110 transition-transform duration-500">
-<span className="material-symbols-outlined text-5xl text-[#D32F2F]" style={{ fontVariationSettings: '\'FILL\' 0' }}>database_off</span>
-</div>
-<h3 className="font-headline text-2xl font-bold text-white mb-4 tracking-tight uppercase">WIPER MALWARE</h3>
-<div className="space-y-4">
-<div className="h-px w-12 bg-[#D32F2F]"></div>
-<p className="text-on-surface-variant text-sm leading-relaxed">
-                            The "Destover" malware variant was deployed, systematically erasing master boot records and rendering thousands of PCs unbootable.
-                        </p>
-<div className="bg-[#D32F2F]/10 p-4 font-mono text-[10px] text-[#D32F2F] border-l-2 border-[#D32F2F]">
-                            VARIANT: BKDR_DESTOVER // IMPACT: FATAL
-                        </div>
-</div>
-<div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-40 transition-opacity">
-<span className="font-headline font-black text-6xl">02</span>
-</div>
-</div>
-{/*  EXTORTION  */}
-<div className="stagger-reveal group relative p-8 md:p-12 hover:bg-[#D32F2F]/5 transition-colors" style={{ animation: 'reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards', animationDelay: '0.6s' }}>
-<div className="mb-10 transform group-hover:scale-110 transition-transform duration-500">
-<span className="material-symbols-outlined text-5xl text-[#D32F2F]" style={{ fontVariationSettings: '\'FILL\' 0' }}>mail</span>
-</div>
-<h3 className="font-headline text-2xl font-bold text-white mb-4 tracking-tight uppercase">EXTORTION</h3>
-<div className="space-y-4">
-<div className="h-px w-12 bg-[#D32F2F]"></div>
-<p className="text-on-surface-variant text-sm leading-relaxed">
-                            A psychological operations campaign featuring coercive threats aimed at Sony executives to halt the release of "The Interview".
-                        </p>
-<div className="bg-[#D32F2F]/10 p-4 font-mono text-[10px] text-[#D32F2F] border-l-2 border-[#D32F2F]">
-                            MOTIVE: POLITICAL // INTENT: CENSORSHIP
-                        </div>
-</div>
-<div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-40 transition-opacity">
-<span className="font-headline font-black text-6xl">03</span>
+<div className="w-[1px] h-10 bg-white/10"></div>
+<div className="flex flex-col">
+<span className="text-[9px] text-white/40 tracking-[0.3em] font-headline uppercase font-bold mb-1">Threat Level</span>
+<span className="text-xs font-black text-primary animate-pulse">CRITICAL_OMEGA</span>
 </div>
 </div>
 </div>
-{/*  Technical Logs / Ticker Tape  */}
-<div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 opacity-0 animate-reveal" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
-<div className="bg-[#0A0A0A]/80 backdrop-blur-md p-6 border-l border-[#D32F2F]">
-<div className="flex items-center gap-2 mb-4">
-<div className="w-2 h-2 rounded-full bg-[#D32F2F] animate-pulse"></div>
-<span className="text-[10px] font-headline font-bold text-white uppercase tracking-widest">Live Forensics Tape</span>
+{/*  Cinematic Timeline Component  */}
+<div className="relative w-full overflow-x-auto no-scrollbar pb-12">
+{/*  Central Data Line  */}
+<div className="absolute top-[148px] left-0 w-[2000px] h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+<div className="flex gap-0 min-w-[1700px] py-12 items-start relative">
+{/*  Event 01: September (Phishing)  */}
+<div className="w-80 group flex flex-col gap-8 opacity-0 animate-reveal reveal-delay-1">
+<div className="h-32 flex items-end pr-8">
+<div className="p-6 bg-[#0A0A0A] border-l-[3px] border-white/20 w-full relative transition-all duration-500 group-hover:border-primary group-hover:bg-[#120606]">
+<div className="text-[9px] font-headline text-white/40 mb-2 tracking-[0.2em] uppercase font-bold">Log_001 // Recon</div>
+<div className="text-lg font-headline font-black text-white uppercase group-hover:text-primary transition-colors tracking-tight">Initial Infiltration</div>
+<p className="text-[11px] text-white/60 leading-relaxed mt-3 font-medium font-body italic">Shadow network established via legacy VPN gateway. Silent data collection begins.</p>
 </div>
-<div className="font-mono text-[11px] text-on-surface-variant space-y-1">
-<div className="flex justify-between"><span>[2014-11-24 08:15:22]</span> <span className="text-primary">BREACH_DETECTED</span></div>
-<div className="flex justify-between"><span>[2014-11-24 08:16:05]</span> <span>AUTH_OVERRIDE_ADMIN_ROOT</span></div>
-<div className="flex justify-between"><span>[2014-11-24 08:18:44]</span> <span className="text-primary">WIPER_ROUTINE_INIT</span></div>
-<div className="flex justify-between"><span>[2014-11-24 08:22:12]</span> <span>EXFIL_THREAD_01_ACTIVE</span></div>
+</div>
+<div className="relative flex justify-center py-4">
+<div className="w-8 h-8 bg-[#050505] border-[3px] border-white/30 flex items-center justify-center rotate-45 group-hover:bg-primary group-hover:border-white transition-all duration-500 shadow-lg">
+<div className="w-2 h-2 bg-white/50 -rotate-45"></div>
 </div>
 </div>
-<div className="relative h-full min-h-[160px] overflow-hidden bg-[#0A0A0A]/80 backdrop-blur-md">
-<img alt="Cybersecurity node graph" className="w-full h-full object-cover opacity-20 grayscale contrast-150" data-alt="Abstract cinematic visualization of digital network data flowing through server nodes with high contrast red and dark grey lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT6ilT0ko0q5reJ1yNtRM25dK6mxrNYGERmj4xbzi-M0rYHY30KHRmiIblx1dLlL6sTj3U33MPNCagJZJqswaRBWAUeOIedqx40_sOnNJOgRZ6J_3NamiLdnygdcnJ2G4DxsoQGvynCJ4l0L3XtzLG0RztOdRA60F0bt9aXV4iS4yU4K8rocDYpRS8aLblw36WGWIF6Z8Oi3UuchnLlBc1OPOxP9k9uVNeTp2MH4ompX_ub4KZ-FEbJkb4q0U8dqjcsjCuesVkCyE"/>
-<div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent"></div>
-<div className="absolute bottom-4 left-4">
-<span className="text-[10px] font-headline font-bold text-white bg-[#D32F2F] px-2 py-1">CLASSIFIED EVIDENCE</span>
+<div className="text-center">
+<div className="text-6xl font-black font-headline tracking-tighter text-white/10 group-hover:text-white transition-all duration-500">SEPT</div>
+<div className="text-[10px] font-mono text-white/30 mt-2 uppercase tracking-widest font-bold">Vector: Phishing</div>
+</div>
+</div>
+{/*  Event 02: November 24 (Access)  */}
+<div className="w-80 group flex flex-col-reverse gap-8 opacity-0 animate-reveal reveal-delay-2">
+<div className="h-32 pr-8">
+<div className="p-6 bg-[#0A0A0A] border-l-[3px] border-primary w-full relative group-hover:bg-[#1a0a0a] transition-all">
+<div className="absolute top-4 right-4 animate-pulse">
+<span className="material-symbols-outlined text-primary text-sm" data-icon="warning">report</span>
+</div>
+<div className="text-[9px] font-headline text-primary mb-2 tracking-[0.2em] uppercase font-bold">Log_002 // Access</div>
+<div className="text-lg font-headline font-black text-white uppercase tracking-tight">The First Domino</div>
+<p className="text-[11px] text-white/60 leading-relaxed mt-3 font-medium font-body italic">System administrators observe unexplained traffic spikes in Culver City servers.</p>
+</div>
+</div>
+<div className="relative flex justify-center py-4">
+<div className="w-8 h-8 bg-primary/20 border-[3px] border-primary flex items-center justify-center rotate-45 group-hover:scale-125 transition-transform duration-500">
+<div className="w-2 h-2 bg-primary"></div>
+</div>
+</div>
+<div className="text-center">
+<div className="text-6xl font-black font-headline tracking-tighter text-white/10 group-hover:text-primary transition-all">NOV 24</div>
+<div className="text-[10px] font-mono text-white/30 mt-2 uppercase tracking-widest font-bold">Node: Internal_Gateway</div>
+</div>
+</div>
+{/*  Event 03: December 17 (Data Theft)  */}
+<div className="w-80 group flex flex-col gap-8 opacity-0 animate-reveal reveal-delay-3">
+<div className="h-32 flex items-end pr-8">
+<div className="p-6 bg-[#0A0A0A] border-l-[3px] border-white/20 w-full transition-all duration-500 group-hover:border-primary">
+<div className="text-[9px] font-headline text-white/40 mb-2 tracking-[0.2em] uppercase font-bold">Log_003 // Payload</div>
+<div className="text-lg font-headline font-black text-white uppercase tracking-tight">Lateral Migration</div>
+<p className="text-[11px] text-white/60 leading-relaxed mt-3 font-medium font-body italic">Malware spreads to core accounting and production databases globally.</p>
+</div>
+</div>
+<div className="relative flex justify-center py-4">
+<div className="w-8 h-8 bg-[#050505] border-[3px] border-white/30 flex items-center justify-center rotate-45 transition-all">
+<div className="w-2 h-2 bg-white/50 -rotate-45"></div>
+</div>
+</div>
+<div className="text-center">
+<div className="text-6xl font-black font-headline tracking-tighter text-white/10 group-hover:text-white transition-all">DEC 17</div>
+<div className="text-[10px] font-mono text-white/30 mt-2 uppercase tracking-widest font-bold">Attack: SQL_Injection</div>
+</div>
+</div>
+{/*  Event 04: December 19 (Attack / Exfil)  */}
+<div className="w-80 group flex flex-col-reverse gap-8 opacity-0 animate-reveal reveal-delay-4">
+<div className="h-32 pr-8">
+<div className="p-6 bg-primary border-l-[3px] border-white w-full shadow-[0_0_40px_rgba(211,47,47,0.4)] relative">
+<div className="absolute -top-3 -right-3 w-10 h-10 bg-white flex items-center justify-center rotate-12 shadow-xl">
+<span className="material-symbols-outlined text-primary font-black text-xl" data-icon="upload">upload_file</span>
+</div>
+<div className="text-[9px] font-headline text-white/80 mb-2 tracking-[0.2em] uppercase font-bold">Log_004 // Breach</div>
+<div className="text-xl font-headline font-black text-white uppercase italic tracking-tight">CRITICAL EXFIL</div>
+<p className="text-[11px] text-white/90 leading-relaxed mt-3 font-bold font-body">100TB of proprietary data transferred to off-shore 'GOP' servers.</p>
+</div>
+</div>
+<div className="relative flex justify-center py-4">
+<div className="w-12 h-12 bg-primary border-4 border-white flex items-center justify-center rotate-45 shadow-[0_0_30px_#D32F2F]">
+<span className="material-symbols-outlined text-white -rotate-45 font-black text-xl animate-bounce" data-icon="keyboard_double_arrow_up">keyboard_double_arrow_up</span>
+</div>
+</div>
+<div className="text-center">
+<div className="text-6xl font-black font-headline tracking-tighter text-primary animate-pulse">DEC 19</div>
+<div className="text-[10px] font-headline text-primary mt-2 uppercase tracking-widest font-black">DATA LOSS DETECTED</div>
+</div>
+</div>
+{/*  Event 05: January (Leaks / Fallout)  */}
+<div className="w-80 group flex flex-col gap-8 opacity-0 animate-reveal reveal-delay-5">
+<div className="h-32 flex items-end pr-8">
+<div className="p-6 bg-[#0A0A0A] border-l-[3px] border-white/10 w-full opacity-60 group-hover:opacity-100 transition-opacity">
+<div className="text-[9px] font-headline text-white/40 mb-2 tracking-[0.2em] uppercase font-bold">Log_005 // Fallout</div>
+<div className="text-lg font-headline font-black text-white uppercase tracking-tight">The Void</div>
+<p className="text-[11px] text-white/60 leading-relaxed mt-3 font-medium font-body italic">Global server shutdown. Forensic teams arrive. Damage assessment: Terminal.</p>
+</div>
+</div>
+<div className="relative flex justify-center py-4">
+<div className="w-8 h-8 bg-surface-container border-[3px] border-white/20 flex items-center justify-center rotate-45">
+<div className="w-2 h-2 bg-background"></div>
+</div>
+</div>
+<div className="text-center">
+<div className="text-6xl font-black font-headline tracking-tighter text-white/10 group-hover:text-white transition-all">JAN</div>
+<div className="text-[10px] font-mono text-white/30 mt-2 uppercase tracking-widest font-bold">Phase: Recovery_Failed</div>
+</div>
+</div>
+</div>
+</div>
+{/*  Tactical Metadata Ticker  */}
+<div className="mt-auto border-t border-white/10 py-8 flex items-center justify-between opacity-0 animate-reveal reveal-delay-5">
+<div className="flex gap-16">
+<div className="flex flex-col">
+<div className="text-[9px] font-headline text-primary tracking-[0.4em] uppercase mb-2 font-black">Packet Stream</div>
+<div className="font-mono text-[10px] text-white/40 bg-white/5 px-2 py-1 border border-white/5">
+                        0x44 0xEE 0x01 <span className="text-primary">[ENCRYPTED]</span> -&gt; 192.168.1.104
+                    </div>
+</div>
+<div className="flex flex-col">
+<div className="text-[9px] font-headline text-primary tracking-[0.4em] uppercase mb-2 font-black">System Integrity</div>
+<div className="font-mono text-[10px] text-white/40 flex gap-2">
+<span className="text-red-500">HASH_MATCH: FAILURE</span> // OFFSET_CORRECTION: REQ
+                    </div>
+</div>
+</div>
+<div className="flex items-center gap-6">
+<div className="flex flex-col items-end">
+<span className="text-[10px] font-headline text-white/40 uppercase tracking-[0.2em] font-bold">Playback Node</span>
+<span className="text-xs font-mono font-bold text-white/80">ALPHA-09-EXFIL</span>
+</div>
+<div className="flex gap-1.5 h-6 items-center">
+<div className="w-1.5 h-5 bg-primary"></div>
+<div className="w-1.5 h-5 bg-primary"></div>
+<div className="w-1.5 h-3 bg-primary/20"></div>
+<div className="w-1.5 h-3 bg-primary/20"></div>
 </div>
 </div>
 </div>
 </div>
 </main>
 {/*  Footer  */}
-<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/90 backdrop-blur-xl border-t border-[#D32F2F]/20">
-<div className="font-headline font-bold text-[10px] tracking-widest text-[#D32F2F] animate-pulse">
+<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-3 bg-[#050505]/95 backdrop-blur-xl border-t border-[#D32F2F]/20">
+<div className="flex items-center gap-4">
+<div className="text-[#D32F2F] font-headline text-[10px] font-black uppercase tracking-[0.3em] flex items-center gap-2">
+<span className="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
             CONFIDENTIAL // CLASSIFIED INTEL
         </div>
-<div className="flex gap-8">
-<a className="font-label text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">TIMELINE</a>
-<a className="font-label text-[10px] uppercase tracking-widest text-[#D32F2F]" href="#">SOURCES</a>
-<a className="font-label text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">RECOVERY</a>
+</div>
+<div className="flex gap-12 font-headline text-[10px] font-black uppercase tracking-[0.2em]">
+<a className="text-[#D32F2F] relative group" href="#">
+            TIMELINE
+            <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-primary"></span>
+</a>
+<a className="text-white/30 hover:text-white transition-colors" href="#">SOURCES</a>
+<a className="text-white/30 hover:text-white transition-colors" href="#">RECOVERY</a>
+</div>
+<div className="text-white/20 text-[9px] font-mono uppercase font-bold">
+        SYS_ID: <span className="text-white/40">88-X092-B</span>
 </div>
 </footer>
-
+{/*  Background Noise / Overlay  */}
+<div className="fixed inset-0 pointer-events-none z-[100] opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
 
         </motion.div>
     );

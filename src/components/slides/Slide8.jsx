@@ -4,182 +4,201 @@ import { motion } from 'framer-motion';
 export default function Slide8() {
     return (
         <motion.div
+
             initial={{ opacity: 0, scale: 0.98, x: 50 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        
             className="relative w-full h-full"
         >
             
-<div className="fixed inset-0 digital-noise z-[9999]"></div>
-{/*  TopAppBar Shell  */}
-<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] dark:bg-[#0A0A0A] border-b border-[#D32F2F]/15">
-<div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">
-            SONY_HACK.INTEL
-        </div>
-<nav className="hidden md:flex items-center gap-8 font-headline tracking-tighter uppercase font-bold text-xs">
-<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">INTEL</a>
-<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">BREACH</a>
-<a className="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">EXFIL</a>
-<a className="text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1" href="#">IMPACT</a>
+<div className="grain-overlay"></div>
+<div className="scanline"></div>
+{/*  TopAppBar  */}
+<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A]/95 backdrop-blur-sm border-b border-[#D32F2F]/20">
+<div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase animate-flicker">
+        SONY_HACK.INTEL
+    </div>
+<nav className="hidden md:flex gap-8 items-center">
+<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm px-2" href="#">INTEL</a>
+<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm px-2" href="#">BREACH</a>
+<a className="font-headline tracking-tighter uppercase font-bold text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75 text-sm px-2" href="#">EXFIL</a>
+<a className="font-headline tracking-tighter uppercase font-bold text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1 text-sm px-2" href="#">IMPACT</a>
 </nav>
-<div className="text-[#D32F2F] font-headline tracking-tighter uppercase font-bold text-xs">
-            SCENE 01 // THE BREACH
-        </div>
+<div className="text-[#D32F2F] font-headline font-bold text-xs tracking-widest bg-white/5 px-3 py-1 border border-[#D32F2F]/30">
+        SCENE 01 // THE BREACH
+    </div>
 </header>
-{/*  SideNavBar Shell  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] dark:bg-[#0A0A0A] w-64 border-r border-[#D32F2F]/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] pt-20">
-<div className="px-6 py-4 mb-4">
-<div className="flex items-center gap-3">
-<div className="w-8 h-8 bg-surface-container-highest flex items-center justify-center">
-<span className="material-symbols-outlined text-primary text-sm">security</span>
+{/*  SideNavBar  */}
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col w-64 bg-[#0A0A0A] border-r border-[#D32F2F]/15 pt-20 shadow-[20px_0_50px_rgba(0,0,0,0.8)]">
+<div className="px-6 py-8">
+<div className="flex items-center gap-3 mb-6">
+<div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center border border-outline-variant">
+<span className="material-symbols-outlined text-[#D32F2F]" style={{ fontVariationSettings: '\'FILL\' 1' }}>security</span>
 </div>
 <div>
-<div className="text-lg font-bold text-white font-headline">OPERATIONS</div>
-<div className="text-[10px] text-primary/80 font-mono tracking-widest">LIVE_TRACING_ON</div>
+<div className="text-white font-headline font-bold text-lg leading-none">OPERATIONS</div>
+<div className="text-[#D32F2F] font-headline font-medium text-[10px] tracking-tighter mt-1">LIVE_TRACING_ON</div>
 </div>
 </div>
 </div>
-<nav className="flex-1 space-y-1">
-<div className="bg-[#D32F2F] text-white font-bold px-4 py-3 flex items-center gap-3 font-headline text-xs">
-<span className="material-symbols-outlined text-base">skull</span>
-<span>THREAT_ACTOR</span>
-</div>
-<div className="text-white/40 hover:text-white/80 hover:bg-white/5 px-4 py-3 flex items-center gap-3 font-headline text-xs transition-colors">
-<span className="material-symbols-outlined text-base">anchor</span>
-<span>PHISHING</span>
-</div>
-<div className="text-white/40 hover:text-white/80 hover:bg-white/5 px-4 py-3 flex items-center gap-3 font-headline text-xs transition-colors">
-<span className="material-symbols-outlined text-base">network_check</span>
-<span>NETWORK</span>
-</div>
-<div className="text-white/40 hover:text-white/80 hover:bg-white/5 px-4 py-3 flex items-center gap-3 font-headline text-xs transition-colors">
-<span className="material-symbols-outlined text-base">dns</span>
-<span>SERVER</span>
-</div>
-<div className="text-white/40 hover:text-white/80 hover:bg-white/5 px-4 py-3 flex items-center gap-3 font-headline text-xs transition-colors">
-<span className="material-symbols-outlined text-base">public</span>
-<span>GLOBAL</span>
+<nav className="flex-1">
+<div className="flex flex-col">
+<a className="flex items-center gap-4 text-white/40 hover:text-white/80 px-6 py-3 transition-all duration-75 hover:bg-white/5 group" href="#">
+<span className="material-symbols-outlined text-sm" data-icon="skull">skull</span>
+<span className="font-headline text-xs font-medium tracking-widest">THREAT_ACTOR</span>
+</a>
+<a className="flex items-center gap-4 text-white/40 hover:text-white/80 px-6 py-3 transition-all duration-75 hover:bg-white/5 group" href="#">
+<span className="material-symbols-outlined text-sm" data-icon="hook">anchor</span>
+<span className="font-headline text-xs font-medium tracking-widest">PHISHING</span>
+</a>
+<a className="flex items-center gap-4 text-white/40 hover:text-white/80 px-6 py-3 transition-all duration-75 hover:bg-white/5 group" href="#">
+<span className="material-symbols-outlined text-sm" data-icon="network_check">network_check</span>
+<span className="font-headline text-xs font-medium tracking-widest">NETWORK</span>
+</a>
+<a className="flex items-center gap-4 text-white/40 hover:text-white/80 px-6 py-3 transition-all duration-75 hover:bg-white/5 group" href="#">
+<span className="material-symbols-outlined text-sm" data-icon="dns">dns</span>
+<span className="font-headline text-xs font-medium tracking-widest">SERVER</span>
+</a>
+<a className="flex items-center gap-4 bg-[#D32F2F] text-white font-bold px-6 py-3 transition-all duration-75" href="#">
+<span className="material-symbols-outlined text-sm" data-icon="public">public</span>
+<span className="font-headline text-xs font-medium tracking-widest">GLOBAL</span>
+</a>
 </div>
 </nav>
-<div className="p-4">
-<button className="w-full bg-primary-container text-on-primary-container font-headline font-bold text-xs py-3 tracking-widest hover:bg-primary transition-colors uppercase">
-                DOWNLOAD EVIDENCE
-            </button>
+<div className="p-6">
+<button className="w-full py-3 bg-primary-container text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest hover:bg-[#ffb3ac] hover:text-[#680008] transition-colors duration-75 flex items-center justify-center gap-2 border border-white/10">
+<span className="material-symbols-outlined text-sm">download</span>
+            DOWNLOAD EVIDENCE
+        </button>
 </div>
 </aside>
-{/*  Main Content Canvas  */}
+{/*  Main Content  */}
 <main className="pl-64 pt-20 pb-16 min-h-screen">
-<div className="max-w-7xl mx-auto px-12 py-12">
-{/*  Hero Title Section  */}
-<div className="mb-16">
-<div className="inline-block bg-secondary-container px-3 py-1 mb-4">
-<span className="text-[10px] font-mono font-bold text-on-secondary-container tracking-[0.2em] uppercase">Phase 04 // Counter-Intelligence</span>
+<div className="max-w-7xl mx-auto px-12 py-20">
+{/*  Tactical Metadata Ticker  */}
+<div className="mb-12 overflow-hidden whitespace-nowrap border-y border-[#D32F2F]/20 py-2 bg-black/40">
+<div className="inline-block animate-marquee-slower text-[10px] font-mono text-[#D32F2F] tracking-[0.3em] uppercase">
+                SYS_LOG: 0x442A_ERR // PACKET_LOSS: 0.003% // ENCRYPTION: AES-256-GCM // TRACE_STATUS: ACTIVE // SESSION_ID: 9982-X-2024 // TRACE_STATUS: ACTIVE // SESSION_ID: 9982-X-2024 // 
+            </div>
 </div>
-<h1 className="font-headline text-8xl font-extrabold tracking-tighter text-on-surface uppercase leading-[0.85]">
-                    STRIKING <br/> <span className="text-primary">BACK</span>
+{/*  Page Title Area  */}
+<div className="relative mb-24">
+<div className="absolute -top-12 -left-8 text-[120px] font-black text-white/5 font-headline pointer-events-none select-none">REALITY</div>
+<h1 className="text-8xl md:text-[10rem] font-headline font-black tracking-[-0.05em] uppercase text-on-background leading-none">
+                THE NEW <br/>
+<span className="text-[#D32F2F] glitch-hover-effect">REALITY</span>
 </h1>
-</div>
-{/*  Bento Grid Intelligence Layout  */}
-<div className="grid grid-cols-12 gap-6">
-{/*  Main Investigation Module  */}
-<div className="col-span-12 lg:col-span-7 bg-surface-container-low p-8 relative overflow-hidden group">
-<div className="absolute top-0 right-0 w-32 h-32 opacity-10">
-<span className="material-symbols-outlined text-[120px] text-primary translate-x-12 -translate-y-12">policy</span>
-</div>
-<div className="flex items-start justify-between mb-12">
-<div>
-<span className="text-[10px] font-mono text-primary uppercase tracking-widest block mb-1">Status: active_response</span>
-<h2 className="font-headline text-3xl font-bold text-white uppercase tracking-tight">Forensic Investigation</h2>
-</div>
-<span className="material-symbols-outlined text-primary">search_insights</span>
-</div>
-<div className="space-y-6">
-<div className="flex gap-4">
-<div className="flex-none w-px bg-primary h-auto"></div>
-<div>
-<p className="text-xl text-on-surface leading-relaxed font-light italic">
-                                    "FBI &amp; Mandiant lead a massive forensic investigation into the digital ruins."
-                                </p>
+<div className="mt-8 flex items-center gap-4">
+<div className="h-px w-24 bg-[#D32F2F]"></div>
+<p className="font-headline text-sm font-bold tracking-[0.5em] text-[#D32F2F]">SLIDE 08 // LESSONS LEARNED</p>
 </div>
 </div>
-<div className="grid grid-cols-2 gap-4 mt-8">
-<div className="bg-surface-container-high p-4 border-l-2 border-primary">
-<span className="text-[10px] font-mono text-white/40 uppercase block">Agency_Primary</span>
-<span className="font-headline text-white font-bold text-lg">FEDERAL BUREAU</span>
+{/*  Lessons Grid  */}
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-0 border border-outline-variant/30">
+{/*  Lesson 01  */}
+<div className="relative group bg-[#0A0A0A] p-12 border-r border-outline-variant/30 flex flex-col justify-between aspect-square lesson-card overflow-hidden">
+<div className="flex justify-between items-start z-10">
+<span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">01_CORE</span>
+<span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="security">security</span>
 </div>
-<div className="bg-surface-container-high p-4 border-l-2 border-tertiary">
-<span className="text-[10px] font-mono text-white/40 uppercase block">Private_Sector</span>
-<span className="font-headline text-white font-bold text-lg">MANDIANT.SEC</span>
+<div className="bg-[#D32F2F] p-8 relative overflow-hidden group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.1s' }}>
+<div className="absolute top-0 right-0 w-16 h-16 bg-white/5 -mr-8 -mt-8 rotate-45"></div>
+<h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase leading-none">
+                        Cybersecurity <br/> is no longer <br/> optional.
+                    </h2>
 </div>
-</div>
-</div>
-</div>
-{/*  Classified Visual Module  */}
-<div className="col-span-12 lg:col-span-5 bg-surface-container-highest flex items-center justify-center p-0 relative min-h-[400px]">
-<img className="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-40" data-alt="Close-up of a weathered manila folder stamped CLASSIFIED with digital red glowing fingerprint scans superimposed on the texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXzCgqghh8IY59afygXQvWqW3BjG53ON6Cg4wPMGctW8H9_5xwAnPPF3ZkCD4XqvZG83zHhkI-e4HdMOPLPDE9dDD4U3iE7D8ohIEs3Fk0HLoQyFHyP50wgArO8TMx92BVpHtmu5A9bzjpDWRuxZ0B1MlwhILwybZSdXAo5Zv3UEP3sVYWIY1kSr6j9meW5t3yHmC0Mw_hF2sc_w4-CEwmQpvm5m_fS6qvEDI7N-qUCfQnl5YSNBAjPTjZCz2gSkgfsNUBHo8t7Zc"/>
-<div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
-<div className="relative z-10 text-center px-12">
-<div className="inline-block border border-primary/40 px-4 py-1 mb-4 backdrop-blur-md">
-<span className="text-[10px] font-headline text-primary tracking-[0.3em] font-bold">EVIDENCE_LOG_409</span>
-</div>
-<p className="text-white font-headline text-lg tracking-tight uppercase font-medium">U.S. DOJ charges state-linked hackers with multiple counts of espionage</p>
-</div>
-</div>
-{/*  Operational Impact Ticker  */}
-<div className="col-span-12 md:col-span-6 bg-surface-container-high p-8 flex flex-col justify-between">
-<div>
-<div className="flex items-center gap-2 mb-6">
-<span className="material-symbols-outlined text-primary text-xl" data-weight="fill">description</span>
-<span className="text-[10px] font-mono text-white/60 tracking-widest uppercase">Analog Fallback Protocol</span>
-</div>
-<h3 className="font-headline text-2xl font-bold text-white mb-4 uppercase">FAX AND PAPER OPS</h3>
-<p className="text-on-surface/80 text-sm leading-relaxed mb-6">
-                            For weeks, one of the world's most advanced media conglomerates was forced to operate like a 1970s accounting firm. Payroll, communications, and logistical planning moved to fax machines and handwritten ledgers.
-                        </p>
-</div>
-<div className="flex items-center gap-4">
-<div className="flex-1 h-[1px] bg-white/10"></div>
-<span className="text-[10px] font-mono text-primary">RECOVERY_TIME: 21_DAYS</span>
-</div>
-</div>
-{/*  DOJ Alert Card  */}
-<div className="col-span-12 md:col-span-6 bg-primary-container p-8 relative overflow-hidden">
-<div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
-<div className="relative z-10">
-<span className="material-symbols-outlined text-white text-5xl mb-6">gavel</span>
-<h3 className="font-headline text-3xl font-black text-white leading-tight uppercase mb-4 italic">CRIMINAL INDICTMENTS</h3>
-<p className="text-white/90 font-medium mb-8">Official charges filed against state-linked actors for massive exfiltration of corporate data and destructive malware deployment.</p>
-<div className="flex flex-wrap gap-2">
-<span className="bg-white/20 px-3 py-1 text-[10px] font-headline font-bold text-white uppercase">Conspiracy</span>
-<span className="bg-white/20 px-3 py-1 text-[10px] font-headline font-bold text-white uppercase">Wire Fraud</span>
-<span className="bg-white/20 px-3 py-1 text-[10px] font-headline font-bold text-white uppercase">Computer Fraud</span>
-</div>
-</div>
-</div>
-</div>
-{/*  Footer Meta Text  */}
-<div className="mt-20 flex justify-between items-end border-t border-white/5 pt-8">
-<div className="max-w-md">
-<span className="text-[10px] font-mono text-primary uppercase block mb-2 tracking-[0.2em]">Forensic Conclusion</span>
-<p className="text-xs text-white/40 leading-relaxed uppercase">The response marked a turning point in international cyber policy, blending traditional law enforcement with elite cyber forensics to attribute the attack to state entities.</p>
-</div>
-<div className="font-headline font-black text-4xl text-white/10 tracking-tighter uppercase select-none">
-                    INVESTIGATION_07
+<div className="mt-8 text-[10px] font-mono text-white/40 uppercase tracking-tighter z-10">
+                    STATUS: MANDATORY_PROTOCOL<br/>
+                    IMPACT: INFRASTRUCTURE_WIDE
                 </div>
+{/*  Background Pattern  */}
+<div className="absolute inset-0 opacity-10 pointer-events-none group-hover:opacity-20 transition-opacity">
+<div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, #D32F2F 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+</div>
+</div>
+{/*  Lesson 02  */}
+<div className="relative group bg-[#111111] p-12 border-r border-outline-variant/30 flex flex-col justify-between aspect-square lesson-card overflow-hidden">
+<div className="flex justify-between items-start z-10">
+<span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">02_GATE</span>
+<span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="fingerprint">fingerprint</span>
+</div>
+<div className="bg-[#D32F2F] p-8 relative overflow-hidden group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.3s' }}>
+<div className="absolute bottom-0 left-0 w-24 h-2 bg-white/20"></div>
+<h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase leading-none">
+                        Identity is <br/> the new <br/> perimeter.
+                    </h2>
+</div>
+<div className="mt-8 text-[10px] font-mono text-white/40 uppercase tracking-tighter z-10">
+                    STATUS: ZERO_TRUST_ENFORCED<br/>
+                    IMPACT: ACCESS_CONTROL
+                </div>
+{/*  Encrypted file texture effect  */}
+<div className="absolute inset-0 opacity-5 pointer-events-none flex flex-wrap gap-1 p-2 font-mono text-[6px] text-white">
+                    010010101101010110101101101010101011010101010101101010110101010110101010101101011010101011010110101101010101101011010101010101101010110101010110101010101101
+                </div>
+</div>
+{/*  Lesson 03  */}
+<div className="relative group bg-[#0A0A0A] p-12 flex flex-col justify-between aspect-square lesson-card overflow-hidden">
+<div className="flex justify-between items-start z-10">
+<span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">03_VULN</span>
+<span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="mail">mail</span>
+</div>
+<div className="bg-[#D32F2F] p-8 relative overflow-hidden group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.5s' }}>
+<h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase leading-none">
+                        One email <br/> can break <br/> a company.
+                    </h2>
+<div className="absolute top-2 right-2 text-white/10 text-6xl select-none font-headline font-black">!</div>
+</div>
+<div className="mt-8 text-[10px] font-mono text-white/40 uppercase tracking-tighter z-10">
+                    STATUS: HUMAN_ERROR_DETECTED<br/>
+                    IMPACT: TOTAL_COLLAPSE_POTENTIAL
+                </div>
+{/*  Subtle grid background  */}
+<div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+</div>
+</div>
+{/*  Asymmetric Design Elements  */}
+<div className="mt-20 grid grid-cols-12 gap-6">
+<div className="col-span-12 lg:col-span-8">
+<div className="p-8 bg-[#1A1A1A] border-l-4 border-[#D32F2F] relative overflow-hidden">
+<div className="absolute top-0 right-0 p-2 font-mono text-[8px] text-white/10 uppercase">classification: level_05</div>
+<p className="text-lg text-on-surface font-body leading-relaxed mb-6 relative z-10">
+                        The breach at Sony wasn't just a technical failure; it was a socio-technical collapse. We must redefine our defensive posture from 'preventative' to 'resilient'. The data is gone, but the lesson remains etched in the digital ruins.
+                    </p>
+<div className="flex gap-4 relative z-10">
+<span className="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-headline font-bold text-[#D32F2F] uppercase">EVIDENCE_008_REV</span>
+<span className="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-headline font-bold text-[#D32F2F] uppercase">FORENSIC_SUMMARY</span>
+</div>
+</div>
+</div>
+<div className="col-span-12 lg:col-span-4 bg-[#0A0A0A] p-8 border border-outline-variant/30 relative">
+<div className="absolute inset-0 bg-gradient-to-br from-[#D32F2F]/5 to-transparent"></div>
+<div className="relative h-full flex flex-col justify-center items-center text-center">
+<div className="text-[60px] font-headline font-black text-[#D32F2F] leading-none mb-2 animate-flicker">94%</div>
+<div className="text-[10px] font-headline font-bold text-white/60 tracking-widest uppercase">Breach Probability Increase <br/> Since Incident</div>
+</div>
+</div>
 </div>
 </div>
 </main>
-{/*  Footer Shell  */}
-<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/80 backdrop-blur-md border-t border-[#D32F2F]/15 font-['Inter'] text-[10px] uppercase tracking-widest">
-<div className="text-white/30 italic">CONFIDENTIAL // CLASSIFIED INTEL</div>
+{/*  Footer  */}
+<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/90 backdrop-blur-md border-t border-[#D32F2F]/20">
+<div className="text-[#D32F2F] font-headline font-bold text-[10px] tracking-widest animate-flicker">
+        CONFIDENTIAL // CLASSIFIED INTEL
+    </div>
 <div className="flex gap-8">
-<a className="text-white/30 hover:text-white transition-opacity" href="#">TIMELINE</a>
-<a className="text-white/30 hover:text-white transition-opacity" href="#">SOURCES</a>
-<a className="text-[#D32F2F]" href="#">RECOVERY</a>
+<a className="font-label text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors" href="#">TIMELINE</a>
+<a className="font-label text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors" href="#">SOURCES</a>
+<a className="font-label text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors" href="#">RECOVERY</a>
 </div>
-<div className="text-primary font-mono">NODE_7_SECURED</div>
+<div className="flex items-center gap-2">
+<div className="w-1.5 h-1.5 bg-[#D32F2F] animate-pulse shadow-[0_0_5px_#D32F2F]"></div>
+<span className="font-mono text-[9px] text-[#D32F2F]">SERVER_CONNECTED</span>
+</div>
 </footer>
+
 
         </motion.div>
     );
