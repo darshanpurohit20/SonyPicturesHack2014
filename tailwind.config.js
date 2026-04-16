@@ -64,14 +64,14 @@ export default {
         "label": ["Inter", "sans-serif"]
       },
       animation: {
-        'reveal': 'fadeInUp 0.15s ease-out both',
-        'fade-in-up': 'fadeInUp 0.15s ease-out both',
+        'reveal': 'fadeInUp 0.1s ease-out both',
+        'fade-in-up': 'fadeInUp 0.1s ease-out both',
         'data-scroll': 'dataScroll 40s linear infinite',
         'scanline': 'scanline 8s linear infinite',
       },
       keyframes: {
         fadeInUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '0%': { opacity: '0', transform: 'translateY(4px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         dataScroll: {

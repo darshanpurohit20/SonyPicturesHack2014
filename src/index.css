@@ -448,10 +448,10 @@
             background-size: 100% 4px;
         }
         .reveal-delay-1 { animation-delay: 0s; }
-        .reveal-delay-2 { animation-delay: 0.03s; }
-        .reveal-delay-3 { animation-delay: 0.06s; }
-        .reveal-delay-4 { animation-delay: 0.09s; }
-        .reveal-delay-5 { animation-delay: 0.12s; }
+        .reveal-delay-2 { animation-delay: 0s; }
+        .reveal-delay-3 { animation-delay: 0s; }
+        .reveal-delay-4 { animation-delay: 0s; }
+        .reveal-delay-5 { animation-delay: 0s; }
         
         .no-scrollbar::-webkit-scrollbar {
             display: none;
