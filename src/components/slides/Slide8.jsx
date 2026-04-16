@@ -168,17 +168,6 @@ export default function Slide8() {
 </div>
 </div>
 </main>
-{/*  Footer  */}
-<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/90 backdrop-blur-md border-t border-[#D32F2F]/20">
-<div className="text-[#D32F2F] font-headline font-bold text-[10px] tracking-widest animate-flicker">
-        CONFIDENTIAL // CLASSIFIED INTEL
-    </div>
-<div className="flex items-center gap-2">
-<div className="w-1.5 h-1.5 bg-[#D32F2F] animate-pulse shadow-[0_0_5px_#D32F2F]"></div>
-<span className="font-mono text-[9px] text-[#D32F2F]">SERVER_CONNECTED</span>
-</div>
-</footer>
-
 
         </motion.div>
     );
