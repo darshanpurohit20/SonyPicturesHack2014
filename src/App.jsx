@@ -1,121 +1,109 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React, { useState, useEffect, useRef } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
-function App() {
-  const [count, setCount] = useState(0)
+import Slide1 from './components/slides/Slide1';
+import Slide2 from './components/slides/Slide2';
+import Slide3 from './components/slides/Slide3';
+import Slide4 from './components/slides/Slide4';
+import Slide5 from './components/slides/Slide5';
+import Slide6 from './components/slides/Slide6';
+import Slide7 from './components/slides/Slide7';
+import Slide8 from './components/slides/Slide8';
+import Slide9 from './components/slides/Slide9';
+import Slide10 from './components/slides/Slide10';
+
+const slides = [
+  Slide1,
+  Slide2,
+  Slide3,
+  Slide4,
+  Slide5,
+  Slide6,
+  Slide7,
+  Slide8,
+  Slide9,
+  Slide10,
+];
+
+export default function App() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const isTransitioningRef = useRef(false);
+
+  const nextSlide = () => {
+    if (isTransitioningRef.current) return;
+    setCurrentSlide((prev) => {
+      if (prev < slides.length - 1) {
+        isTransitioningRef.current = true;
+        setTimeout(() => { isTransitioningRef.current = false; }, 800);
+        return prev + 1;
+      }
+      return prev;
+    });
+  };
+
+  const prevSlide = () => {
+    if (isTransitioningRef.current) return;
+    setCurrentSlide((prev) => {
+      if (prev > 0) {
+        isTransitioningRef.current = true;
+        setTimeout(() => { isTransitioningRef.current = false; }, 800);
+        return prev - 1;
+      }
+      return prev;
+    });
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        prevSlide();
+      }
+    };
+
+    const handleWheel = (e) => {
+      if (Math.abs(e.deltaY) > 20) {
+        if (e.deltaY > 0) nextSlide();
+        else prevSlide();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('wheel', handleWheel, { passive: true });
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('wheel', handleWheel);
+    };
+  }, []);
+
+  const CurrentSlideComponent = slides[currentSlide];
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
+    <div className="w-screen h-screen bg-black overflow-hidden relative">
+      <AnimatePresence mode="wait">
+        <CurrentSlideComponent key={currentSlide} />
+      </AnimatePresence>
+
+      {/* Global Navigation HUD overlay (optional if slide headers aren't enough) */}
+      <div className="fixed bottom-4 right-4 z-[9999] bg-black/50 backdrop-blur-md border border-[#D32F2F]/20 px-3 py-1 flex items-center gap-4 text-xs font-mono select-none">
         <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
+          onClick={prevSlide}
+          className={`hover:text-[#D32F2F] transition-colors ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'text-white/60'}`}
         >
-          Count is {count}
+          &lt;_PREV
         </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+        <span className="text-[#D32F2F]/60">
+          {'['} {(currentSlide + 1).toString().padStart(2, '0')} / {slides.length.toString().padStart(2, '0')} {']'}
+        </span>
+        <button
+          onClick={nextSlide}
+          className={`hover:text-[#D32F2F] transition-colors ${currentSlide === slides.length - 1 ? 'opacity-30 cursor-not-allowed' : 'text-white/60'}`}
+        >
+          NEXT_&gt;
+        </button>
+      </div>
+    </div>
+  );
 }
-
-export default App

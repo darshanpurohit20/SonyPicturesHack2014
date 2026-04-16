@@ -1,0 +1,83 @@
+import os
+import re
+import glob
+
+def style_to_dict(style_str):
+    parts = style_str.split(';')
+    styles = []
+    for p in parts:
+        if ':' not in p: continue
+        k, v = p.split(':', 1)
+        k = k.strip()
+        v = v.strip().replace("'", "\\'")
+        
+        # camelCase the key
+        k_parts = k.split('-')
+        k_camel = k_parts[0] + ''.join(x.title() for x in k_parts[1:])
+        
+        styles.append(f"{k_camel}: '{v}'")
+    return "{{ " + ", ".join(styles) + " }}"
+
+def convert_to_jsx(html_str):
+    # remove scripts
+    html_str = re.sub(r'<script.*?>.*?</script>', '', html_str, flags=re.DOTALL)
+    # Extract styles instead of just removing them to be appended later, but in the JSX we still remove:
+    html_str = re.sub(r'<style.*?>.*?</style>', '', html_str, flags=re.DOTALL)
+    # replace class= with className=
+    html_str = html_str.replace('class="', 'className="')
+    # replace style="..."
+    def style_replacer(match):
+        return 'style=' + style_to_dict(match.group(1))
+    html_str = re.sub(r'style="([^"]*)"', style_replacer, html_str)
+    # self-close img tags
+    html_str = re.sub(r'<img(.*?)(?<!/)>', r'<img\1/>', html_str)
+    # self-close br tags
+    html_str = re.sub(r'<br>', r'<br/>', html_str)
+    html_str = re.sub(r'<hr>', r'<hr/>', html_str)
+    # replace inline comments <!-- ... --> with {/* ... */}
+    html_str = re.sub(r'<!--(.*?)-->', r'{/* \1 */}', html_str, flags=re.DOTALL)
+    return html_str
+
+slides = glob.glob('slide_*')
+slides.sort()
+
+imports = []
+components = []
+all_css = []
+
+for i, slide_dir in enumerate(slides):
+    html_file = os.path.join(slide_dir, 'code.html')
+    if not os.path.exists(html_file): continue
+    
+    with open(html_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+        
+    # Extract style block if any
+    style_matches = re.finditer(r'<style[^>]*>(.*?)</style>', content, re.DOTALL)
+    for m in style_matches:
+        all_css.append(f"/* Styles from {slide_dir} */\n" + m.group(1))
+
+    # Extract body content
+    body_match = re.search(r'<body[^>]*>(.*?)</body>', content, re.DOTALL)
+    if not body_match: continue
+    
+    body_html = body_match.group(1)
+    jsx_content = convert_to_jsx(body_html)
+    
+    comp_name = f"Slide{i+1}"
+    
+    # Optional CSS extraction for scoped css could be done here, but we put it in index.css
+    # Write JSX file
+    out_file = os.path.join('src', 'components', 'slides', f'{comp_name}.jsx')
+    
+    jsx_code = f"""import React from 'react';\nimport {{ motion }} from 'framer-motion';\n\nexport default function {comp_name}() {{\n    return (\n        <motion.div\n            initial={{{{ opacity: 0, scale: 0.98, x: 50 }}}}\n            animate={{{{ opacity: 1, scale: 1, x: 0 }}}}\n            exit={{{{ opacity: 0, scale: 1.02, x: -50 }}}}\n            transition={{{{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}}}\n            className="relative w-full h-full"\n        >\n            {jsx_content}\n        </motion.div>\n    );\n}}\n"""
+    
+    with open(out_file, 'w', encoding='utf-8') as f:
+        f.write(jsx_code)
+        
+    print(f"Generated {out_file}")
+
+with open('src/index.css', 'a', encoding='utf-8') as f:
+    f.write("\n\n" + "\n\n".join(all_css))
+
+print("Done generating slides and appending css.")
