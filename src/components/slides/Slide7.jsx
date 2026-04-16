@@ -159,12 +159,6 @@ export default function Slide7() {
 </div>
 </div>
 </main>
-{/*  Footer Shell  */}
-<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/80 backdrop-blur-md border-t border-[#D32F2F]/15 font-['Inter'] text-[10px] uppercase tracking-widest">
-<div className="text-white/30 italic">CONFIDENTIAL // CLASSIFIED INTEL</div>
-<div className="text-primary font-mono">NODE_7_SECURED</div>
-</footer>
-
         </motion.div>
     );
 }
