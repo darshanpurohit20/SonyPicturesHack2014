@@ -129,9 +129,9 @@ export default function Slide5() {
                                 Systematic expansion across the internal topology. Custom malware payload spread via SMB network shares, infecting domain controllers and file servers.
                             </p>
 </div>
-<div className="h-40 bg-black/40 border border-white/5 flex items-center justify-center relative">
+<div className="h-40 bg-[#111111]/40 border border-white/5 flex items-center justify-center relative">
 <img className="absolute inset-0 w-full h-full object-cover opacity-30 grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKwA_RZJPEKlxspJ90vtzlWd0XK_4op27mYf8mhsXqHfvYSoDHyLuOZOZeHhKZ_QIjBAGRRNGV108sbB_LgZEzyxwuwX8lsDzhiusqqqO3k8PU0gqlnYABlnZwfIjNaoVb6GYFqFyFaTZev6AANeGxCS50cj7CBsHQgdOI6mEeMUhVyS9pUAn9ltoRXgUCNpHBkTYW_T1KY2kWbQnlKxQTG90sMpcdQaM0bUQyVkHDHYWd5JUnyWLPTvlOtUjcg_t9r7htz23hnHY"/>
-<div className="relative z-10 font-mono text-[10px] text-primary p-4 bg-black/60 backdrop-blur-sm border border-primary/20">
+<div className="relative z-10 font-mono text-[10px] text-primary p-4 bg-[#111111]/60 backdrop-blur-sm border border-primary/20">
                                 SCANNING_NET_RANGE: 10.0.4.0/24<br/>
                                 PAYLOAD_STATUS: INJECTED<br/>
                                 SHARES_MOUNTED: 142

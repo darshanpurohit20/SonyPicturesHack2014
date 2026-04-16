@@ -63,7 +63,7 @@ export default function Slide8() {
 <main className="pl-64 pt-10 xl:pt-20 pb-16 min-h-screen">
 <div className="max-w-7xl mx-auto px-12 py-20">
 {/*  Tactical Metadata Ticker  */}
-<div className="mb-12  whitespace-nowrap border-y border-[#D32F2F]/20 py-2 bg-black/40">
+<div className="mb-12  whitespace-nowrap border-y border-[#D32F2F]/20 py-2 bg-[#111111]/40">
 <div className="inline-block animate-marquee-slower text-[10px] font-mono text-[#D32F2F] tracking-[0.3em] uppercase">
                 SYS_LOG: 0x442A_ERR // PACKET_LOSS: 0.003% // ENCRYPTION: AES-256-GCM // TRACE_STATUS: ACTIVE // SESSION_ID: 9982-X-2024 // TRACE_STATUS: ACTIVE // SESSION_ID: 9982-X-2024 // 
             </div>

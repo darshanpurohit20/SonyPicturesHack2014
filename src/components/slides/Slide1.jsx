@@ -95,7 +95,7 @@ export default function Slide1({ nextSlide, goToSlide }) {
 
 </aside>
 {/*  Main Content Canvas  */}
-<main className="ml-64 pt-10 xl:pt-20 pb-6 xl:pb-12 min-h-screen relative flex items-center justify-center bg-black ">
+<main className="ml-64 pt-10 xl:pt-20 pb-6 xl:pb-12 min-h-screen relative flex items-center justify-center bg-[#111111] ">
 {/*  Tactical Metadata Ticker  */}
 <div className="absolute top-20 right-0 left-64  py-1 bg-white/[0.02] border-b border-white/5">
 <div className="flex whitespace-nowrap gap-12 text-[10px] text-[#D32F2F]/40 font-mono uppercase tracking-[0.3em] animate-marquee">
@@ -110,7 +110,7 @@ export default function Slide1({ nextSlide, goToSlide }) {
 {/*  High-Impact Visual: Hacker Skull  */}
 <div className="relative mb-8 xl:mb-16 skull-breach mt-8 xl:mt-16 xl:mt-24">
 <div className="absolute inset-0 bg-[#D32F2F] blur-[120px] opacity-20"></div>
-<div className="relative p-12 border border-[#D32F2F]/40 bg-black/40 backdrop-blur-3xl pulse-glow-red">
+<div className="relative p-12 border border-[#D32F2F]/40 bg-[#111111]/40 backdrop-blur-3xl pulse-glow-red">
 <span className="material-symbols-outlined text-[12vh] xl:text-[180px] text-[#D32F2F] leading-none select-none" data-icon="skull" data-weight="fill" style={{ fontVariationSettings: '\'FILL\' 1' }}>skull</span>
 {/*  Glitch Decorative Elements  */}
 <div className="absolute -top-6 -left-6 w-12 h-12 border-t-4 border-l-4 border-[#D32F2F]"></div>
@@ -137,7 +137,7 @@ export default function Slide1({ nextSlide, goToSlide }) {
 <button onClick={nextSlide} className="btn-glow px-12 py-3 xl:py-5 bg-[#D32F2F] text-white font-headline font-black text-sm uppercase tracking-[0.2em] hover:bg-red-700 transition-all active:scale-95 border border-white/20 cursor-pointer">
                     INITIATE FORENSICS _
                 </button>
-<button onClick={() => goToSlide(3)} className="btn-glow px-12 py-3 xl:py-5 border border-white/20 text-white/60 font-headline font-bold text-sm uppercase tracking-[0.2em] hover:bg-white/5 hover:text-white transition-all bg-black/40 backdrop-blur-md cursor-pointer">
+<button onClick={() => goToSlide(3)} className="btn-glow px-12 py-3 xl:py-5 border border-white/20 text-white/60 font-headline font-bold text-sm uppercase tracking-[0.2em] hover:bg-white/5 hover:text-white transition-all bg-[#111111]/40 backdrop-blur-md cursor-pointer">
                     VIEW TIMELINE
                 </button>
 </div>

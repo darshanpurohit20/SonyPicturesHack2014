@@ -69,7 +69,7 @@ export default function Slide9() {
                         </div>
                     </div>
                     {/*  Main Visual Container  */}
-                    <div className="w-full max-w-6xl aspect-video relative group border border-white/10 bg-black/80  shadow-2xl reveal-delay-1 opacity-0 animate-fade-in-blur">
+                    <div className="w-full max-w-6xl aspect-video relative group border border-white/10 bg-[#111111]/80  shadow-2xl reveal-delay-1 opacity-0 animate-fade-in-blur">
                         {/*  Cinematic CSS Visual Elements (Replaces broken image)  */}
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#2a0808_0%,_#000000_100%)] opacity-80 animate-pulse-slow"></div>
                         <div className="absolute inset-0 opacity-20 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]"></div>

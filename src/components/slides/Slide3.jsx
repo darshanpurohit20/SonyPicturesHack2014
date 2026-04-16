@@ -85,7 +85,7 @@ export default function Slide3() {
           </motion.div>
 
           {/* Triple Threat Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/10 backdrop-blur-sm bg-black/40">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/10 backdrop-blur-sm bg-[#111111]/40">
 
             {/* DATA BREACH */}
             <motion.div

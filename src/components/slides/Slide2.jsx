@@ -124,10 +124,10 @@ export default function Slide2() {
             </div>
             {/*  Live Ticker Overlay  */}
             <div className="absolute top-8 right-8 flex flex-col gap-1 items-end opacity-80 font-mono text-[10px]">
-                <span className="bg-black/80 text-[#D32F2F] px-2 py-1 border border-[#D32F2F]/30">TIMESTAMP: <span
+                <span className="bg-[#111111]/80 text-[#D32F2F] px-2 py-1 border border-[#D32F2F]/30">TIMESTAMP: <span
                         id="current-time">2014-11-24_08:15:22_UTC</span></span>
-                <span className="bg-black/80 text-white px-2 py-1 border border-white/10">SIGNAL_STRENGTH: ████████░░</span>
-                <span className="bg-black/80 text-green-500 px-2 py-1 border border-green-500/30">NODE:
+                <span className="bg-[#111111]/80 text-white px-2 py-1 border border-white/10">SIGNAL_STRENGTH: ████████░░</span>
+                <span className="bg-[#111111]/80 text-green-500 px-2 py-1 border border-green-500/30">NODE:
                     KALI_REMOTE_01</span>
             </div>
         </section>
