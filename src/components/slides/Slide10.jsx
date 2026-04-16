@@ -23,7 +23,6 @@ export default function Slide10() {
 <div className="dust" style={{ top: '80%', left: '30%', animationDelay: '1.5s' }}></div>
 {/*  TopAppBar  */}
 <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] dark:bg-[#0A0A0A] border-b border-[#D32F2F]/15">
-<div className="flex items-center gap-8">
 <span className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">SONY_HACK.INTEL</span>
 </header>
 {/*  SideNavBar  */}

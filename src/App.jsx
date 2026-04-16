@@ -83,11 +83,20 @@ export default function App() {
 
   const CurrentSlideComponent = slides[currentSlide];
 
+  const goToSlide = (index) => {
+    if (isTransitioningRef.current) return;
+    if (index >= 0 && index < slides.length) {
+      isTransitioningRef.current = true;
+      setTimeout(() => { isTransitioningRef.current = false; }, 300);
+      setCurrentSlide(index);
+    }
+  };
+
   return (
     <div className="w-full min-h-screen bg-black overflow-y-auto overflow-x-hidden relative flex flex-col justify-center">
       <AnimatePresence mode="wait">
         <Suspense fallback={<SlideLoadingFallback />}>
-          <CurrentSlideComponent key={currentSlide} />
+          <CurrentSlideComponent key={currentSlide} nextSlide={nextSlide} prevSlide={prevSlide} goToSlide={goToSlide} currentSlide={currentSlide} />
         </Suspense>
       </AnimatePresence>
 

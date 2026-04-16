@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export default function Slide1() {
+export default function Slide1({ nextSlide, goToSlide }) {
     return (
         <motion.div
 
@@ -134,10 +134,10 @@ export default function Slide1() {
 </div>
 {/*  Tactical CTA  */}
 <div className="mt-10 xl:mt-20 flex gap-6 opacity-0 animate-[fadeIn_1s_ease-out_1s_forwards]">
-<button className="btn-glow px-12 py-3 xl:py-5 bg-[#D32F2F] text-white font-headline font-black text-sm uppercase tracking-[0.2em] hover:bg-red-700 transition-all active:scale-95 border border-white/20">
+<button onClick={nextSlide} className="btn-glow px-12 py-3 xl:py-5 bg-[#D32F2F] text-white font-headline font-black text-sm uppercase tracking-[0.2em] hover:bg-red-700 transition-all active:scale-95 border border-white/20 cursor-pointer">
                     INITIATE FORENSICS _
                 </button>
-<button className="btn-glow px-12 py-3 xl:py-5 border border-white/20 text-white/60 font-headline font-bold text-sm uppercase tracking-[0.2em] hover:bg-white/5 hover:text-white transition-all bg-black/40 backdrop-blur-md">
+<button onClick={() => goToSlide(3)} className="btn-glow px-12 py-3 xl:py-5 border border-white/20 text-white/60 font-headline font-bold text-sm uppercase tracking-[0.2em] hover:bg-white/5 hover:text-white transition-all bg-black/40 backdrop-blur-md cursor-pointer">
                     VIEW TIMELINE
                 </button>
 </div>

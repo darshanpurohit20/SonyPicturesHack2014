@@ -59,10 +59,6 @@ export default function Slide2() {
                     href="#">IMPACT</a>
             </nav>
         </div>
-        <div
-            className="bg-primary-container text-on-primary-container px-4 py-2 font-headline text-xs font-black tracking-widest cursor-default border-l-4 border-white/20">
-            SEC_BRIEFING // 01
-        </div>
     </header>
     {/*  SideNavBar  */}
     <aside
