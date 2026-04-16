@@ -173,11 +173,6 @@ export default function Slide8() {
 <div className="text-[#D32F2F] font-headline font-bold text-[10px] tracking-widest animate-flicker">
         CONFIDENTIAL // CLASSIFIED INTEL
     </div>
-<div className="flex gap-8">
-<a className="font-label text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors" href="#">TIMELINE</a>
-<a className="font-label text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors" href="#">SOURCES</a>
-<a className="font-label text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors" href="#">RECOVERY</a>
-</div>
 <div className="flex items-center gap-2">
 <div className="w-1.5 h-1.5 bg-[#D32F2F] animate-pulse shadow-[0_0_5px_#D32F2F]"></div>
 <span className="font-mono text-[9px] text-[#D32F2F]">SERVER_CONNECTED</span>

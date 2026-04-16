@@ -218,12 +218,7 @@ export default function Slide3() {
         <div className="font-headline font-bold text-[10px] tracking-widest text-[#D32F2F] animate-pulse">
           CONFIDENTIAL // CLASSIFIED INTEL
         </div>
-        <div className="flex gap-8">
-          <a className="font-label text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">TIMELINE</a>
-          <a className="font-label text-[10px] uppercase tracking-widest text-[#D32F2F]" href="#">SOURCES</a>
-          <a className="font-label text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">RECOVERY</a>
-        </div>
-      </footer>
+              </footer>
     </motion.div>
   );
 }

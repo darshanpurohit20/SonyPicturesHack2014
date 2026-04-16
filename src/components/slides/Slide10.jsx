@@ -110,11 +110,6 @@ export default function Slide10() {
 <span className="material-symbols-outlined text-xs text-[#D32F2F]" data-icon="lock">lock</span>
 <span className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30">CONFIDENTIAL // CLASSIFIED INTEL</span>
 </div>
-<div className="flex gap-8">
-<a className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">TIMELINE</a>
-<a className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">SOURCES</a>
-<a className="font-['Inter'] text-[10px] uppercase tracking-widest text-[#D32F2F]" href="#">RECOVERY</a>
-</div>
 <div className="flex items-center gap-4">
 <span className="text-[10px] font-['Inter'] text-white/30">v4.0.2_BETA</span>
 <div className="w-2 h-2 bg-[#D32F2F] rounded-full animate-pulse"></div>

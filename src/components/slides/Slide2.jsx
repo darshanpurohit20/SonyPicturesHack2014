@@ -45,20 +45,8 @@ export default function Slide2() {
     {/*  TopAppBar  */}
     <header
         className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#050505] border-b border-[#D32F2F]/15 backdrop-blur-sm">
-        <div className="flex items-center gap-8">
-            <span
-                className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase flicker-animation">SONY_HACK.INTEL</span>
-            <nav className="hidden md:flex gap-6">
-                <a className="text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1 font-headline tracking-tighter uppercase font-bold transition-all duration-300"
-                    href="#">INTEL</a>
-                <a className="text-white/60 font-headline tracking-tighter uppercase font-bold hover:text-[#D32F2F] hover:tracking-widest transition-all duration-300"
-                    href="#">BREACH</a>
-                <a className="text-white/60 font-headline tracking-tighter uppercase font-bold hover:text-[#D32F2F] hover:tracking-widest transition-all duration-300"
-                    href="#">EXFIL</a>
-                <a className="text-white/60 font-headline tracking-tighter uppercase font-bold hover:text-[#D32F2F] hover:tracking-widest transition-all duration-300"
-                    href="#">IMPACT</a>
-            </nav>
-        </div>
+        <span
+            className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase flicker-animation">SONY_HACK.INTEL</span>
     </header>
     {/*  SideNavBar  */}
     <aside

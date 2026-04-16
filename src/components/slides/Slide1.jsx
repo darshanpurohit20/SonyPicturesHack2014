@@ -159,11 +159,6 @@ export default function Slide1({ nextSlide, goToSlide }) {
 <div className="font-['Inter'] text-[10px] uppercase tracking-[0.4em] text-white/20">
             CONFIDENTIAL // ZERO DAY PROTOCOL ACTIVE
         </div>
-<div className="flex gap-8">
-<a className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/20 hover:text-[#D32F2F] transition-colors" href="#">TIMELINE</a>
-<a className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/20 hover:text-[#D32F2F] transition-colors" href="#">SOURCES</a>
-<a className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/20 hover:text-[#D32F2F] transition-colors" href="#">RECOVERY</a>
-</div>
 <div className="font-mono text-[10px] text-[#D32F2F]/60">
             SECURE_NODE_09 // 127.0.0.1
         </div>

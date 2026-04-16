@@ -251,14 +251,6 @@ export default function Slide4() {
             CONFIDENTIAL // CLASSIFIED INTEL
         </div>
 </div>
-<div className="flex gap-12 font-headline text-[10px] font-black uppercase tracking-[0.2em]">
-<a className="text-[#D32F2F] relative group" href="#">
-            TIMELINE
-            <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-primary"></span>
-</a>
-<a className="text-white/30 hover:text-white transition-colors" href="#">SOURCES</a>
-<a className="text-white/30 hover:text-white transition-colors" href="#">RECOVERY</a>
-</div>
 <div className="text-white/20 text-[9px] font-mono uppercase font-bold">
         SYS_ID: <span className="text-white/40">88-X092-B</span>
 </div>
