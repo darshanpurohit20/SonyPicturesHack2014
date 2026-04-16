@@ -1,4 +1,4 @@
-# SONY_HACK.INTEL // Cinematic Presentation
+# SONY_HACK.INTEL : Cinematic Presentation
 
 ![Static Badge](https://img.shields.io/badge/Status-Classified-d32f2f?style=flat-square) ![Static Badge](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel) ![Static Badge](https://img.shields.io/badge/Framework-React-61dafb?style=flat-square&logo=react)
 
