@@ -64,7 +64,7 @@ export default function Slide3() {
 
 </aside>
 {/*  Main Content  */}
-<main className="lg:pl-64 pt-24 pb-16 h-full px-6 md:px-12 relative z-10">
+<main className="lg:pl-64 pt-24 pb-16 min-h-screen px-6 md:px-12 relative z-10">
 <div className="max-w-6xl mx-auto">
 {/*  Header Section  */}
 <div className="mb-12 border-l-4 border-[#D32F2F] pl-6 py-2 animate-reveal">

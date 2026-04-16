@@ -75,7 +75,7 @@ export default function Slide8() {
 </div>
 </aside>
 {/*  Main Content  */}
-<main className="pl-64 pt-10 xl:pt-20 pb-16 h-full">
+<main className="pl-64 pt-10 xl:pt-20 pb-16 min-h-screen">
 <div className="max-w-7xl mx-auto px-12 py-20">
 {/*  Tactical Metadata Ticker  */}
 <div className="mb-12  whitespace-nowrap border-y border-[#D32F2F]/20 py-2 bg-black/40">

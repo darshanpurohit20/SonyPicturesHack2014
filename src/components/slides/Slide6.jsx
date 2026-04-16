@@ -71,7 +71,7 @@ export default function Slide6() {
 
 </aside>
 {/*  MAIN CANVAS  */}
-<main className="ml-64 pt-10 xl:pt-20 pb-6 xl:pb-12 h-full relative ">
+<main className="ml-64 pt-10 xl:pt-20 pb-6 xl:pb-12 min-h-screen relative ">
 {/*  Background Asset  */}
 <div className="absolute inset-0 z-0 ">
 <div className="absolute inset-0 bg-[#131313] opacity-80"></div>

@@ -67,7 +67,7 @@ export default function Slide7() {
 
 </aside>
 {/*  Main Content Canvas  */}
-<main className="pl-64 pt-10 xl:pt-20 pb-16 h-full">
+<main className="pl-64 pt-10 xl:pt-20 pb-16 min-h-screen">
 <div className="max-w-7xl mx-auto px-12 py-12">
 {/*  Hero Title Section  */}
 <div className="mb-8 xl:mb-16">

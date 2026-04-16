@@ -104,7 +104,7 @@ export default function Slide1() {
 
 </aside>
 {/*  Main Content Canvas  */}
-<main className="ml-64 pt-10 xl:pt-20 pb-6 xl:pb-12 h-full relative flex items-center justify-center bg-black ">
+<main className="ml-64 pt-10 xl:pt-20 pb-6 xl:pb-12 min-h-screen relative flex items-center justify-center bg-black ">
 {/*  Tactical Metadata Ticker  */}
 <div className="absolute top-20 right-0 left-64  py-1 bg-white/[0.02] border-b border-white/5">
 <div className="flex whitespace-nowrap gap-12 text-[10px] text-[#D32F2F]/40 font-mono uppercase tracking-[0.3em] animate-marquee">

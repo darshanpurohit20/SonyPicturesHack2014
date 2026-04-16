@@ -76,7 +76,7 @@ export default function Slide5() {
 
 </aside>
 {/*  Main Content Canvas  */}
-<main className="lg:pl-64 pt-24 pb-24 px-6 h-full relative z-10">
+<main className="lg:pl-64 pt-24 pb-24 px-6 min-h-screen relative z-10">
 <div className="max-w-7xl mx-auto space-y-12">
 {/*  Header Section  */}
 <section className="space-y-4">

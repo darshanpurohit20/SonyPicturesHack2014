@@ -52,9 +52,6 @@ def convert_to_jsx(html_str):
     html_str = re.sub(r'\bpb-12\b', 'pb-6 xl:pb-12', html_str)
     html_str = re.sub(r'\bpy-5\b', 'py-3 xl:py-5', html_str)
 
-    # Convert min-h-screen to h-full so it fits the App wrapper precisely
-    html_str = html_str.replace('min-h-screen', 'h-full')
-    
     # replace style="..."
     def style_replacer(match):
         return 'style=' + style_to_dict(match.group(1))

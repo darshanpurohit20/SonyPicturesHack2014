@@ -69,7 +69,7 @@ export default function Slide9() {
 
 </aside>
 {/*  Main Content Canvas  */}
-<main className="md:ml-64 pt-10 xl:pt-20 pb-24 h-full relative flex flex-col">
+<main className="md:ml-64 pt-10 xl:pt-20 pb-24 min-h-screen relative flex flex-col">
 {/*  Hero Section  */}
 <section className="flex-grow flex flex-col items-center justify-center p-8 md:p-12 relative ">
 {/*  Tactical Metadata Ticker  */}
