@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SONY_HACK.INTEL // SCENE 01</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#5b403d",
+                        "on-secondary-container": "#ff9e96",
+                        "surface-container-highest": "#353534",
+                        "tertiary-container": "#00799c",
+                        "on-tertiary-container": "#e9f7ff",
+                        "outline": "#ab8985",
+                        "surface-container-lowest": "#050505",
+                        "surface-dim": "#080808",
+                        "on-tertiary": "#003546",
+                        "background": "#000000",
+                        "surface-container-high": "#1a1a1a",
+                        "surface-tint": "#ffb3ac",
+                        "primary-fixed-dim": "#ffb3ac",
+                        "surface-bright": "#2a2929",
+                        "inverse-on-surface": "#313030",
+                        "on-surface": "#e5e2e1",
+                        "secondary-container": "#832a26",
+                        "on-primary-container": "#fff2f0",
+                        "surface-variant": "#353534",
+                        "secondary-fixed-dim": "#ffb3ac",
+                        "tertiary": "#7bd1f8",
+                        "error-container": "#93000a",
+                        "surface-container": "#100f0f",
+                        "surface-container-low": "#0c0b0b",
+                        "primary-container": "#d32f2f",
+                        "primary": "#ffb3ac",
+                        "surface": "#000000",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed-variant": "#802824",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#611110",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#ffdad6",
+                        "inverse-primary": "#ba1a20",
+                        "tertiary-fixed-dim": "#7bd1f8",
+                        "on-primary-fixed-variant": "#930010",
+                        "tertiary-fixed": "#bee9ff",
+                        "on-tertiary-fixed": "#001f2a",
+                        "on-background": "#e5e2e1",
+                        "on-secondary-fixed": "#410003",
+                        "on-primary-fixed": "#410003",
+                        "on-tertiary-fixed-variant": "#004d65",
+                        "secondary": "#ffb3ac",
+                        "primary-fixed": "#ffdad6",
+                        "on-surface-variant": "#e4beba",
+                        "inverse-surface": "#e5e2e1",
+                        "on-primary": "#680008"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        @keyframes marqueeVertical {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+        .code-scroller {
+            animation: marqueeVertical 40s linear infinite;
+        }
+        .grain-overlay {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAXCU7M87OI87IiYeXFz667fhLCEbukmXpwMQI5V9XS1uni_9nwFQF2u-5THpMTkuDXbvd4H3jGqZFbJbxJwAevApeA4sIBHT7rCDtuUAJHnClhRRjlGAu_EIF7PPke2gEDZN8ZuLZK-kEA63e6OBTy7q2zzu5ZB9qki_b2eFotwv4V1SaKdzdQfOx9rZGetgQlVA4TzOLft4HnZYPPgJCTp3hpxsWk7mqOwhn2p_ysNEvxoMJkiPftVUo5lAFLLmlISgKUA1PoSXc);
+            opacity: 0.05;
+            pointer-events: none;
+        }
+        .tech-grid {
+            background-image: linear-gradient(rgba(211, 47, 47, 0.05) 1px, transparent 1px), 
+                              linear-gradient(90deg, rgba(211, 47, 47, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 5;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(211, 47, 47, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+            opacity: 0.1;
+            position: absolute;
+            bottom: 100%;
+            animation: scanline 10s linear infinite;
+        }
+        @keyframes scanline {
+            0% { bottom: 100%; }
+            100% { bottom: -100%; }
+        }
+        /* Sequential Animations */
+        .reveal-step-1 {
+            opacity: 0;
+            filter: blur(10px);
+            animation: fadeInZoom 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.8s;
+        }
+        @keyframes fadeInZoom {
+            0% { opacity: 0; transform: scale(0.95) translateY(10px); filter: blur(10px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); filter: blur(0px); }
+        }
+
+        .reveal-step-2 {
+            opacity: 0;
+            animation: slamGlitch 0.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+            animation-delay: 3s;
+        }
+        @keyframes slamGlitch {
+            0% { opacity: 0; transform: scale(1.5) skew(10deg); filter: blur(20px); }
+            40% { opacity: 1; transform: scale(1) skew(-5deg); text-shadow: 10px 0 #d32f2f, -10px 0 #7bd1f8; }
+            70% { transform: skew(2deg); text-shadow: -5px 0 #d32f2f, 5px 0 #7bd1f8; }
+            100% { opacity: 1; transform: scale(1) skew(0); }
+        }
+
+        .red-flash {
+            animation: flashBackground 0.3s ease-out;
+            animation-delay: 3s;
+            animation-fill-mode: both;
+        }
+        @keyframes flashBackground {
+            0% { background-color: transparent; }
+            10% { background-color: rgba(211, 47, 47, 0.4); }
+            100% { background-color: transparent; }
+        }
+
+        /* Skull Breach Animation */
+        .skull-breach {
+            animation: breachGlitch 4s infinite;
+        }
+        @keyframes breachGlitch {
+            0%, 90%, 100% { transform: translate(0); opacity: 1; filter: hue-rotate(0deg); }
+            92% { transform: translate(-5px, 2px); opacity: 0.8; filter: hue-rotate(90deg); }
+            94% { transform: translate(5px, -2px); opacity: 0.5; }
+            96% { transform: scale(1.1) translate(-2px, -2px); text-shadow: 5px 5px #d32f2f, -5px -5px #7bd1f8; }
+            98% { transform: translate(2px, 5px); opacity: 0.8; }
+        }
+
+        .pulse-glow-red {
+            animation: pulseGlow 4s infinite ease-in-out;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { filter: drop-shadow(0 0 5px rgba(211, 47, 47, 0.4)); }
+            50% { filter: drop-shadow(0 0 40px rgba(211, 47, 47, 0.8)); }
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(211, 47, 47, 0.6);
+            text-shadow: 0 0 8px rgba(255,255,255,0.5);
+        }
+
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .particle {
+            position: absolute;
+            background: rgba(211, 47, 47, 0.3);
+            border-radius: 50%;
+            animation: drift linear infinite;
+        }
+        @keyframes drift {
+            from { transform: translateY(110vh); }
+            to { transform: translateY(-10vh); }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+        }
+    </style>
+</head>
+<body class="bg-black text-on-background font-body selection:bg-primary-container selection:text-white overflow-hidden">
+<!-- Red Flash Overlay Trigger -->
+<div class="fixed inset-0 z-[60] pointer-events-none red-flash"></div>
+<!-- Grain Overlay -->
+<div class="fixed inset-0 z-[100] grain-overlay"></div>
+<!-- Digital Void Background -->
+<div class="fixed inset-0 z-0 tech-grid"></div>
+<div class="fixed inset-0 z-0 opacity-10 flex overflow-hidden pointer-events-none">
+<div class="code-scroller font-mono text-[9px] text-[#D32F2F] leading-tight space-y-1 w-full px-4">
+<p>0x45 0x78 0x65 0x63 0x75 0x74 0x69 0x6e 0x67 0x20 0x53 0x63 0x72 0x69 0x70 0x74...</p>
+<p>&gt; CONNECTING TO SONY-HQ-GW01... SUCCESS</p>
+<p>&gt; BYPASSING FIREWALL... [####################] 100%</p>
+<p>&gt; EXPLOITING CVE-2014-4113...</p>
+<p>&gt; INJECTING SHELLCODE... OFFSET 0x00401000</p>
+<p>&gt; ROOT ACCESS GRANTED</p>
+<p>&gt; INITIALIZING DATA EXFILTRATION PORT 8080</p>
+<p>0x53 0x79 0x73 0x74 0x65 0x6d 0x20 0x42 0x72 0x65 0x61 0x63 0x68 0x21</p>
+<p>&gt; DELETING SYSTEM LOGS...</p>
+<p>&gt; ENCRYPTING LOCAL STORAGE...</p>
+<p>0x45 0x78 0x65 0x63 0x75 0x74 0x69 0x6e 0x67 0x20 0x53 0x63 0x72 0x69 0x70 0x74...</p>
+<p>&gt; CONNECTING TO SONY-HQ-GW01... SUCCESS</p>
+<p>&gt; BYPASSING FIREWALL... [####################] 100%</p>
+<p>&gt; EXPLOITING CVE-2014-4113...</p>
+<p>&gt; INJECTING SHELLCODE... OFFSET 0x00401000</p>
+<p>&gt; ROOT ACCESS GRANTED</p>
+<p>&gt; INITIALIZING DATA EXFILTRATION PORT 8080</p>
+<p>0x53 0x79 0x73 0x74 0x65 0x6d 0x20 0x42 0x72 0x65 0x61 0x63 0x68 0x21</p>
+<p>&gt; DELETING SYSTEM LOGS...</p>
+<p>&gt; ENCRYPTING LOCAL STORAGE...</p>
+</div>
+</div>
+<div class="scanline"></div>
+<div class="particles">
+<div class="particle" style="width: 2px; height: 2px; left: 15%; animation-duration: 20s; opacity: 0.4;"></div>
+<div class="particle" style="width: 1px; height: 1px; left: 35%; animation-duration: 35s; opacity: 0.3;"></div>
+<div class="particle" style="width: 3px; height: 3px; left: 60%; animation-duration: 25s; opacity: 0.2;"></div>
+<div class="particle" style="width: 2px; height: 2px; left: 85%; animation-duration: 30s; opacity: 0.5;"></div>
+<div class="particle" style="width: 1px; height: 1px; left: 90%; animation-duration: 40s; opacity: 0.3;"></div>
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-black/80 backdrop-blur-md border-b border-[#D32F2F]/10">
+<div class="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-['Space_Grotesk'] uppercase">
+            SONY_HACK.INTEL
+        </div>
+<nav class="hidden md:flex gap-8">
+<a class="text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-sm" href="#">INTEL</a>
+<a class="text-white/40 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">BREACH</a>
+<a class="text-white/40 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">EXFIL</a>
+<a class="text-white/40 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">IMPACT</a>
+</nav>
+<div class="text-[#D32F2F]/60 font-['Space_Grotesk'] tracking-tighter uppercase font-bold text-xs tracking-[0.2em]">
+            SCENE 01 // THE BREACH
+        </div>
+</header>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full z-40 flex flex-col bg-black border-r border-[#D32F2F]/10 w-64 pt-24">
+<div class="px-6 mb-8">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 bg-surface-container-highest/20 flex items-center justify-center border border-[#D32F2F]/20">
+<span class="material-symbols-outlined text-[#D32F2F]" data-icon="security">security</span>
+</div>
+<div>
+<div class="text-lg font-bold text-white font-headline">OPERATIONS</div>
+<div class="text-[10px] text-[#D32F2F] tracking-[0.2em] font-mono">LIVE_TRACING_ON</div>
+</div>
+</div>
+</div>
+<nav class="flex flex-col flex-grow">
+<a class="flex items-center gap-4 bg-[#D32F2F] text-white font-bold px-4 py-3 font-['Space_Grotesk'] text-xs uppercase" href="#">
+<span class="material-symbols-outlined" data-icon="skull" data-weight="fill" style="font-variation-settings: 'FILL' 1;">skull</span>
+                THREAT_ACTOR
+            </a>
+<a class="flex items-center gap-4 text-white/30 hover:text-white/80 hover:bg-white/5 px-4 py-3 font-['Space_Grotesk'] text-xs uppercase transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="hook">anchor</span>
+                PHISHING
+            </a>
+<a class="flex items-center gap-4 text-white/30 hover:text-white/80 hover:bg-white/5 px-4 py-3 font-['Space_Grotesk'] text-xs uppercase transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="network_check">network_check</span>
+                NETWORK
+            </a>
+<a class="flex items-center gap-4 text-white/30 hover:text-white/80 hover:bg-white/5 px-4 py-3 font-['Space_Grotesk'] text-xs uppercase transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="dns">dns</span>
+                SERVER
+            </a>
+<a class="flex items-center gap-4 text-white/30 hover:text-white/80 hover:bg-white/5 px-4 py-3 font-['Space_Grotesk'] text-xs uppercase transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+                GLOBAL
+            </a>
+</nav>
+<div class="p-4">
+<button class="w-full py-3 bg-primary-container text-white font-headline font-bold text-xs uppercase tracking-widest hover:bg-primary transition-colors border border-white/5">
+                DOWNLOAD EVIDENCE
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 pt-20 pb-12 min-h-screen relative flex items-center justify-center bg-black overflow-hidden">
+<!-- Tactical Metadata Ticker -->
+<div class="absolute top-20 right-0 left-64 overflow-hidden py-1 bg-white/[0.02] border-b border-white/5">
+<div class="flex whitespace-nowrap gap-12 text-[10px] text-[#D32F2F]/40 font-mono uppercase tracking-[0.3em] animate-marquee">
+<span>Packet Log: 192.168.1.104 &gt;&gt; EXFILTRATION DETECTED</span>
+<span>Timestamp: 2014-11-24 08:15:22 EST</span>
+<span>System Status: CRITICAL FAILURE</span>
+<span>Node: SONY-PICTURES-ENT-HQ</span>
+<span>Auth: UNKNOWN_ENTITY_GOP</span>
+</div>
+</div>
+<div class="max-w-6xl w-full px-12 flex flex-col items-center text-center z-10">
+<!-- High-Impact Visual: Hacker Skull -->
+<div class="relative mb-16 skull-breach">
+<div class="absolute inset-0 bg-[#D32F2F] blur-[120px] opacity-20"></div>
+<div class="relative p-12 border border-[#D32F2F]/40 bg-black/40 backdrop-blur-3xl pulse-glow-red">
+<span class="material-symbols-outlined text-[180px] text-[#D32F2F] leading-none select-none" data-icon="skull" data-weight="fill" style="font-variation-settings: 'FILL' 1;">skull</span>
+<!-- Glitch Decorative Elements -->
+<div class="absolute -top-6 -left-6 w-12 h-12 border-t-4 border-l-4 border-[#D32F2F]"></div>
+<div class="absolute -bottom-6 -right-6 w-12 h-12 border-b-4 border-r-4 border-[#D32F2F]"></div>
+</div>
+</div>
+<!-- Cinematic Hook Text -->
+<div class="space-y-8 max-w-5xl">
+<div class="reveal-step-1">
+<h1 class="font-headline font-black text-6xl md:text-9xl tracking-tight leading-[0.85] text-white uppercase italic">
+                        A normal <span class="text-[#D32F2F] drop-shadow-[0_0_15px_rgba(211,47,47,0.5)]">Monday morning</span> at Sony… 
+                    </h1>
+<div class="h-1 w-64 bg-[#D32F2F]/60 mx-auto mt-8 blur-[1px]"></div>
+</div>
+<div class="reveal-step-2">
+<h2 class="font-headline font-black text-5xl md:text-8xl tracking-tighter text-white/80 uppercase">
+                        suddenly every screen <br/>
+<span class="bg-white text-black px-8 py-4 mt-8 inline-block font-black shadow-[15px_15px_0_rgba(211,47,47,0.7)] transform -rotate-1">TURNS BLACK.</span>
+</h2>
+</div>
+</div>
+<!-- Tactical CTA -->
+<div class="mt-20 flex gap-6 opacity-0 animate-[fadeIn_1s_ease-out_4s_forwards]">
+<button class="btn-glow px-12 py-5 bg-[#D32F2F] text-white font-headline font-black text-sm uppercase tracking-[0.2em] hover:bg-red-700 transition-all active:scale-95 border border-white/20">
+                    INITIATE FORENSICS _
+                </button>
+<button class="btn-glow px-12 py-5 border border-white/20 text-white/60 font-headline font-bold text-sm uppercase tracking-[0.2em] hover:bg-white/5 hover:text-white transition-all bg-black/40 backdrop-blur-md">
+                    VIEW TIMELINE
+                </button>
+</div>
+</div>
+<!-- Ambient UI Elements -->
+<div class="absolute bottom-24 left-12 opacity-40 font-mono text-[11px] text-[#D32F2F] space-y-2 hidden lg:block border-l-2 border-[#D32F2F]/40 pl-6">
+<p class="animate-pulse">&gt; GATHERING VOLATILE DATA...</p>
+<p>&gt; MEMORY DUMP IN PROGRESS [88%]</p>
+<p>&gt; TRACING ORIGIN: [REDACTED]</p>
+</div>
+<div class="absolute top-48 right-12 opacity-40 font-mono text-[11px] text-white/60 space-y-2 text-right hidden lg:block border-r-2 border-white/20 pr-6">
+<p>THREAT LEVEL: <span class="text-[#D32F2F] font-bold">OMEGA</span></p>
+<p>VULNERABILITY: CVE-2014-4113</p>
+<p>ACTOR: Guardians of Peace</p>
+</div>
+</main>
+<!-- Footer -->
+<footer class="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-3 bg-black/90 backdrop-blur-xl border-t border-white/5">
+<div class="font-['Inter'] text-[10px] uppercase tracking-[0.4em] text-white/20">
+            CONFIDENTIAL // ZERO DAY PROTOCOL ACTIVE
+        </div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-[10px] uppercase tracking-widest text-white/20 hover:text-[#D32F2F] transition-colors" href="#">TIMELINE</a>
+<a class="font-['Inter'] text-[10px] uppercase tracking-widest text-white/20 hover:text-[#D32F2F] transition-colors" href="#">SOURCES</a>
+<a class="font-['Inter'] text-[10px] uppercase tracking-widest text-white/20 hover:text-[#D32F2F] transition-colors" href="#">RECOVERY</a>
+</div>
+<div class="font-mono text-[10px] text-[#D32F2F]/60">
+            SECURE_NODE_09 // 127.0.0.1
+        </div>
+</footer>
+<style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+        }
+    </style>
+</body></html>

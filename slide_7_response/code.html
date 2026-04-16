@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#5b403d",
+                        "on-secondary-container": "#ff9e96",
+                        "surface-container-highest": "#353534",
+                        "tertiary-container": "#00799c",
+                        "on-tertiary-container": "#e9f7ff",
+                        "outline": "#ab8985",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-dim": "#131313",
+                        "on-tertiary": "#003546",
+                        "background": "#131313",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-tint": "#ffb3ac",
+                        "primary-fixed-dim": "#ffb3ac",
+                        "surface-bright": "#3a3939",
+                        "inverse-on-surface": "#313030",
+                        "on-surface": "#e5e2e1",
+                        "secondary-container": "#832a26",
+                        "on-primary-container": "#fff2f0",
+                        "surface-variant": "#353534",
+                        "secondary-fixed-dim": "#ffb3ac",
+                        "tertiary": "#7bd1f8",
+                        "error-container": "#93000a",
+                        "surface-container": "#201f1f",
+                        "surface-container-low": "#1c1b1b",
+                        "primary-container": "#d32f2f",
+                        "primary": "#ffb3ac",
+                        "surface": "#131313",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed-variant": "#802824",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#611110",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#ffdad6",
+                        "inverse-primary": "#ba1a20",
+                        "tertiary-fixed-dim": "#7bd1f8",
+                        "on-primary-fixed-variant": "#930010",
+                        "tertiary-fixed": "#bee9ff",
+                        "on-tertiary-fixed": "#001f2a",
+                        "on-background": "#e5e2e1",
+                        "on-secondary-fixed": "#410003",
+                        "on-primary-fixed": "#410003",
+                        "on-tertiary-fixed-variant": "#004d65",
+                        "secondary": "#ffb3ac",
+                        "primary-fixed": "#ffdad6",
+                        "on-surface-variant": "#e4beba",
+                        "inverse-surface": "#e5e2e1",
+                        "on-primary": "#680008"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .digital-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.02;
+            pointer-events: none;
+        }
+        body {
+            background-color: #131313;
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface bg-background min-h-screen overflow-x-hidden">
+<div class="fixed inset-0 digital-noise z-[9999]"></div>
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] dark:bg-[#0A0A0A] border-b border-[#D32F2F]/15">
+<div class="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">
+            SONY_HACK.INTEL
+        </div>
+<nav class="hidden md:flex items-center gap-8 font-headline tracking-tighter uppercase font-bold text-xs">
+<a class="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">INTEL</a>
+<a class="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">BREACH</a>
+<a class="text-white/60 hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">EXFIL</a>
+<a class="text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1" href="#">IMPACT</a>
+</nav>
+<div class="text-[#D32F2F] font-headline tracking-tighter uppercase font-bold text-xs">
+            SCENE 01 // THE BREACH
+        </div>
+</header>
+<!-- SideNavBar Shell -->
+<aside class="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] dark:bg-[#0A0A0A] w-64 border-r border-[#D32F2F]/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] pt-20">
+<div class="px-6 py-4 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm">security</span>
+</div>
+<div>
+<div class="text-lg font-bold text-white font-headline">OPERATIONS</div>
+<div class="text-[10px] text-primary/80 font-mono tracking-widest">LIVE_TRACING_ON</div>
+</div>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<div class="bg-[#D32F2F] text-white font-bold px-4 py-3 flex items-center gap-3 font-headline text-xs">
+<span class="material-symbols-outlined text-base">skull</span>
+<span>THREAT_ACTOR</span>
+</div>
+<div class="text-white/40 hover:text-white/80 hover:bg-white/5 px-4 py-3 flex items-center gap-3 font-headline text-xs transition-colors">
+<span class="material-symbols-outlined text-base">anchor</span>
+<span>PHISHING</span>
+</div>
+<div class="text-white/40 hover:text-white/80 hover:bg-white/5 px-4 py-3 flex items-center gap-3 font-headline text-xs transition-colors">
+<span class="material-symbols-outlined text-base">network_check</span>
+<span>NETWORK</span>
+</div>
+<div class="text-white/40 hover:text-white/80 hover:bg-white/5 px-4 py-3 flex items-center gap-3 font-headline text-xs transition-colors">
+<span class="material-symbols-outlined text-base">dns</span>
+<span>SERVER</span>
+</div>
+<div class="text-white/40 hover:text-white/80 hover:bg-white/5 px-4 py-3 flex items-center gap-3 font-headline text-xs transition-colors">
+<span class="material-symbols-outlined text-base">public</span>
+<span>GLOBAL</span>
+</div>
+</nav>
+<div class="p-4">
+<button class="w-full bg-primary-container text-on-primary-container font-headline font-bold text-xs py-3 tracking-widest hover:bg-primary transition-colors uppercase">
+                DOWNLOAD EVIDENCE
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="pl-64 pt-20 pb-16 min-h-screen">
+<div class="max-w-7xl mx-auto px-12 py-12">
+<!-- Hero Title Section -->
+<div class="mb-16">
+<div class="inline-block bg-secondary-container px-3 py-1 mb-4">
+<span class="text-[10px] font-mono font-bold text-on-secondary-container tracking-[0.2em] uppercase">Phase 04 // Counter-Intelligence</span>
+</div>
+<h1 class="font-headline text-8xl font-extrabold tracking-tighter text-on-surface uppercase leading-[0.85]">
+                    STRIKING <br/> <span class="text-primary">BACK</span>
+</h1>
+</div>
+<!-- Bento Grid Intelligence Layout -->
+<div class="grid grid-cols-12 gap-6">
+<!-- Main Investigation Module -->
+<div class="col-span-12 lg:col-span-7 bg-surface-container-low p-8 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 opacity-10">
+<span class="material-symbols-outlined text-[120px] text-primary translate-x-12 -translate-y-12">policy</span>
+</div>
+<div class="flex items-start justify-between mb-12">
+<div>
+<span class="text-[10px] font-mono text-primary uppercase tracking-widest block mb-1">Status: active_response</span>
+<h2 class="font-headline text-3xl font-bold text-white uppercase tracking-tight">Forensic Investigation</h2>
+</div>
+<span class="material-symbols-outlined text-primary">search_insights</span>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="flex-none w-px bg-primary h-auto"></div>
+<div>
+<p class="text-xl text-on-surface leading-relaxed font-light italic">
+                                    "FBI &amp; Mandiant lead a massive forensic investigation into the digital ruins."
+                                </p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-8">
+<div class="bg-surface-container-high p-4 border-l-2 border-primary">
+<span class="text-[10px] font-mono text-white/40 uppercase block">Agency_Primary</span>
+<span class="font-headline text-white font-bold text-lg">FEDERAL BUREAU</span>
+</div>
+<div class="bg-surface-container-high p-4 border-l-2 border-tertiary">
+<span class="text-[10px] font-mono text-white/40 uppercase block">Private_Sector</span>
+<span class="font-headline text-white font-bold text-lg">MANDIANT.SEC</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Classified Visual Module -->
+<div class="col-span-12 lg:col-span-5 bg-surface-container-highest flex items-center justify-center p-0 relative min-h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-40" data-alt="Close-up of a weathered manila folder stamped CLASSIFIED with digital red glowing fingerprint scans superimposed on the texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXzCgqghh8IY59afygXQvWqW3BjG53ON6Cg4wPMGctW8H9_5xwAnPPF3ZkCD4XqvZG83zHhkI-e4HdMOPLPDE9dDD4U3iE7D8ohIEs3Fk0HLoQyFHyP50wgArO8TMx92BVpHtmu5A9bzjpDWRuxZ0B1MlwhILwybZSdXAo5Zv3UEP3sVYWIY1kSr6j9meW5t3yHmC0Mw_hF2sc_w4-CEwmQpvm5m_fS6qvEDI7N-qUCfQnl5YSNBAjPTjZCz2gSkgfsNUBHo8t7Zc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="relative z-10 text-center px-12">
+<div class="inline-block border border-primary/40 px-4 py-1 mb-4 backdrop-blur-md">
+<span class="text-[10px] font-headline text-primary tracking-[0.3em] font-bold">EVIDENCE_LOG_409</span>
+</div>
+<p class="text-white font-headline text-lg tracking-tight uppercase font-medium">U.S. DOJ charges state-linked hackers with multiple counts of espionage</p>
+</div>
+</div>
+<!-- Operational Impact Ticker -->
+<div class="col-span-12 md:col-span-6 bg-surface-container-high p-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-xl" data-weight="fill">description</span>
+<span class="text-[10px] font-mono text-white/60 tracking-widest uppercase">Analog Fallback Protocol</span>
+</div>
+<h3 class="font-headline text-2xl font-bold text-white mb-4 uppercase">FAX AND PAPER OPS</h3>
+<p class="text-on-surface/80 text-sm leading-relaxed mb-6">
+                            For weeks, one of the world's most advanced media conglomerates was forced to operate like a 1970s accounting firm. Payroll, communications, and logistical planning moved to fax machines and handwritten ledgers.
+                        </p>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex-1 h-[1px] bg-white/10"></div>
+<span class="text-[10px] font-mono text-primary">RECOVERY_TIME: 21_DAYS</span>
+</div>
+</div>
+<!-- DOJ Alert Card -->
+<div class="col-span-12 md:col-span-6 bg-primary-container p-8 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-white text-5xl mb-6">gavel</span>
+<h3 class="font-headline text-3xl font-black text-white leading-tight uppercase mb-4 italic">CRIMINAL INDICTMENTS</h3>
+<p class="text-white/90 font-medium mb-8">Official charges filed against state-linked actors for massive exfiltration of corporate data and destructive malware deployment.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white/20 px-3 py-1 text-[10px] font-headline font-bold text-white uppercase">Conspiracy</span>
+<span class="bg-white/20 px-3 py-1 text-[10px] font-headline font-bold text-white uppercase">Wire Fraud</span>
+<span class="bg-white/20 px-3 py-1 text-[10px] font-headline font-bold text-white uppercase">Computer Fraud</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Meta Text -->
+<div class="mt-20 flex justify-between items-end border-t border-white/5 pt-8">
+<div class="max-w-md">
+<span class="text-[10px] font-mono text-primary uppercase block mb-2 tracking-[0.2em]">Forensic Conclusion</span>
+<p class="text-xs text-white/40 leading-relaxed uppercase">The response marked a turning point in international cyber policy, blending traditional law enforcement with elite cyber forensics to attribute the attack to state entities.</p>
+</div>
+<div class="font-headline font-black text-4xl text-white/10 tracking-tighter uppercase select-none">
+                    INVESTIGATION_07
+                </div>
+</div>
+</div>
+</main>
+<!-- Footer Shell -->
+<footer class="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/80 backdrop-blur-md border-t border-[#D32F2F]/15 font-['Inter'] text-[10px] uppercase tracking-widest">
+<div class="text-white/30 italic">CONFIDENTIAL // CLASSIFIED INTEL</div>
+<div class="flex gap-8">
+<a class="text-white/30 hover:text-white transition-opacity" href="#">TIMELINE</a>
+<a class="text-white/30 hover:text-white transition-opacity" href="#">SOURCES</a>
+<a class="text-[#D32F2F]" href="#">RECOVERY</a>
+</div>
+<div class="text-primary font-mono">NODE_7_SECURED</div>
+</footer>
+</body></html>

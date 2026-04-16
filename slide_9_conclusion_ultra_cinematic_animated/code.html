@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SONY_HACK.INTEL // CONCLUSION</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#5b403d",
+                        "on-secondary-container": "#ff9e96",
+                        "surface-container-highest": "#353534",
+                        "tertiary-container": "#00799c",
+                        "on-tertiary-container": "#e9f7ff",
+                        "outline": "#ab8985",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-dim": "#131313",
+                        "on-tertiary": "#003546",
+                        "background": "#050505",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-tint": "#ffb3ac",
+                        "primary-fixed-dim": "#ffb3ac",
+                        "surface-bright": "#3a3939",
+                        "inverse-on-surface": "#313030",
+                        "on-surface": "#e5e2e1",
+                        "secondary-container": "#832a26",
+                        "on-primary-container": "#fff2f0",
+                        "surface-variant": "#353534",
+                        "secondary-fixed-dim": "#ffb3ac",
+                        "tertiary": "#7bd1f8",
+                        "error-container": "#93000a",
+                        "surface-container": "#201f1f",
+                        "surface-container-low": "#1c1b1b",
+                        "primary-container": "#d32f2f",
+                        "primary": "#ffb3ac",
+                        "surface": "#131313",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed-variant": "#802824",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#611110",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#ffdad6",
+                        "inverse-primary": "#ba1a20",
+                        "tertiary-fixed-dim": "#7bd1f8",
+                        "on-primary-fixed-variant": "#930010",
+                        "tertiary-fixed": "#bee9ff",
+                        "on-tertiary-fixed": "#001f2a",
+                        "on-background": "#e5e2e1",
+                        "on-secondary-fixed": "#410003",
+                        "on-primary-fixed": "#410003",
+                        "on-tertiary-fixed-variant": "#004d65",
+                        "secondary": "#ffb3ac",
+                        "primary-fixed": "#ffdad6",
+                        "on-surface-variant": "#e4beba",
+                        "inverse-surface": "#e5e2e1",
+                        "on-primary": "#680008"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    "animation": {
+                        "reveal-quote": "revealQuote 4s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+                        "glitch": "glitch 1s linear infinite",
+                        "pulse-glow": "pulseGlow 2s ease-in-out infinite",
+                        "scanline": "scanline 8s linear infinite",
+                        "fade-in-blur": "fadeInBlur 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+                        "flicker": "flicker 0.15s infinite",
+                    },
+                    "keyframes": {
+                        "revealQuote": {
+                            "0%": { opacity: "0", transform: "scale(1.1) translateY(20px)", filter: "blur(10px)" },
+                            "100%": { opacity: "1", transform: "scale(1) translateY(0)", filter: "blur(0)" }
+                        },
+                        "glitch": {
+                            "0%, 100%": { transform: "translate(0)" },
+                            "20%": { transform: "translate(-2px, 2px)" },
+                            "40%": { transform: "translate(-2px, -2px)" },
+                            "60%": { transform: "translate(2px, 2px)" },
+                            "80%": { transform: "translate(2px, -2px)" }
+                        },
+                        "pulseGlow": {
+                            "0%, 100%": { "text-shadow": "0 0 10px rgba(211, 47, 47, 0.8), 0 0 20px rgba(211, 47, 47, 0.4)" },
+                            "50%": { "text-shadow": "0 0 25px rgba(211, 47, 47, 1), 0 0 40px rgba(211, 47, 47, 0.6)" }
+                        },
+                        "scanline": {
+                            "0%": { transform: "translateY(-100%)" },
+                            "100%": { transform: "translateY(100%)" }
+                        },
+                        "fadeInBlur": {
+                            "0%": { opacity: "0", filter: "blur(20px)", transform: "translateY(10px)" },
+                            "100%": { opacity: "1", filter: "blur(0)", transform: "translateY(0)" }
+                        },
+                        "flicker": {
+                            "0%": { opacity: "0.8" },
+                            "10%": { opacity: "0.5" },
+                            "20%": { opacity: "0.9" },
+                            "30%": { opacity: "0.6" },
+                            "40%": { opacity: "0.8" },
+                            "50%": { opacity: "1" },
+                            "60%": { opacity: "0.7" },
+                            "70%": { opacity: "0.9" },
+                            "80%": { opacity: "0.4" },
+                            "90%": { opacity: "0.8" },
+                            "100%": { opacity: "1" }
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.04;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        .scanlines {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.2) 50%);
+            background-size: 100% 4px;
+            z-index: 9998;
+            pointer-events: none;
+        }
+        .scanline-sweep {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 2px;
+            background: rgba(211, 47, 47, 0.1);
+            z-index: 9997;
+            pointer-events: none;
+            animation: scanline 8s linear infinite;
+        }
+        .reveal-delay-1 { animation-delay: 2.5s; }
+        .reveal-delay-2 { animation-delay: 3s; }
+        .reveal-delay-3 { animation-delay: 3.5s; }
+        .glitch-text::before, .glitch-text::after {
+            content: "MESSAGE";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: transparent;
+        }
+        .glitch-text::before {
+            color: #ff0000;
+            animation: glitch 2s infinite linear alternate-reverse;
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+        }
+        .glitch-text::after {
+            color: #00ffff;
+            animation: glitch 1.5s infinite linear alternate-reverse;
+            z-index: -2;
+            clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+        }
+        #particles-canvas {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<div class="grain-overlay"></div>
+<div class="scanlines"></div>
+<div class="scanline-sweep"></div>
+<canvas id="particles-canvas"></canvas>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#050505]/90 backdrop-blur-sm border-b border-[#D32F2F]/20">
+<div class="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">SONY_HACK.INTEL</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-white/60 font-headline tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">INTEL</a>
+<a class="text-white/60 font-headline tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">BREACH</a>
+<a class="text-white/60 font-headline tracking-tighter uppercase font-bold text-sm hover:text-[#D32F2F] hover:bg-white/5 transition-colors duration-75" href="#">EXFIL</a>
+<a class="text-[#D32F2F] border-b-2 border-[#D32F2F] pb-1 font-headline tracking-tighter uppercase font-bold text-sm" href="#">IMPACT</a>
+</nav>
+<div class="text-[#D32F2F] font-headline tracking-tighter uppercase font-bold text-xs flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-[#D32F2F] animate-pulse"></span>
+            SCENE 01 // THE BREACH
+        </div>
+</header>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#050505] w-64 border-r border-[#D32F2F]/15 hidden md:flex">
+<div class="pt-24 px-6 pb-8">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-10 h-10 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-[#D32F2F]">shield_person</span>
+</div>
+<div>
+<div class="text-white font-bold text-lg font-headline uppercase">OPERATIONS</div>
+<div class="text-[#D32F2F] text-[10px] tracking-widest font-bold">LIVE_TRACING_ON</div>
+</div>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-4 text-white/40 hover:text-white/80 px-4 py-3 font-headline text-xs font-medium hover:bg-white/5 group transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="skull">skull</span>
+<span>THREAT_ACTOR</span>
+</a>
+<a class="flex items-center gap-4 text-white/40 hover:text-white/80 px-4 py-3 font-headline text-xs font-medium hover:bg-white/5 group transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="hook">anchor</span>
+<span>PHISHING</span>
+</a>
+<a class="flex items-center gap-4 text-white/40 hover:text-white/80 px-4 py-3 font-headline text-xs font-medium hover:bg-white/5 group transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="network_check">network_check</span>
+<span>NETWORK</span>
+</a>
+<a class="flex items-center gap-4 text-white/40 hover:text-white/80 px-4 py-3 font-headline text-xs font-medium hover:bg-white/5 group transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="dns">dns</span>
+<span>SERVER</span>
+</a>
+<a class="bg-[#D32F2F] text-white font-bold px-4 py-3 flex items-center gap-4 font-headline text-xs shadow-[0_0_20px_rgba(211,47,47,0.3)]" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+<span>GLOBAL</span>
+</a>
+</nav>
+</div>
+<div class="mt-auto p-6">
+<button class="w-full bg-primary-container text-on-primary-container py-3 font-headline font-bold text-xs tracking-widest uppercase hover:bg-primary transition-colors border border-white/10">
+                DOWNLOAD EVIDENCE
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-20 pb-24 min-h-screen relative flex flex-col">
+<!-- Hero Section -->
+<section class="flex-grow flex flex-col items-center justify-center p-8 md:p-12 relative overflow-hidden">
+<!-- Tactical Metadata Ticker -->
+<div class="absolute top-0 left-0 w-full bg-surface-container-low/50 py-1 px-8 overflow-hidden whitespace-nowrap border-b border-white/5">
+<div class="inline-block text-[10px] text-[#D32F2F] font-mono tracking-tighter opacity-50 uppercase">
+                    PKT_RECV: 192.168.1.104 // AUTH_FAILURE // SYS_LOCKDOWN_INITIATED // ENCRYPTION_KEY_EXPIRED // TOTAL_EXFIL: 100TB // PKT_RECV: 192.168.1.104 // AUTH_FAILURE // SYS_LOCKDOWN_INITIATED
+                </div>
+</div>
+<!-- Main Visual Container -->
+<div class="w-full max-w-6xl aspect-video relative group border border-white/10 bg-black/80 overflow-hidden shadow-2xl reveal-delay-1 opacity-0 animate-fade-in-blur">
+<img alt="Cinematic theater screen" class="w-full h-full object-cover opacity-30 mix-blend-luminosity animate-flicker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1qAeeoCYXb1jn8vjcGBYdvDHvcvpB_i0EOsSPU7JL465FbibTQ8BXWzO-_EXTGL2E3WOoNuBRwBFnT7svt1-8FRvHblcMdDT9wfatIXYivSCzxUmUGuw3-l71IO_m02A3ZdX9g21xEV48lA1UjG6Mlnqi0f5StKnjizYfkfnwKIt-3Ng4GSttQjYF7eoIxqPukkOvLx4JlX9D8NwZyaO0Y1IMJoV0n9lh92XfbNXWudAxCPVtUu2Q70uhQ0KBoc0nm-pxGvsTtvs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-[#050505]"></div>
+<div class="absolute inset-0 bg-[#D32F2F]/5 mix-blend-overlay"></div>
+<!-- Content Overlay -->
+<div class="absolute bottom-12 left-12 right-12 z-10">
+<h1 class="font-headline text-6xl md:text-9xl font-black tracking-[-0.05em] uppercase text-white leading-none mb-4 drop-shadow-lg">
+                        A FINAL <span class="text-primary-container relative glitch-text-container inline-block">MESSAGE</span>
+</h1>
+<div class="flex items-center gap-4 opacity-0 animate-fade-in-blur reveal-delay-2">
+<span class="w-12 h-[2px] bg-primary-container"></span>
+<p class="font-headline text-lg tracking-[0.2em] text-white font-medium uppercase">End of Transmission</p>
+</div>
+</div>
+<!-- Asymmetric Data Points -->
+<div class="absolute top-12 right-12 text-right opacity-0 animate-fade-in-blur reveal-delay-2">
+<div class="text-[10px] font-mono text-white/40 uppercase mb-1">Impact Analysis</div>
+<div class="text-primary font-headline font-bold text-2xl tracking-tighter">CAT_09_EXTREME</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Narrative Analysis -->
+<section class="px-8 md:px-12 pb-24 grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto w-full">
+<!-- Key Insight 01 -->
+<div class="md:col-span-7 bg-surface-container-high/40 backdrop-blur-md p-8 flex flex-col justify-between relative group hover:bg-surface-container-highest/60 transition-all border border-white/5 opacity-0 animate-fade-in-blur reveal-delay-2">
+<div class="flex justify-between items-start mb-12">
+<div class="text-[10px] font-headline font-bold text-primary tracking-widest uppercase">Analysis // 01</div>
+<span class="material-symbols-outlined text-white/20 animate-pulse" data-icon="security_update_warning">security_update_warning</span>
+</div>
+<div>
+<h3 class="font-headline text-3xl font-bold text-white mb-6 uppercase tracking-tight">The Censorship Mechanism</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-lg">
+                        Sony wasn't just a hack. It was a message about <span class="text-white font-bold">censorship and power</span>. By targeting creative expression, the threat actors demonstrated how digital warfare can silence cultural narratives.
+                    </p>
+</div>
+</div>
+<!-- Key Insight 02 -->
+<div class="md:col-span-5 bg-surface-container/40 backdrop-blur-md p-8 border-l-4 border-primary-container opacity-0 animate-fade-in-blur reveal-delay-3 border border-y-white/5 border-r-white/5">
+<div class="text-[10px] font-headline font-bold text-primary tracking-widest uppercase mb-4">Intelligence // 02</div>
+<h3 class="font-headline text-2xl font-bold text-white mb-6 uppercase tracking-tight">Blurred Boundaries</h3>
+<p class="text-on-surface-variant text-base leading-relaxed">
+                    The incident highlighted the <span class="text-white font-semibold">blurring lines</span> between corporate security and national security. A private entity became the battlefield for a sovereign conflict.
+                </p>
+<div class="mt-8 flex gap-2">
+<span class="px-3 py-1 bg-surface-container-lowest/80 text-[10px] font-headline font-bold text-white/40 uppercase border border-white/5">National</span>
+<span class="px-3 py-1 bg-surface-container-lowest/80 text-[10px] font-headline font-bold text-white/40 uppercase border border-white/5">Corporate</span>
+<span class="px-3 py-1 bg-surface-container-lowest/80 text-[10px] font-headline font-bold text-white/40 uppercase border border-white/5">Sovereign</span>
+</div>
+</div>
+<!-- Final Statement -->
+<div class="md:col-span-12 py-24 flex flex-col items-center text-center">
+<div class="mb-12 opacity-20 animate-pulse">
+<span class="material-symbols-outlined text-8xl" data-icon="keyboard_command_key">keyboard_command_key</span>
+</div>
+<blockquote class="font-headline text-4xl md:text-7xl font-black text-white italic max-w-5xl tracking-tight uppercase leading-none opacity-0 animate-reveal-quote">
+                    “This wasn’t just a hack. It was a <span class="text-[#D32F2F] animate-pulse-glow relative glitch-text inline-block">MESSAGE</span>.”
+                </blockquote>
+<div class="mt-16 w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-[#D32F2F]/60 to-transparent shadow-[0_0_15px_rgba(211,47,47,0.4)] opacity-0 animate-fade-in-blur reveal-delay-2"></div>
+<!-- Connection Lost Indicator -->
+<div class="mt-8 flex flex-col items-center gap-2 opacity-0 animate-fade-in-blur reveal-delay-3">
+<div class="flex items-center gap-2 text-[#D32F2F] font-mono text-sm tracking-[0.3em] font-bold">
+<span class="w-2 h-2 bg-[#D32F2F] rounded-full animate-ping"></span>
+                        CONNECTION LOST
+                    </div>
+<div class="text-[10px] text-white/20 font-mono">REMOTE_HOST_DISCONNECTED // SIG_KILL_SENT</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-3 bg-[#050505]/95 backdrop-blur-md border-t border-[#D32F2F]/15">
+<div class="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30">CONFIDENTIAL // CLASSIFIED INTEL</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">TIMELINE</a>
+<a class="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">SOURCES</a>
+<a class="font-['Inter'] text-[10px] uppercase tracking-widest text-[#D32F2F] font-bold" href="#">RECOVERY</a>
+</div>
+<div class="text-[10px] font-mono text-primary animate-pulse flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+            SYSTEM_STABLE_V1.02
+        </div>
+</footer>
+<!-- Mobile Navigation -->
+<nav class="md:hidden fixed bottom-12 left-0 w-full bg-[#050505]/90 backdrop-blur-lg border-t border-[#D32F2F]/15 flex justify-around items-center py-3 z-[60]">
+<button class="flex flex-col items-center gap-1 text-white/40">
+<span class="material-symbols-outlined" data-icon="skull">skull</span>
+<span class="text-[8px] font-headline font-bold uppercase">Actor</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-white/40">
+<span class="material-symbols-outlined" data-icon="dns">dns</span>
+<span class="text-[8px] font-headline font-bold uppercase">Network</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+<span class="text-[8px] font-headline font-bold uppercase">Global</span>
+</button>
+</nav>
+<script>
+        // Simple Particle System
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        let particles = [];
+        const particleCount = 60;
+        
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 1.5;
+                this.size = Math.random() * 2;
+                this.alpha = Math.random() * 0.5;
+            }
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                if (this.y < 0) this.reset();
+            }
+            draw() {
+                ctx.fillStyle = `rgba(211, 47, 47, ${this.alpha})`;
+                ctx.fillRect(this.x, this.y, this.size, this.size);
+            }
+        }
+        
+        function init() {
+            resize();
+            for(let i = 0; i < particleCount; i++) {
+                particles.push(new Particle());
+            }
+            animate();
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+        
+        window.addEventListener('resize', resize);
+        init();
+    </script>
+</body></html>
