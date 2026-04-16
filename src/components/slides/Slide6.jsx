@@ -209,36 +209,36 @@ export default function Slide6() {
 <div>
 <div className="text-[10px] text-[#D32F2F] font-mono mb-2">METRIC_IMPACT_RATING</div>
 <div className="text-6xl font-black text-white font-headline tracking-tighter leading-none flex items-baseline">
-<span id="impact-rating-value">0.0</span>
+<span id="impact-rating-value">9.8</span>
 <span className="text-xl text-white/20 ml-1">/10</span>
 </div>
 </div>
 <div className="space-y-6">
 <div className="flex flex-col gap-2">
 <div className="flex justify-between text-[10px] uppercase tracking-widest text-white/60">
-<span>Brand Equity Erosion</span>
-<span>-84%</span>
+<span>Financial Remediation Estimate</span>
+<span className="text-[#D32F2F]">$100M+</span>
 </div>
 <div className="h-1 bg-white/5 w-full">
-<div className="h-full bg-[#D32F2F] transition-all duration-[2000ms] ease-out w-0" id="stat-bar-1"></div>
+<div className="h-full bg-[#D32F2F] transition-all duration-[2000ms] ease-out w-[85%]" id="stat-bar-1"></div>
 </div>
 </div>
 <div className="flex flex-col gap-2">
 <div className="flex justify-between text-[10px] uppercase tracking-widest text-white/60">
-<span>Infrastructure Integrity</span>
-<span>12%</span>
+<span>Infrastructure Wiped</span>
+<span className="text-[#D32F2F] font-bold">~ 3,200 Nodes</span>
 </div>
 <div className="h-1 bg-white/5 w-full">
-<div className="h-full bg-[#D32F2F] transition-all duration-[2000ms] ease-out w-0" id="stat-bar-2"></div>
+<div className="h-full bg-[#D32F2F] transition-all duration-[2000ms] ease-out w-[60%]" id="stat-bar-2"></div>
 </div>
 </div>
 <div className="flex flex-col gap-2">
 <div className="flex justify-between text-[10px] uppercase tracking-widest text-white/60">
-<span>Global Sentiment</span>
-<span className="animate-flicker text-error">HOSTILE</span>
+<span>Data Exfiltrated</span>
+<span className="animate-flicker text-error font-bold">100 TB</span>
 </div>
 <div className="h-1 bg-white/5 w-full">
-<div className="h-full bg-[#D32F2F] transition-all duration-[2000ms] ease-out w-0" id="stat-bar-3"></div>
+<div className="h-full bg-[#D32F2F] transition-all duration-[2000ms] ease-out w-[100%]" id="stat-bar-3"></div>
 </div>
 </div>
 </div>

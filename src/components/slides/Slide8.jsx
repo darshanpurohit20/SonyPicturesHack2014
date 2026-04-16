@@ -98,15 +98,15 @@ export default function Slide8() {
 {/*  Lessons Grid  */}
 <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 border border-outline-variant/30">
 {/*  Lesson 01  */}
-<div className="relative group bg-[#0A0A0A] p-12 border-r border-outline-variant/30 flex flex-col justify-between aspect-square lesson-card ">
-<div className="flex justify-between items-start z-10">
+<div className="relative group bg-[#0A0A0A] p-12 border-r border-outline-variant/30 flex flex-col justify-between lesson-card h-full">
+<div className="flex justify-between items-start z-10 mb-8">
 <span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">01_CORE</span>
 <span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="security">security</span>
 </div>
-<div className="bg-[#D32F2F] p-8 relative  group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.1s' }}>
-<div className="absolute top-0 right-0 w-16 h-16 bg-white/5 -mr-8 -mt-8 rotate-45"></div>
-<h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase leading-none">
-                        Cybersecurity <br/> is no longer <br/> optional.
+<div className="bg-[#D32F2F] p-8 relative flex-grow group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.1s' }}>
+<div className="absolute top-0 right-0 w-16 h-16 bg-white/5 -mr-8 -mt-8 rotate-45 pointer-events-none"></div>
+<h2 className="text-3xl xl:text-4xl 2xl:text-5xl font-headline font-black text-white uppercase leading-tight">
+                        Cybersecurity is no longer optional.
                     </h2>
 </div>
 <div className="mt-8 text-[10px] font-mono text-white/40 uppercase tracking-tighter z-10">
@@ -119,15 +119,15 @@ export default function Slide8() {
 </div>
 </div>
 {/*  Lesson 02  */}
-<div className="relative group bg-[#111111] p-12 border-r border-outline-variant/30 flex flex-col justify-between aspect-square lesson-card ">
-<div className="flex justify-between items-start z-10">
+<div className="relative group bg-[#111111] p-12 border-r border-outline-variant/30 flex flex-col justify-between lesson-card h-full">
+<div className="flex justify-between items-start z-10 mb-8">
 <span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">02_GATE</span>
 <span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="fingerprint">fingerprint</span>
 </div>
-<div className="bg-[#D32F2F] p-8 relative  group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.3s' }}>
-<div className="absolute bottom-0 left-0 w-24 h-2 bg-white/20"></div>
-<h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase leading-none">
-                        Identity is <br/> the new <br/> perimeter.
+<div className="bg-[#D32F2F] p-8 relative flex-grow group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.3s' }}>
+<div className="absolute bottom-0 left-0 w-24 h-2 bg-white/20 pointer-events-none"></div>
+<h2 className="text-3xl xl:text-4xl 2xl:text-5xl font-headline font-black text-white uppercase leading-tight">
+                        Identity is the new perimeter.
                     </h2>
 </div>
 <div className="mt-8 text-[10px] font-mono text-white/40 uppercase tracking-tighter z-10">
@@ -140,16 +140,16 @@ export default function Slide8() {
                 </div>
 </div>
 {/*  Lesson 03  */}
-<div className="relative group bg-[#0A0A0A] p-12 flex flex-col justify-between aspect-square lesson-card ">
-<div className="flex justify-between items-start z-10">
+<div className="relative group bg-[#0A0A0A] p-12 flex flex-col justify-between lesson-card h-full">
+<div className="flex justify-between items-start z-10 mb-8">
 <span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">03_VULN</span>
 <span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="mail">mail</span>
 </div>
-<div className="bg-[#D32F2F] p-8 relative  group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.5s' }}>
-<h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase leading-none">
-                        One email <br/> can break <br/> a company.
+<div className="bg-[#D32F2F] p-8 relative flex-grow group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.5s' }}>
+<h2 className="text-3xl xl:text-4xl 2xl:text-5xl font-headline font-black text-white uppercase leading-tight relative z-10">
+                        One email can break a company.
                     </h2>
-<div className="absolute top-2 right-2 text-white/10 text-6xl select-none font-headline font-black">!</div>
+<div className="absolute top-2 right-2 text-white/10 text-8xl select-none font-headline font-black pointer-events-none">!</div>
 </div>
 <div className="mt-8 text-[10px] font-mono text-white/40 uppercase tracking-tighter z-10">
                     STATUS: HUMAN_ERROR_DETECTED<br/>
