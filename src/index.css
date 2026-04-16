@@ -447,11 +447,11 @@
             background: linear-gradient(to bottom, transparent 50%, rgba(211, 47, 47, 0.08) 50%);
             background-size: 100% 4px;
         }
-        .reveal-delay-1 { animation-delay: 0s; }
-        .reveal-delay-2 { animation-delay: 0s; }
-        .reveal-delay-3 { animation-delay: 0s; }
-        .reveal-delay-4 { animation-delay: 0s; }
-        .reveal-delay-5 { animation-delay: 0s; }
+        .reveal-delay-1 { animation-delay: 0.2s; }
+        .reveal-delay-2 { animation-delay: 0.25s; }
+        .reveal-delay-3 { animation-delay: 0.2s; }
+        .reveal-delay-4 { animation-delay: 0.15s; }
+        .reveal-delay-5 { animation-delay: 0.1s; }
         
         .no-scrollbar::-webkit-scrollbar {
             display: none;
@@ -527,10 +527,10 @@
             animation: scanline 4s linear infinite;
             z-index: 1;
         }
-        .reveal-delay-1 { animation-delay: 0.1s; }
-        .reveal-delay-2 { animation-delay: 0.3s; }
-        .reveal-delay-3 { animation-delay: 0.5s; }
-        .reveal-delay-4 { animation-delay: 0.7s; }
+        .reveal-delay-1 { animation-delay: 0s; }
+        .reveal-delay-2 { animation-delay: 0s; }
+        .reveal-delay-3 { animation-delay: 0s; }
+        .reveal-delay-4 { animation-delay: 0s; }
 
         .particle {
             position: absolute;
@@ -650,9 +650,9 @@
             pointer-events: none;
             animation: scanline 8s linear infinite;
         }
-        .reveal-delay-1 { animation-delay: 2.5s; }
-        .reveal-delay-2 { animation-delay: 3s; }
-        .reveal-delay-3 { animation-delay: 3.5s; }
+        .reveal-delay-1 { animation-delay: 0s; }
+        .reveal-delay-2 { animation-delay: 0s; }
+        .reveal-delay-3 { animation-delay: 0s; }
         .glitch-text::before, .glitch-text::after {
             content: "MESSAGE";
             position: absolute;
