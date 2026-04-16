@@ -199,36 +199,6 @@ export default function Slide9() {
                     </div>
                 </section>
             </main>
-            {/*  Footer  */}
-            <footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-3 bg-[#050505]/95 backdrop-blur-md border-t border-[#D32F2F]/15">
-                <div className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30">CONFIDENTIAL // CLASSIFIED INTEL</div>
-                <div className="flex gap-8">
-                    <a className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">TIMELINE</a>
-                    <a className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-opacity" href="#">SOURCES</a>
-                    <a className="font-['Inter'] text-[10px] uppercase tracking-widest text-[#D32F2F] font-bold" href="#">RECOVERY</a>
-                </div>
-                <div className="text-[10px] font-mono text-primary animate-pulse flex items-center gap-2">
-                    <span className="w-1 h-1 bg-primary"></span>
-                    SYSTEM_STABLE_V1.02
-                </div>
-            </footer>
-            {/*  Mobile Navigation  */}
-            <nav className="md:hidden fixed bottom-12 left-0 w-full bg-[#050505]/90 backdrop-blur-lg border-t border-[#D32F2F]/15 flex justify-around items-center py-3 z-[60]">
-                <button className="flex flex-col items-center gap-1 text-white/40">
-                    <span className="material-symbols-outlined" data-icon="skull">skull</span>
-                    <span className="text-[8px] font-headline font-bold uppercase">Actor</span>
-                </button>
-                <button className="flex flex-col items-center gap-1 text-white/40">
-                    <span className="material-symbols-outlined" data-icon="dns">dns</span>
-                    <span className="text-[8px] font-headline font-bold uppercase">Network</span>
-                </button>
-                <button className="flex flex-col items-center gap-1 text-primary">
-                    <span className="material-symbols-outlined" data-icon="public">public</span>
-                    <span className="text-[8px] font-headline font-bold uppercase">Global</span>
-                </button>
-            </nav>
-
-
         </motion.div>
     );
 }
