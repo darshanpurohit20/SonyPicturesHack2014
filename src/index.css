@@ -686,8 +686,8 @@
         @keyframes fadeInBlur {
             0% {
                 opacity: 0;
-                filter: blur(10px);
-                transform: translateY(20px);
+                filter: blur(3px);
+                transform: translateY(10px);
             }
             100% {
                 opacity: 1;

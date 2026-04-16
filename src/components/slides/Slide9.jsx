@@ -132,14 +132,14 @@ export default function Slide9() {
                     </div>
                     {/*  Section 8: Conclusion and Key Takeaways  */}
                     <div className="md:col-span-12 bg-surface-container-high/30 backdrop-blur-md p-8 md:p-12 border border-white/5 opacity-0 animate-fade-in-blur reveal-delay-2">
-                        <div className="text-[10px] font-headline font-bold text-primary tracking-widest uppercase mb-6">Intelligence // 08 — Conclusion and Key Takeaways</div>
+                        <div className="text-[10px] font-headline font-bold text-primary tracking-widest uppercase mb-6">Intelligence // 08 Conclusion and Key Takeaways</div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                             <div>
                                 <p className="text-on-surface-variant text-base leading-relaxed mb-6">
                                     The 2014 Sony Pictures hack marked a <span className="text-white font-bold">turning point</span> in how destructive cyberattacks against private companies are understood, blurring lines between corporate security incidents and geopolitical conflict. It demonstrated that a determined, state-linked actor could combine espionage, sabotage, and psychological operations to inflict strategic, financial, and reputational damage on a global entertainment firm.
                                 </p>
                                 <p className="text-on-surface-variant text-base leading-relaxed">
-                                    In the years since, other destructive campaigns—such as <span className="text-white font-semibold">WannaCry</span> and <span className="text-white font-semibold">NotPetya</span>—have echoed patterns seen at Sony: rapid propagation, data destruction, and significant collateral damage beyond the initial target. The Sony case remains a foundational example in discussions of cyber norms, corporate preparedness, and the ethics of responding to coercive threats.
+                                    In the years since, other destructive campaigns such as <span className="text-white font-semibold">WannaCry</span> and <span className="text-white font-semibold">NotPetya</span> have echoed patterns seen at Sony: rapid propagation, data destruction, and significant collateral damage beyond the initial target. The Sony case remains a foundational example in discussions of cyber norms, corporate preparedness, and the ethics of responding to coercive threats.
                                 </p>
                             </div>
                             <div>
