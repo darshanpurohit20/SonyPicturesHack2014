@@ -146,7 +146,7 @@ export default function Slide1() {
 </div>
 </div>
 {/*  Tactical CTA  */}
-<div className="mt-10 xl:mt-20 flex gap-6 opacity-0 animate-[fadeIn_1s_ease-out_4s_forwards]">
+<div className="mt-10 xl:mt-20 flex gap-6 opacity-0 animate-[fadeIn_1s_ease-out_1s_forwards]">
 <button className="btn-glow px-12 py-3 xl:py-5 bg-[#D32F2F] text-white font-headline font-black text-sm uppercase tracking-[0.2em] hover:bg-red-700 transition-all active:scale-95 border border-white/20">
                     INITIATE FORENSICS _
                 </button>

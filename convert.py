@@ -28,6 +28,9 @@ def convert_to_jsx(html_str):
     # Prevent cutoff issues by removing explicit overflow-hidden
     html_str = html_str.replace('overflow-hidden', '')
     
+    # Fix excessively long animation delays from the original HTML
+    html_str = html_str.replace('4s_forwards', '1s_forwards')
+    
     # Make typography and spacing strictly responsive so it fits in 100vh on laptop screens
     html_str = html_str.replace('md:text-9xl', 'md:text-[8vw] xl:text-[7vw]')
     html_str = html_str.replace('text-6xl md:text-9xl', 'text-5xl md:text-6xl xl:text-8xl')
