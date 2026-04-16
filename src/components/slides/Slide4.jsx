@@ -183,13 +183,13 @@ export default function Slide4() {
 {/*  Event 04: December 19 (Attack / Exfil)  */}
 <div className="w-full group flex flex-col gap-6 animate-reveal reveal-delay-4">
 <div className="flex-1 pr-0 xl:pr-8">
-<div className="p-6 bg-primary border-l-[3px] border-white w-full shadow-[0_0_40px_rgba(211,47,47,0.4)] relative">
+<div className="p-6 bg-[#D32F2F] border-l-[3px] border-white w-full shadow-[0_0_40px_rgba(211,47,47,0.4)] relative">
 <div className="absolute -top-3 -right-3 w-10 h-10 bg-white flex items-center justify-center rotate-12 shadow-xl">
-<span className="material-symbols-outlined text-primary font-black text-xl" data-icon="upload">upload_file</span>
+<span className="material-symbols-outlined text-[#D32F2F] font-black text-xl" data-icon="upload">upload_file</span>
 </div>
-<div className="text-[9px] font-headline text-white/80 mb-2 tracking-[0.2em] uppercase font-bold">Log_004 // Breach</div>
+<div className="text-[9px] font-headline text-white mb-2 tracking-[0.2em] uppercase font-bold">Log_004 // Breach</div>
 <div className="text-xl font-headline font-black text-white uppercase italic tracking-tight">CRITICAL EXFIL</div>
-<p className="text-[11px] text-white/90 leading-relaxed mt-3 font-bold font-body">100TB of proprietary data transferred to off-shore 'GOP' servers.</p>
+<p className="text-[11px] text-white leading-relaxed mt-3 font-bold font-body">100TB of proprietary data transferred to off-shore 'GOP' servers.</p>
 </div>
 </div>
 <div className="relative flex justify-center py-4">
