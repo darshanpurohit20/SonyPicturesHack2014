@@ -118,13 +118,11 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Cinematic Timeline Component  */}
-<div className="relative w-full overflow-x-auto no-scrollbar pb-6 xl:pb-12">
-{/*  Central Data Line  */}
-<div className="absolute top-[148px] left-0 w-[2000px] h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
-<div className="flex gap-0 min-w-[1700px] py-12 items-start relative">
+<div className="relative w-full pb-6 xl:pb-12">
+<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 py-12 items-start relative">
 {/*  Event 01: September (Phishing)  */}
-<div className="w-80 group flex flex-col gap-8 animate-reveal reveal-delay-1">
-<div className="h-32 flex items-end pr-8">
+<div className="w-full group flex flex-col gap-6 animate-reveal reveal-delay-1">
+<div className="flex-1 pr-0 xl:pr-8">
 <div className="p-6 bg-[#0A0A0A] border-l-[3px] border-white/20 w-full relative transition-all duration-500 group-hover:border-primary group-hover:bg-[#120606]">
 <div className="text-[9px] font-headline text-white/40 mb-2 tracking-[0.2em] uppercase font-bold">Log_001 // Recon</div>
 <div className="text-lg font-headline font-black text-white uppercase group-hover:text-primary transition-colors tracking-tight">Initial Infiltration</div>
@@ -142,8 +140,8 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Event 02: November 24 (Access)  */}
-<div className="w-80 group flex flex-col-reverse gap-8 animate-reveal reveal-delay-2">
-<div className="h-32 pr-8">
+<div className="w-full group flex flex-col gap-6 animate-reveal reveal-delay-2">
+<div className="flex-1 pr-0 xl:pr-8">
 <div className="p-6 bg-[#0A0A0A] border-l-[3px] border-primary w-full relative group-hover:bg-[#1a0a0a] transition-all">
 <div className="absolute top-4 right-4 animate-pulse">
 <span className="material-symbols-outlined text-primary text-sm" data-icon="warning">report</span>
@@ -164,8 +162,8 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Event 03: December 17 (Data Theft)  */}
-<div className="w-80 group flex flex-col gap-8 animate-reveal reveal-delay-3">
-<div className="h-32 flex items-end pr-8">
+<div className="w-full group flex flex-col gap-6 animate-reveal reveal-delay-3">
+<div className="flex-1 pr-0 xl:pr-8">
 <div className="p-6 bg-[#0A0A0A] border-l-[3px] border-white/20 w-full transition-all duration-500 group-hover:border-primary">
 <div className="text-[9px] font-headline text-white/40 mb-2 tracking-[0.2em] uppercase font-bold">Log_003 // Payload</div>
 <div className="text-lg font-headline font-black text-white uppercase tracking-tight">Lateral Migration</div>
@@ -183,8 +181,8 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Event 04: December 19 (Attack / Exfil)  */}
-<div className="w-80 group flex flex-col-reverse gap-8 animate-reveal reveal-delay-4">
-<div className="h-32 pr-8">
+<div className="w-full group flex flex-col gap-6 animate-reveal reveal-delay-4">
+<div className="flex-1 pr-0 xl:pr-8">
 <div className="p-6 bg-primary border-l-[3px] border-white w-full shadow-[0_0_40px_rgba(211,47,47,0.4)] relative">
 <div className="absolute -top-3 -right-3 w-10 h-10 bg-white flex items-center justify-center rotate-12 shadow-xl">
 <span className="material-symbols-outlined text-primary font-black text-xl" data-icon="upload">upload_file</span>
@@ -205,8 +203,8 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Event 05: January (Leaks / Fallout)  */}
-<div className="w-80 group flex flex-col gap-8 animate-reveal reveal-delay-5">
-<div className="h-32 flex items-end pr-8">
+<div className="w-full group flex flex-col gap-6 animate-reveal reveal-delay-5">
+<div className="flex-1 pr-0 xl:pr-8">
 <div className="p-6 bg-[#0A0A0A] border-l-[3px] border-white/10 w-full opacity-60 group-hover:opacity-100 transition-opacity">
 <div className="text-[9px] font-headline text-white/40 mb-2 tracking-[0.2em] uppercase font-bold">Log_005 // Fallout</div>
 <div className="text-lg font-headline font-black text-white uppercase tracking-tight">The Void</div>
