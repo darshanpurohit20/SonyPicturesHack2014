@@ -61,11 +61,7 @@ export default function Slide3() {
                 </a>
 </nav>
 </div>
-<div className="mt-auto p-8">
-<button className="w-full bg-[#D32F2F] text-white font-headline text-[10px] font-black uppercase py-4 tracking-tighter transition-all hover:brightness-110 active:scale-95 shadow-[0_0_20px_rgba(211,47,47,0.3)]">
-                DOWNLOAD EVIDENCE
-            </button>
-</div>
+
 </aside>
 {/*  Main Content  */}
 <main className="lg:pl-64 pt-24 pb-16 h-full px-6 md:px-12 relative z-10">

@@ -66,11 +66,7 @@ export default function Slide9() {
 </a>
 </nav>
 </div>
-<div className="mt-auto p-6">
-<button className="w-full bg-primary-container text-on-primary-container py-3 font-headline font-bold text-xs tracking-widest uppercase hover:bg-primary transition-colors border border-white/10">
-                DOWNLOAD EVIDENCE
-            </button>
-</div>
+
 </aside>
 {/*  Main Content Canvas  */}
 <main className="md:ml-64 pt-10 xl:pt-20 pb-24 h-full relative flex flex-col">

@@ -84,11 +84,7 @@ export default function Slide4() {
 <span className="material-symbols-outlined text-sm" data-icon="public">public</span> GLOBAL
         </a>
 </nav>
-<div className="p-6">
-<button className="w-full bg-transparent border border-[#D32F2F]/50 text-[#D32F2F] py-3 font-headline text-[10px] tracking-[0.2em] font-black hover:bg-[#D32F2F] hover:text-white transition-all duration-300">
-            DOWNLOAD EVIDENCE
-        </button>
-</div>
+
 </aside>
 {/*  Main Content Canvas  */}
 <main className="pl-64 pt-10 xl:pt-20 pb-16 h-screen relative z-10  bg-transparent">

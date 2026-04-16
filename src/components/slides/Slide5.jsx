@@ -73,11 +73,7 @@ export default function Slide5() {
                 </a>
 </div>
 </nav>
-<div className="p-6 mt-auto">
-<button className="w-full bg-primary-container text-on-primary-container font-headline font-bold py-3 text-xs tracking-widest hover:bg-primary transition-all uppercase">
-                DOWNLOAD EVIDENCE
-            </button>
-</div>
+
 </aside>
 {/*  Main Content Canvas  */}
 <main className="lg:pl-64 pt-24 pb-24 px-6 h-full relative z-10">

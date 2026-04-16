@@ -64,11 +64,7 @@ export default function Slide7() {
 <span>GLOBAL</span>
 </div>
 </nav>
-<div className="p-4">
-<button className="w-full bg-primary-container text-on-primary-container font-headline font-bold text-xs py-3 tracking-widest hover:bg-primary transition-colors uppercase">
-                DOWNLOAD EVIDENCE
-            </button>
-</div>
+
 </aside>
 {/*  Main Content Canvas  */}
 <main className="pl-64 pt-10 xl:pt-20 pb-16 h-full">

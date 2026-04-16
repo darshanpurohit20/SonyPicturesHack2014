@@ -90,11 +90,7 @@ TRACE: 127.0.0.1 -&gt; 10.0.2.15 -&gt; 203.0.113.4
 <span className="group-hover:translate-x-1 transition-transform">GLOBAL</span>
 </a>
 </nav>
-<div className="p-6">
-<button className="w-full bg-primary-container text-white py-3 font-headline text-[10px] font-black uppercase tracking-[0.2em] transition-all hover:bg-white hover:text-black border border-transparent hover:border-primary-container">
-                DOWNLOAD EVIDENCE
-            </button>
-</div>
+
 </aside>
 {/*  Main Content Canvas  */}
 <main className="ml-64 pt-16 pb-6 xl:pb-12 px-12 h-full">

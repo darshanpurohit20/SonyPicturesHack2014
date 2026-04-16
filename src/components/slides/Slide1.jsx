@@ -101,11 +101,7 @@ export default function Slide1() {
                 GLOBAL
             </a>
 </nav>
-<div className="p-4">
-<button className="w-full py-3 bg-primary-container text-white font-headline font-bold text-xs uppercase tracking-widest hover:bg-primary transition-colors border border-white/5">
-                DOWNLOAD EVIDENCE
-            </button>
-</div>
+
 </aside>
 {/*  Main Content Canvas  */}
 <main className="ml-64 pt-10 xl:pt-20 pb-6 xl:pb-12 h-full relative flex items-center justify-center bg-black ">
@@ -121,7 +117,7 @@ export default function Slide1() {
 </div>
 <div className="max-w-6xl w-full px-12 flex flex-col items-center text-center z-10">
 {/*  High-Impact Visual: Hacker Skull  */}
-<div className="relative mb-8 xl:mb-16 skull-breach">
+<div className="relative mb-8 xl:mb-16 skull-breach mt-8 xl:mt-16 xl:mt-24">
 <div className="absolute inset-0 bg-[#D32F2F] blur-[120px] opacity-20"></div>
 <div className="relative p-12 border border-[#D32F2F]/40 bg-black/40 backdrop-blur-3xl pulse-glow-red">
 <span className="material-symbols-outlined text-[12vh] xl:text-[180px] text-[#D32F2F] leading-none select-none" data-icon="skull" data-weight="fill" style={{ fontVariationSettings: '\'FILL\' 1' }}>skull</span>

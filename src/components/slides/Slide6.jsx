@@ -68,11 +68,7 @@ export default function Slide6() {
 </div>
 </nav>
 </div>
-<div className="mt-auto p-6">
-<button className="w-full py-3 bg-white/5 border border-white/10 text-white text-[10px] tracking-widest font-bold hover:bg-[#D32F2F] hover:border-[#D32F2F] transition-all duration-150">
-            DOWNLOAD EVIDENCE
-        </button>
-</div>
+
 </aside>
 {/*  MAIN CANVAS  */}
 <main className="ml-64 pt-10 xl:pt-20 pb-6 xl:pb-12 h-full relative ">
