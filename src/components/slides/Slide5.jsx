@@ -10,7 +10,7 @@ export default function Slide5() {
             exit={{ opacity: 0, filter: 'blur(10px)', x: -100, scale: 0.9 }}
             transition={{ duration: 0.2, type: 'spring', bounce: 0.5 }}
         
-            className="relative w-full min-h-screen"
+            className="relative w-full min-h-screen bg-black"
         >
             
 <div className="grain-overlay fixed inset-0 z-[100]"></div>

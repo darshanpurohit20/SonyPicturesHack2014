@@ -10,7 +10,7 @@ export default function Slide8() {
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
             transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
         
-            className="relative w-full min-h-screen"
+            className="relative w-full min-h-screen bg-black"
         >
             
 <div className="grain-overlay"></div>
