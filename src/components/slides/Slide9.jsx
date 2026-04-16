@@ -130,7 +130,66 @@ export default function Slide9() {
                             <span className="px-3 py-1 bg-surface-container-lowest/80 text-[10px] font-headline font-bold text-white/40 uppercase border border-white/5">Sovereign</span>
                         </div>
                     </div>
-                    {/*  Final Statement  */}
+                    {/*  Section 8: Conclusion and Key Takeaways  */}
+                    <div className="md:col-span-12 bg-surface-container-high/30 backdrop-blur-md p-8 md:p-12 border border-white/5 opacity-0 animate-fade-in-blur reveal-delay-2">
+                        <div className="text-[10px] font-headline font-bold text-primary tracking-widest uppercase mb-6">Intelligence // 08 — Conclusion and Key Takeaways</div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                            <div>
+                                <p className="text-on-surface-variant text-base leading-relaxed mb-6">
+                                    The 2014 Sony Pictures hack marked a <span className="text-white font-bold">turning point</span> in how destructive cyberattacks against private companies are understood, blurring lines between corporate security incidents and geopolitical conflict. It demonstrated that a determined, state-linked actor could combine espionage, sabotage, and psychological operations to inflict strategic, financial, and reputational damage on a global entertainment firm.
+                                </p>
+                                <p className="text-on-surface-variant text-base leading-relaxed">
+                                    In the years since, other destructive campaigns—such as <span className="text-white font-semibold">WannaCry</span> and <span className="text-white font-semibold">NotPetya</span>—have echoed patterns seen at Sony: rapid propagation, data destruction, and significant collateral damage beyond the initial target. The Sony case remains a foundational example in discussions of cyber norms, corporate preparedness, and the ethics of responding to coercive threats.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 className="font-headline text-xl font-bold text-white mb-6 uppercase tracking-tight">Five Critical Takeaways</h4>
+                                <ul className="space-y-4">
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary text-sm mt-0.5" data-icon="vpn_key">vpn_key</span>
+                                        <div>
+                                            <span className="text-white font-bold text-sm uppercase tracking-wide">Identity is the new perimeter</span>
+                                            <p className="text-white/50 text-xs mt-1">Protecting credentials and implementing MFA are as important as patching systems.</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary text-sm mt-0.5" data-icon="cloud_upload">cloud_upload</span>
+                                        <div>
+                                            <span className="text-white font-bold text-sm uppercase tracking-wide">Plan for wipers and ransomware</span>
+                                            <p className="text-white/50 text-xs mt-1">Resilient, tested backups and recovery procedures are non-negotiable.</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary text-sm mt-0.5" data-icon="network_check">network_check</span>
+                                        <div>
+                                            <span className="text-white font-bold text-sm uppercase tracking-wide">Monitor east–west traffic</span>
+                                            <p className="text-white/50 text-xs mt-1">Detecting lateral movement early can prevent catastrophic damage.</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary text-sm mt-0.5" data-icon="account_balance">account_balance</span>
+                                        <div>
+                                            <span className="text-white font-bold text-sm uppercase tracking-wide">Integrate cyber into governance</span>
+                                            <p className="text-white/50 text-xs mt-1">Boards must own cyber risk and ensure cross-functional preparedness.</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary text-sm mt-0.5" data-icon="warning">warning</span>
+                                        <div>
+                                            <span className="text-white font-bold text-sm uppercase tracking-wide">Treat information as toxic when leaked</span>
+                                            <p className="text-white/50 text-xs mt-1">Legal, ethical, and reputational implications demand careful, principled responses.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="mt-8 pt-6 border-t border-white/10">
+                            <p className="text-on-surface-variant text-sm leading-relaxed text-center max-w-4xl mx-auto">
+                                These lessons are increasingly relevant in an era of <span className="text-white font-semibold">AI-enabled social engineering</span>, nation-state cyber units, and ubiquitous data collection—where attacks like Sony's can be replicated or augmented with new technologies.
+                            </p>
+                        </div>
+                    </div>
+                    {/*  Section 9: Final Statement  */}
                     <div className="md:col-span-12 py-24 flex flex-col items-center text-center">
                         <div className="mb-12 opacity-20 animate-pulse">
                             <span className="material-symbols-outlined text-8xl" data-icon="keyboard_command_key">keyboard_command_key</span>
