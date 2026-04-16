@@ -19,13 +19,13 @@ export default function Slide5() {
 
 </div>
 {/*  TopAppBar  */}
-<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] border-b border-[#D32F2F]/15">
+<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111111] border-b border-[#D32F2F]/15">
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">
             SONY_HACK.INTEL
         </div>
 </header>
 {/*  SideNavBar  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] border-r border-[#D32F2F]/15 w-64 pt-10 xl:pt-20 hidden lg:flex">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#111111] border-r border-[#D32F2F]/15 w-64 pt-10 xl:pt-20 hidden lg:flex">
 <div className="px-6 py-8 border-b border-[#D32F2F]/10">
 <div className="flex items-center gap-3 mb-4">
 <div className="w-10 h-10 bg-surface-container-high flex items-center justify-center">
@@ -157,7 +157,7 @@ export default function Slide5() {
 </div>
 </div>
 {/*  Step 5: DESTRUCTION (Aggressive Reveal)  */}
-<div className="md:col-span-12 bg-[#0A0A0A] border border-[#D32F2F]/30 p-10 relative  group animate-reveal" style={{ animationDelay: "1.3s" }} id="step-5">
+<div className="md:col-span-12 bg-[#111111] border border-[#D32F2F]/30 p-10 relative  group animate-reveal" style={{ animationDelay: "1.3s" }} id="step-5">
 <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
 <div className="absolute -top-4 right-12 bg-primary px-4 py-1 font-headline text-xs text-white font-bold">05_TERMINATE</div>
 <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -203,7 +203,7 @@ export default function Slide5() {
 </div>
 </main>
 {/*  Footer  */}
-<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/80 backdrop-blur-md border-t border-[#D32F2F]/15">
+<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#111111]/80 backdrop-blur-md border-t border-[#D32F2F]/15">
 <div className="font-headline text-[10px] uppercase tracking-widest text-white/30">
             CONFIDENTIAL // CLASSIFIED INTEL
         </div>

@@ -25,7 +25,7 @@ export default function Slide2() {
         TRACE: 127.0.0.1 -&gt; 10.0.2.15 -&gt; 203.0.113.4
     </div>
     {/*  Decryption Sequence Overlay  */}
-    <div className="login-overlay fixed inset-0 z-[200] bg-black flex items-center justify-center font-mono">
+    <div className="login-overlay fixed inset-0 z-[200] bg-gray-800 flex items-center justify-center font-mono">
         <div className="w-80 space-y-4">
             <div className="text-[#D32F2F] text-xs font-black tracking-widest mb-1">INTEL_BOOT_SEQUENCE</div>
             <div className="h-1 bg-surface-container-highest w-full ">
@@ -44,13 +44,13 @@ export default function Slide2() {
     </div>
     {/*  TopAppBar  */}
     <header
-        className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#050505] border-b border-[#D32F2F]/15 backdrop-blur-sm">
+        className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111111] border-b border-[#D32F2F]/15 backdrop-blur-sm">
         <span
             className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase flicker-animation">SONY_HACK.INTEL</span>
     </header>
     {/*  SideNavBar  */}
     <aside
-        className="fixed left-0 top-0 h-full z-40 w-64 bg-[#050505] border-r border-[#D32F2F]/15 flex flex-col pt-10 xl:pt-20 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+        className="fixed left-0 top-0 h-full z-40 w-64 bg-[#111111] border-r border-[#D32F2F]/15 flex flex-col pt-10 xl:pt-20 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
         <div className="px-6 py-8 border-b border-[#D32F2F]/10">
             <div className="flex items-center gap-3 mb-2">
                 <div
@@ -104,7 +104,7 @@ export default function Slide2() {
             <img className="w-full h-full object-cover filter grayscale contrast-125 brightness-50 transition-transform duration-[4000ms]"
                 data-alt="Sony Pictures studio gates at night"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVeZkAnrFYih6esJfhfClULmqDOR5esGhzrFpl05fkOP1Mvm6tARQylhD-9T1GJZQo7_pceWSEGBWLbM5bpqh-REsB7C8T6JVCxAgswJIFocM6eIxKpvhiPTCqlkJQ5e207YAwWpHfpdaAE3fgRW6ZxtM4SfZMj47YEl34MI1OKpi7Lflj_BxT1NHRpiaUJg390xexCIIJKJu7P3muwEJT_ft6uXqMHbPRkBh8vxxYW6bfsvf38HUefT1kidQ65tQrKcjBQwxGV_I" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-black/60"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-gray-800"></div>
             <div className="absolute inset-0 flex flex-col justify-end p-12 ">
                 <div className="max-w-4xl parallax-hero">
                     <div

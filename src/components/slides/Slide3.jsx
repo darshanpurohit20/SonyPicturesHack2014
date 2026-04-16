@@ -30,12 +30,12 @@ export default function Slide3() {
       <div className="cyber-grid" />
 
       {/* TopAppBar */}
-      <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A]/90 backdrop-blur-xl border-b border-[#D32F2F]/20">
+      <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111111]/90 backdrop-blur-xl border-b border-[#D32F2F]/20">
         <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">SONY_HACK.INTEL</div>
         </header>
 
       {/* SideNavBar */}
-      <aside className="fixed left-0 top-0 h-full z-40 hidden lg:flex flex-col bg-[#0A0A0A]/95 backdrop-blur-sm border-r border-[#D32F2F]/20 w-64 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+      <aside className="fixed left-0 top-0 h-full z-40 hidden lg:flex flex-col bg-[#111111]/95 backdrop-blur-sm border-r border-[#D32F2F]/20 w-64 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
         <div className="p-8 pt-24">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-10 h-10 bg-surface-container-high flex items-center justify-center border border-[#D32F2F]/30">
@@ -167,7 +167,7 @@ export default function Slide3() {
             animate="visible"
             className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6"
           >
-            <div className="bg-[#0A0A0A]/80 backdrop-blur-md p-6 border-l border-[#D32F2F]">
+            <div className="bg-[#111111]/80 backdrop-blur-md p-6 border-l border-[#D32F2F]">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-2 h-2 rounded-full bg-[#D32F2F] animate-pulse" />
                 <span className="text-[10px] font-headline font-bold text-white uppercase tracking-widest">Live Forensics Tape</span>
@@ -181,7 +181,7 @@ export default function Slide3() {
               </div>
             </div>
 
-            <div className="bg-[#0A0A0A]/80 backdrop-blur-md p-6 border border-white/5">
+            <div className="bg-[#111111]/80 backdrop-blur-md p-6 border border-white/5">
               <div className="flex items-center gap-2 mb-4">
                 <span className="material-symbols-outlined text-sm text-[#D32F2F]">analytics</span>
                 <span className="text-[10px] font-headline font-bold text-white uppercase tracking-widest">Attack Scale</span>

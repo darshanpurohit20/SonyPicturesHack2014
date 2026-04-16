@@ -15,13 +15,13 @@ export default function Slide7() {
             
 <div className="fixed inset-0 digital-noise z-[9999]"></div>
 {/*  TopAppBar Shell  */}
-<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] dark:bg-[#0A0A0A] border-b border-[#D32F2F]/15">
+<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111111] dark:bg-[#111111] border-b border-[#D32F2F]/15">
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">
             SONY_HACK.INTEL
         </div>
 </header>
 {/*  SideNavBar Shell  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] dark:bg-[#0A0A0A] w-64 border-r border-[#D32F2F]/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] pt-10 xl:pt-20">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#111111] dark:bg-[#111111] w-64 border-r border-[#D32F2F]/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] pt-10 xl:pt-20">
 <div className="px-6 py-4 mb-4">
 <div className="flex items-center gap-3">
 <div className="w-8 h-8 bg-surface-container-highest flex items-center justify-center">

@@ -14,7 +14,7 @@ export default function Slide4() {
         >
             
 {/*  Cyber-Noir Background Layer  */}
-<div className="fixed inset-0 z-0 pointer-events-none ">
+<div className="fixed inset-0 z-0 pointer-events-none bg-[#111111]">
 {/*  Scrolling Forensic Logs  */}
 <div className="absolute right-10 top-0 h-[200%] w-48 opacity-[0.03] font-mono text-[10px] whitespace-nowrap leading-none animate-data-scroll">
 <div className="flex flex-col gap-1">
@@ -36,13 +36,13 @@ export default function Slide4() {
 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_rgba(211,47,47,0.08)_0%,_transparent_70%)]"></div>
 </div>
 {/*  Top Navigation  */}
-<nav className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#050505] border-b border-[#D32F2F]/20">
+<nav className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111111] border-b border-[#D32F2F]/20">
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase group cursor-pointer">
 <span className="inline-block group-hover:animate-pulse">SONY_HACK.INTEL</span>
 </div>
 </nav>
 {/*  Side Navigation  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#050505] border-r border-[#D32F2F]/20 w-64 pt-24">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#111111] border-r border-[#D32F2F]/20 w-64 pt-24">
 <div className="px-6 mb-12">
 <div className="flex items-center gap-3 mb-2">
 <div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center border border-[#D32F2F]/30 group ">
@@ -124,7 +124,7 @@ export default function Slide4() {
 </div>
 </div>
 <div className="text-center">
-<div className="text-6xl font-black font-headline tracking-tighter text-white/10 group-hover:text-white transition-all duration-500">SEPT</div>
+<div className="text-6xl font-black font-headline tracking-tighter text-white">SEPT</div>
 <div className="text-[10px] font-mono text-white/30 mt-2 uppercase tracking-widest font-bold">Vector: Phishing</div>
 </div>
 </div>
@@ -146,7 +146,7 @@ export default function Slide4() {
 </div>
 </div>
 <div className="text-center">
-<div className="text-6xl font-black font-headline tracking-tighter text-white/10 group-hover:text-primary transition-all">NOV 24</div>
+<div className="text-6xl font-black font-headline tracking-tighter text-white">NOV 24</div>
 <div className="text-[10px] font-mono text-white/30 mt-2 uppercase tracking-widest font-bold">Node: Internal_Gateway</div>
 </div>
 </div>
@@ -165,7 +165,7 @@ export default function Slide4() {
 </div>
 </div>
 <div className="text-center">
-<div className="text-6xl font-black font-headline tracking-tighter text-white/10 group-hover:text-white transition-all">DEC 17</div>
+<div className="text-6xl font-black font-headline tracking-tighter text-white">DEC 17</div>
 <div className="text-[10px] font-mono text-white/30 mt-2 uppercase tracking-widest font-bold">Attack: SQL_Injection</div>
 </div>
 </div>
@@ -187,7 +187,7 @@ export default function Slide4() {
 </div>
 </div>
 <div className="text-center">
-<div className="text-6xl font-black font-headline tracking-tighter text-primary animate-pulse">DEC 19</div>
+<div className="text-6xl font-black font-headline tracking-tighter text-white">DEC 19</div>
 <div className="text-[10px] font-headline text-primary mt-2 uppercase tracking-widest font-black">DATA LOSS DETECTED</div>
 </div>
 </div>
@@ -206,7 +206,7 @@ export default function Slide4() {
 </div>
 </div>
 <div className="text-center">
-<div className="text-6xl font-black font-headline tracking-tighter text-white/10 group-hover:text-white transition-all">JAN</div>
+<div className="text-6xl font-black font-headline tracking-tighter text-white">JAN</div>
 <div className="text-[10px] font-mono text-white/30 mt-2 uppercase tracking-widest font-bold">Phase: Recovery_Failed</div>
 </div>
 </div>
@@ -243,18 +243,6 @@ export default function Slide4() {
 </div>
 </div>
 </main>
-{/*  Footer  */}
-<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-3 bg-[#050505]/95 backdrop-blur-xl border-t border-[#D32F2F]/20">
-<div className="flex items-center gap-4">
-<div className="text-[#D32F2F] font-headline text-[10px] font-black uppercase tracking-[0.3em] flex items-center gap-2">
-<span className="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
-            CONFIDENTIAL // CLASSIFIED INTEL
-        </div>
-</div>
-<div className="text-white/20 text-[9px] font-mono uppercase font-bold">
-        SYS_ID: <span className="text-white/40">88-X092-B</span>
-</div>
-</footer>
 {/*  Background Noise / Overlay  */}
 <div className="fixed inset-0 pointer-events-none z-[100] opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
 

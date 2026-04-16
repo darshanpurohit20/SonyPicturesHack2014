@@ -18,11 +18,11 @@ export default function Slide9() {
             <div className="scanline-sweep"></div>
             <canvas id="particles-canvas"></canvas>
             {/*  TopAppBar  */}
-            <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#050505]/90 backdrop-blur-sm border-b border-[#D32F2F]/20">
+            <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111111]/90 backdrop-blur-sm border-b border-[#D32F2F]/20">
                 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">SONY_HACK.INTEL</div>
             </header>
             {/*  SideNavBar  */}
-            <aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#050505] w-64 border-r border-[#D32F2F]/15 hidden md:flex">
+            <aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#111111] w-64 border-r border-[#D32F2F]/15 hidden md:flex">
                 <div className="pt-24 px-6 pb-8">
                     <div className="flex items-center gap-3 mb-8">
                         <div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center">

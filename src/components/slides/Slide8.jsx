@@ -16,13 +16,13 @@ export default function Slide8() {
 <div className="grain-overlay"></div>
 <div className="scanline"></div>
 {/*  TopAppBar  */}
-<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A]/95 backdrop-blur-sm border-b border-[#D32F2F]/20">
+<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111111]/95 backdrop-blur-sm border-b border-[#D32F2F]/20">
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase animate-flicker">
         SONY_HACK.INTEL
     </div>
 </header>
 {/*  SideNavBar  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col w-64 bg-[#0A0A0A] border-r border-[#D32F2F]/15 pt-10 xl:pt-20 shadow-[20px_0_50px_rgba(0,0,0,0.8)]">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col w-64 bg-[#111111] border-r border-[#D32F2F]/15 pt-10 xl:pt-20 shadow-[20px_0_50px_rgba(0,0,0,0.8)]">
 <div className="px-6 py-8">
 <div className="flex items-center gap-3 mb-6">
 <div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center border border-outline-variant">
@@ -83,7 +83,7 @@ export default function Slide8() {
 {/*  Lessons Grid  */}
 <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 border border-outline-variant/30">
 {/*  Lesson 01  */}
-<div className="relative group bg-[#0A0A0A] p-12 border-r border-outline-variant/30 flex flex-col justify-between lesson-card h-full">
+<div className="relative group bg-[#111111] p-12 border-r border-outline-variant/30 flex flex-col justify-between lesson-card h-full">
 <div className="flex justify-between items-start z-10 mb-8">
 <span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">01_CORE</span>
 <span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="security">security</span>
@@ -125,7 +125,7 @@ export default function Slide8() {
                 </div>
 </div>
 {/*  Lesson 03  */}
-<div className="relative group bg-[#0A0A0A] p-12 flex flex-col justify-between lesson-card h-full">
+<div className="relative group bg-[#111111] p-12 flex flex-col justify-between lesson-card h-full">
 <div className="flex justify-between items-start z-10 mb-8">
 <span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">03_VULN</span>
 <span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="mail">mail</span>
@@ -158,7 +158,7 @@ export default function Slide8() {
 </div>
 </div>
 </div>
-<div className="col-span-12 lg:col-span-4 bg-[#0A0A0A] p-8 border border-outline-variant/30 relative">
+<div className="col-span-12 lg:col-span-4 bg-[#111111] p-8 border border-outline-variant/30 relative">
 <div className="absolute inset-0 bg-gradient-to-br from-[#D32F2F]/5 to-transparent"></div>
 <div className="relative h-full flex flex-col justify-center items-center text-center">
 <div className="text-[60px] font-headline font-black text-[#D32F2F] leading-none mb-2 animate-flicker">94%</div>

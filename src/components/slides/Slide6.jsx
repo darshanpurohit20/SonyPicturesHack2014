@@ -15,7 +15,7 @@ export default function Slide6() {
             
 {/*  Moving Particle Background Container and only */}
 <div className="fixed inset-0 z-0  pointer-events-none">
-<div className="absolute inset-0 bg-[#0A0A0A]"></div>
+<div className="absolute inset-0 bg-[#111111]"></div>
 <div className="particle w-1 h-1 top-[10%] left-[20%] animate-particle-move"></div>
 <div className="particle w-[2px] h-[2px] top-[30%] left-[80%] animate-particle-move" style={{ animationDelay: '-5s' }}></div>
 <div className="particle w-1 h-1 top-[70%] left-[40%] animate-particle-move" style={{ animationDelay: '-12s' }}></div>
@@ -23,11 +23,11 @@ export default function Slide6() {
 <div className="particle w-1 h-1 top-[50%] left-[60%] animate-particle-move" style={{ animationDelay: '-3s' }}></div>
 </div>
 {/*  TOP APP BAR  */}
-<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] border-b border-[#D32F2F]/15 font-['Space_Grotesk'] tracking-tighter uppercase font-bold">
+<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111111] border-b border-[#D32F2F]/15 font-['Space_Grotesk'] tracking-tighter uppercase font-bold">
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F]">SONY_HACK.INTEL</div>
 </header>
 {/*  SIDE NAV BAR  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] border-r border-[#D32F2F]/15 w-64 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#111111] border-r border-[#D32F2F]/15 w-64 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
 <div className="p-6 pt-24">
 <div className="flex items-center gap-3 mb-8">
 <div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center">
@@ -186,7 +186,7 @@ export default function Slide6() {
 </div>
 <img className="w-full h-[400px] object-cover opacity-60 filter grayscale contrast-150 transition-all duration-700 group-hover:scale-105" data-alt="Interior of a massive server room with glowing red emergency lights reflecting on metallic surfaces, heavy contrast, forensic aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW1cQPmfotthVayrwYqaQ-0YRLU9u-YFBSevhw3pI_7tih-JEnnCN7kI5hmei0d69-4-iNXZn_ddnTZk1X6uFW1lgeS4nJHGcKtK_l3eaYk6O96O4yhmRdDPvek-3k1WtjQ2OwMHh3IakLK_pEvhLP0mE1qWu3QzdSuq9psXXMequC-KyXSB_ynOFHjsbLNsv9ZiaaonbEQMD8WDmKP4V7W671EcxDnh4FPaEaxDxxHYyxoFDbu_Z6gXtROzrp6EUAC3DWONZIEhw"/>
 <div className="absolute bottom-12 left-12 right-12">
-<div className="bg-[#0A0A0A]/90 p-6 backdrop-blur-md border-l-4 border-[#D32F2F]">
+<div className="bg-[#111111]/90 p-6 backdrop-blur-md border-l-4 border-[#D32F2F]">
 <div className="flex justify-between items-center mb-2">
 <h4 className="text-white font-bold tracking-widest uppercase text-sm font-headline">Server Room Alpha // Physical Lockdown</h4>
 <span className="text-[#D32F2F] font-mono text-[10px] animate-flicker">AUTH_FAILED</span>
@@ -241,7 +241,7 @@ export default function Slide6() {
 </div>
 </main>
 {/*  FOOTER  */}
-<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/80 backdrop-blur-md border-t border-[#D32F2F]/15 font-['Inter'] text-[10px] uppercase tracking-widest">
+<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#111111]/80 backdrop-blur-md border-t border-[#D32F2F]/15 font-['Inter'] text-[10px] uppercase tracking-widest">
 <div className="text-white/30">CONFIDENTIAL // CLASSIFIED INTEL</div>
 <div className="flex gap-8">
 <a className="text-white/30 hover:text-white transition-opacity" href="#">TIMELINE</a>

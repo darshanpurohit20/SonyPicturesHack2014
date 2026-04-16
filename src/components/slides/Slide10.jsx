@@ -22,11 +22,11 @@ export default function Slide10() {
 <div className="dust" style={{ top: '40%', left: '50%', animationDelay: '2s' }}></div>
 <div className="dust" style={{ top: '80%', left: '30%', animationDelay: '1.5s' }}></div>
 {/*  TopAppBar  */}
-<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#0A0A0A] dark:bg-[#0A0A0A] border-b border-[#D32F2F]/15">
+<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111111] dark:bg-[#111111] border-b border-[#D32F2F]/15">
 <span className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-headline uppercase">SONY_HACK.INTEL</span>
 </header>
 {/*  SideNavBar  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] dark:bg-[#0A0A0A] w-64 border-r border-[#D32F2F]/15 pt-10 xl:pt-20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#111111] dark:bg-[#111111] w-64 border-r border-[#D32F2F]/15 pt-10 xl:pt-20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
 <div className="px-6 py-4 mb-6">
 <div className="flex items-center gap-3 mb-2">
 <div className="w-10 h-10 bg-surface-container-highest border border-outline-variant flex items-center justify-center">
@@ -89,7 +89,7 @@ export default function Slide10() {
 </div>
 {/*  Right Side: Thank You Message  */}
 <div className="col-span-12 lg:col-span-4 flex flex-col justify-center">
-<div className="bg-[#0A0A0A] border border-[#D32F2F]/20 p-8 relative">
+<div className="bg-[#111111] border border-[#D32F2F]/20 p-8 relative">
 <div className="absolute -top-2 -left-2 w-full h-full border border-[#D32F2F]/10"></div>
 <div className="relative z-10 text-center">
 <span className="material-symbols-outlined text-4xl text-[#D32F2F] mb-4 block" data-icon="check_circle">check_circle</span>

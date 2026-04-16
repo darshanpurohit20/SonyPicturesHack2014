@@ -52,13 +52,13 @@ export default function Slide1({ nextSlide, goToSlide }) {
 <div className="particle" style={{ width: '1px', height: '1px', left: '90%', animationDuration: '40s', opacity: '0.3' }}></div>
 </div>
 {/*  TopAppBar  */}
-<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-black/80 backdrop-blur-md border-b border-[#D32F2F]/10">
+<header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111111]/80 backdrop-blur-md border-b border-[#D32F2F]/10">
 <div className="text-xl font-black tracking-[-0.02em] text-[#D32F2F] font-['Space_Grotesk'] uppercase">
             SONY_HACK.INTEL
         </div>
 </header>
 {/*  SideNavBar  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-black border-r border-[#D32F2F]/10 w-64 pt-24">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#111111] border-r border-[#D32F2F]/10 w-64 pt-24">
 <div className="px-6 mb-8">
 <div className="flex items-center gap-3 mb-2">
 <div className="w-10 h-10 bg-surface-container-highest/20 flex items-center justify-center border border-[#D32F2F]/20">
@@ -155,7 +155,7 @@ export default function Slide1({ nextSlide, goToSlide }) {
 </div>
 </main>
 {/*  Footer  */}
-<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-3 bg-black/90 backdrop-blur-xl border-t border-white/5">
+<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-3 bg-[#111111]/90 backdrop-blur-xl border-t border-white/5">
 <div className="font-['Inter'] text-[10px] uppercase tracking-[0.4em] text-white/20">
             CONFIDENTIAL
         </div>
