@@ -185,7 +185,7 @@ export default function Slide9() {
                         </div>
                         <div className="mt-8 pt-6 border-t border-white/10">
                             <p className="text-on-surface-variant text-sm leading-relaxed text-center max-w-4xl mx-auto">
-                                These lessons are increasingly relevant in an era of <span className="text-white font-semibold">AI-enabled social engineering</span>, nation-state cyber units, and ubiquitous data collection—where attacks like Sony's can be replicated or augmented with new technologies.
+                                These lessons are increasingly relevant in an era of <span className="text-white font-semibold">AI-enabled social engineering</span>, nation-state cyber units, and ubiquitous data collection where attacks like Sony's can be replicated or augmented with new technologies.
                             </p>
                         </div>
                     </div>
