@@ -157,7 +157,7 @@ export default function Slide1({ nextSlide, goToSlide }) {
 {/*  Footer  */}
 <footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-3 bg-black/90 backdrop-blur-xl border-t border-white/5">
 <div className="font-['Inter'] text-[10px] uppercase tracking-[0.4em] text-white/20">
-            CONFIDENTIAL // ZERO DAY PROTOCOL ACTIVE
+            CONFIDENTIAL
         </div>
 <div className="font-mono text-[10px] text-[#D32F2F]/60">
             SECURE_NODE_09 // 127.0.0.1
