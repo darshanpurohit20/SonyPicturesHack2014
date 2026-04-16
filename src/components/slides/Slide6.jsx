@@ -13,7 +13,7 @@ export default function Slide6() {
             className="relative w-full min-h-screen"
         >
             
-{/*  Moving Particle Background Container  */}
+{/*  Moving Particle Background Container and only */}
 <div className="fixed inset-0 z-0  pointer-events-none">
 <div className="absolute inset-0 bg-[#0A0A0A]"></div>
 <div className="particle w-1 h-1 top-[10%] left-[20%] animate-particle-move"></div>

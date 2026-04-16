@@ -64,8 +64,8 @@ export default {
         "label": ["Inter", "sans-serif"]
       },
       animation: {
-        'reveal': 'fadeInUp 0.8s ease-out both',
-        'fade-in-up': 'fadeInUp 0.8s ease-out both',
+        'reveal': 'fadeInUp 0.15s ease-out both',
+        'fade-in-up': 'fadeInUp 0.15s ease-out both',
         'data-scroll': 'dataScroll 40s linear infinite',
         'scanline': 'scanline 8s linear infinite',
       },

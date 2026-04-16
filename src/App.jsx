@@ -29,7 +29,7 @@ const slides = [
 const SlideLoadingFallback = () => (
   <div className="w-full h-full flex flex-col items-center justify-center bg-black font-mono text-[#D32F2F]">
     <div className="animate-pulse flex flex-col items-center gap-4">
-      <span className="material-symbols-outlined text-4xl animate-spin" style={{ animationDuration: '3s' }}>
+      <span className="material-symbols-outlined text-4xl animate-spin" style={{ animationDuration: '0.5s' }}>
         hourglass_empty
       </span>
       <p className="text-xs uppercase tracking-[0.3em]">Decypting Next Scene...</p>
