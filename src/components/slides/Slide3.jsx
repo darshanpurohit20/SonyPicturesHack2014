@@ -213,12 +213,6 @@ export default function Slide3() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/90 backdrop-blur-xl border-t border-[#D32F2F]/20">
-        <div className="font-headline font-bold text-[10px] tracking-widest text-[#D32F2F] animate-pulse">
-          CONFIDENTIAL // CLASSIFIED INTEL
-        </div>
-              </footer>
     </motion.div>
   );
 }
