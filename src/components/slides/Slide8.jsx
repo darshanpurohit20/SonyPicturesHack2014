@@ -105,7 +105,7 @@ export default function Slide8() {
 </div>
 <div className="bg-[#D32F2F] p-8 relative flex-grow group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.1s' }}>
 <div className="absolute top-0 right-0 w-16 h-16 bg-white/5 -mr-8 -mt-8 rotate-45 pointer-events-none"></div>
-<h2 className="text-3xl xl:text-4xl 2xl:text-5xl font-headline font-black text-white uppercase leading-tight">
+<h2 className="text-3xl md:text-4xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-headline font-black text-white uppercase leading-tight break-words">
                         Cybersecurity is no longer optional.
                     </h2>
 </div>
@@ -126,7 +126,7 @@ export default function Slide8() {
 </div>
 <div className="bg-[#D32F2F] p-8 relative flex-grow group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.3s' }}>
 <div className="absolute bottom-0 left-0 w-24 h-2 bg-white/20 pointer-events-none"></div>
-<h2 className="text-3xl xl:text-4xl 2xl:text-5xl font-headline font-black text-white uppercase leading-tight">
+<h2 className="text-3xl md:text-4xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-headline font-black text-white uppercase leading-tight break-words">
                         Identity is the new perimeter.
                     </h2>
 </div>
@@ -146,7 +146,7 @@ export default function Slide8() {
 <span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="mail">mail</span>
 </div>
 <div className="bg-[#D32F2F] p-8 relative flex-grow group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.5s' }}>
-<h2 className="text-3xl xl:text-4xl 2xl:text-5xl font-headline font-black text-white uppercase leading-tight relative z-10">
+<h2 className="text-3xl md:text-4xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-headline font-black text-white uppercase leading-tight relative z-10 break-words">
                         One email can break a company.
                     </h2>
 <div className="absolute top-2 right-2 text-white/10 text-8xl select-none font-headline font-black pointer-events-none">!</div>
