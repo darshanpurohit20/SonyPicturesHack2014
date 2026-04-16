@@ -80,71 +80,87 @@ export default function Slide10() {
             </button>
 </div>
 </aside>
-{/*  Main Content Canvas  */}
-<main className="flex-1 ml-64 mt-8 xl:mt-16 p-12 overflow-y-auto no-scrollbar relative flex flex-col justify-center">
+<main className="flex-1 lg:ml-64 mt-8 xl:mt-16 p-8 xl:p-12 overflow-y-auto no-scrollbar relative flex flex-col justify-start">
 {/*  Background Elements  */}
 <div className="absolute inset-0 z-0  pointer-events-none opacity-20">
 <div className="absolute top-1/4 left-1/4 w-96 h-96 border border-[#D32F2F]/20 rotate-45"></div>
 <div className="absolute bottom-1/4 right-1/4 w-64 h-64 border border-tertiary/20 -rotate-12"></div>
 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[1px] bg-gradient-to-r from-transparent via-[#D32F2F]/30 to-transparent"></div>
 </div>
-<div className="max-w-5xl mx-auto w-full grid grid-cols-12 gap-12 items-end z-10">
-{/*  Left Side: Title & Primary CTA  */}
-<div className="col-span-12 lg:col-span-8 flex flex-col gap-6">
-<div className="flex items-center gap-4 mb-4">
+<div className="max-w-7xl mx-auto w-full grid grid-cols-12 gap-8 lg:gap-16 items-start z-10 pb-20">
+{/*  Left Side: Conclusion  */}
+<div className="col-span-12 xl:col-span-5 flex flex-col gap-6 opacity-0 animate-fade-in-blur" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
+<div className="flex items-center gap-4 mb-2">
 <div className="h-[2px] w-12 bg-[#D32F2F]"></div>
-<span className="font-headline text-xs tracking-[0.4em] text-[#D32F2F] uppercase">System Exit Protocol</span>
+<span className="font-headline text-xs tracking-[0.4em] text-[#D32F2F] uppercase">Phase_10 // Conclusion</span>
 </div>
-<h1 className="font-headline text-7xl md:text-[8vw] xl:text-[7vw] font-black tracking-tighter uppercase leading-none glitch-effect" data-text="ANY QUESTIONS?">
-                    ANY <span className="text-[#D32F2F] italic">QUESTIONS</span>?
+<h1 className="font-headline text-6xl md:text-7xl font-black tracking-tighter uppercase leading-none drop-shadow-lg">
+                    THE NEW <span className="text-[#D32F2F] italic">PARADIGM</span>
                 </h1>
-<div className="mt-8 flex flex-wrap gap-8 items-center border-l-4 border-[#D32F2F] pl-8 py-4">
-<p className="font-body text-xl text-on-surface max-w-xl leading-relaxed">
-                        Thank you for your time. The briefing has concluded. We are now open for critical discourse on intelligence findings.
+<div className="mt-8 border-l-4 border-[#D32F2F] pl-6 py-2 space-y-6">
+<p className="font-body text-base text-on-surface leading-relaxed text-justify">
+                        The 2014 Sony Pictures hack marked a turning point in how destructive cyberattacks against private companies are understood, blurring lines between corporate security incidents and geopolitical conflict. It demonstrated that a determined, state-linked actor could combine espionage, sabotage, and psychological operations to inflict strategic, financial, and reputational damage on a global entertainment firm.
+                    </p>
+<p className="font-body text-base text-on-surface leading-relaxed text-justify opacity-80">
+                        In the years since, other destructive and disruptive campaigns—such as WannaCry and NotPetya—have echoed patterns seen at Sony: rapid propagation, data destruction or encryption, and significant collateral damage beyond the initial target.
+                    </p>
+<p className="font-body text-base text-white/50 leading-relaxed text-justify text-sm italic mt-4">
+                        These lessons are increasingly relevant in an era of AI-enabled social engineering, nation-state cyber units, and ubiquitous data collection, where attacks like Sony’s can be replicated or augmented with new technologies.
                     </p>
 </div>
 </div>
-{/*  Right Side: Secondary Info/Bento Style  */}
-<div className="col-span-12 lg:col-span-4 flex flex-col gap-4">
-{/*  Discussion Topics Module  */}
-<div className="bg-surface-container-high border border-outline-variant p-6 space-y-4 shadow-[inset_0_0_50px_rgba(0,0,0,0.5)]">
-<div className="flex justify-between items-center border-b border-outline-variant pb-2">
-<span className="text-[10px] font-headline font-bold text-[#D32F2F] uppercase tracking-widest">TOPICS_FOR_DISCUSSION</span>
-<span className="material-symbols-outlined text-xs text-white/40" data-icon="forum">forum</span>
+{/*  Right Side: 5 Takeaways  */}
+<div className="col-span-12 xl:col-span-7 flex flex-col gap-4">
+<h3 className="font-headline font-bold text-white/40 uppercase tracking-widest text-xs mb-2">MODERN ORGANIZATIONAL TAKEAWAYS</h3>
+<div className="grid grid-cols-1 gap-4">
+{/*  Takeaway 1  */}
+<div className="bg-surface-container-low border border-white/5 p-6 flex gap-6 hover:border-[#D32F2F]/50 transition-colors group opacity-0 animate-fade-in-blur" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+<div className="text-[#D32F2F] font-black font-headline text-2xl group-hover:animate-pulse">01</div>
+<div>
+<h4 className="font-headline font-bold text-white uppercase text-lg mb-1 tracking-tight">Identity is the new perimeter</h4>
+<p className="font-body text-sm text-on-surface-variant">Protecting credentials and implementing MFA are as important as patching systems.</p>
 </div>
-<ul className="space-y-3">
-<li className="flex items-start gap-3 group reveal-item delay-1">
-<span className="text-[#D32F2F] font-headline text-sm font-bold mt-1">01</span>
-<span className="text-sm font-body text-white/80 group-hover:text-[#D32F2F] transition-colors cursor-default">Attribution &amp; Geopolitical Alignment</span>
-</li>
-<li className="flex items-start gap-3 group reveal-item delay-2">
-<span className="text-[#D32F2F] font-headline text-sm font-bold mt-1">02</span>
-<span className="text-sm font-body text-white/80 group-hover:text-[#D32F2F] transition-colors cursor-default">Evolution of Wiper-Class Payloads</span>
-</li>
-<li className="flex items-start gap-3 group reveal-item delay-3">
-<span className="text-[#D32F2F] font-headline text-sm font-bold mt-1">03</span>
-<span className="text-sm font-body text-white/80 group-hover:text-[#D32F2F] transition-colors cursor-default">Corporate Duty of Care &amp; Liability</span>
-</li>
-</ul>
 </div>
-{/*  Forensic Logo Module  */}
-<div className="bg-surface-container-lowest p-8 flex flex-col items-center justify-center border border-outline-variant/30 text-center relative ">
-<div className="absolute inset-0 opacity-10 flex items-center justify-center">
-<span className="material-symbols-outlined text-[120px]" data-icon="gpp_maybe">gpp_maybe</span>
+{/*  Takeaway 2  */}
+<div className="bg-surface-container-low border border-white/5 p-6 flex gap-6 hover:border-[#D32F2F]/50 transition-colors group opacity-0 animate-fade-in-blur" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+<div className="text-[#D32F2F] font-black font-headline text-2xl group-hover:animate-pulse">02</div>
+<div>
+<h4 className="font-headline font-bold text-white uppercase text-lg mb-1 tracking-tight">Plan for wipers and ransomware</h4>
+<p className="font-body text-sm text-on-surface-variant">Resilient, tested backups and recovery procedures are non-negotiable.</p>
 </div>
-<div className="relative z-10">
-<span className="material-symbols-outlined text-5xl text-[#D32F2F] mb-4 pulse-glow" data-icon="emergency_home">emergency_home</span>
-<h3 className="font-headline font-black text-xl uppercase tracking-tighter text-white">ZERO_DAY_PROTOCOL</h3>
-<p className="text-[10px] font-label text-white/30 uppercase mt-2 tracking-widest">EST. 2014 // CASE_ID: GOP_DESTRUCTION</p>
+</div>
+{/*  Takeaway 3  */}
+<div className="bg-surface-container-low border border-white/5 p-6 flex gap-6 hover:border-[#D32F2F]/50 transition-colors group opacity-0 animate-fade-in-blur" style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
+<div className="text-[#D32F2F] font-black font-headline text-2xl group-hover:animate-pulse">03</div>
+<div>
+<h4 className="font-headline font-bold text-white uppercase text-lg mb-1 tracking-tight">Monitor east–west traffic</h4>
+<p className="font-body text-sm text-on-surface-variant">Detecting lateral movement early can prevent catastrophic damage.</p>
+</div>
+</div>
+{/*  Takeaway 4  */}
+<div className="bg-surface-container-low border border-white/5 p-6 flex gap-6 hover:border-[#D32F2F]/50 transition-colors group opacity-0 animate-fade-in-blur" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+<div className="text-[#D32F2F] font-black font-headline text-2xl group-hover:animate-pulse">04</div>
+<div>
+<h4 className="font-headline font-bold text-white uppercase text-lg mb-1 tracking-tight">Integrate cyber into governance</h4>
+<p className="font-body text-sm text-on-surface-variant">Boards must own cyber risk and ensure cross-functional preparedness.</p>
+</div>
+</div>
+{/*  Takeaway 5  */}
+<div className="bg-[#D32F2F]/10 border border-[#D32F2F]/30 p-6 flex gap-6 hover:bg-[#D32F2F]/20 transition-colors group opacity-0 animate-fade-in-blur" style={{ animationDelay: '0.7s', animationFillMode: 'both' }}>
+<div className="text-[#D32F2F] font-black font-headline text-2xl group-hover:animate-pulse">05</div>
+<div>
+<h4 className="font-headline font-bold text-[#D32F2F] uppercase text-lg mb-1 tracking-tight">Treat information as toxic when leaked</h4>
+<p className="font-body text-sm text-on-surface-variant">Legal, ethical, and reputational implications of data exposure demand careful, principled responses.</p>
+</div>
 </div>
 </div>
 </div>
 </div>
 {/*  Terminal Ticker Tape (Custom Component)  */}
-<div className="absolute bottom-16 left-0 right-0  bg-[#D32F2F]/5 py-3 border-y border-[#D32F2F]/10">
+<div className="fixed bottom-12 left-0 right-0  bg-[#D32F2F]/5 py-3 border-y border-[#D32F2F]/10 z-20">
 <div className="flex whitespace-nowrap animate-marquee gap-8">
-<span className="text-[10px] font-headline text-[#D32F2F] uppercase tracking-[0.3em]">END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // </span>
-<span className="text-[10px] font-headline text-[#D32F2F] uppercase tracking-[0.3em]">END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // </span>
+<span className="text-[10px] font-headline text-[#D32F2F] uppercase tracking-[0.3em]">END_OF_TRANSMISSION // THIS WAS NOT JUST A HACK. IT WAS A MESSAGE. // [SYSTEM_STATUS: OFFLINE] // END_OF_TRANSMISSION // THIS WAS NOT JUST A HACK. IT WAS A MESSAGE. // [SYSTEM_STATUS: OFFLINE] // </span>
+<span className="text-[10px] font-headline text-[#D32F2F] uppercase tracking-[0.3em]">END_OF_TRANSMISSION // THIS WAS NOT JUST A HACK. IT WAS A MESSAGE. // [SYSTEM_STATUS: OFFLINE] // END_OF_TRANSMISSION // THIS WAS NOT JUST A HACK. IT WAS A MESSAGE. // [SYSTEM_STATUS: OFFLINE] // </span>
 </div>
 </div>
 </main>
