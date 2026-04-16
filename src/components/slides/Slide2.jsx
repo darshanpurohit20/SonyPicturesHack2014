@@ -25,7 +25,7 @@ export default function Slide2() {
         TRACE: 127.0.0.1 -&gt; 10.0.2.15 -&gt; 203.0.113.4
     </div>
     {/*  Decryption Sequence Overlay  */}
-    <div className="login-overlay fixed inset-0 z-[200] bg-gray-800 flex items-center justify-center font-mono">
+    <div className="login-overlay fixed inset-0 z-[200] bg-black flex items-center justify-center font-mono">
         <div className="w-80 space-y-4">
             <div className="text-[#D32F2F] text-xs font-black tracking-widest mb-1">INTEL_BOOT_SEQUENCE</div>
             <div className="h-1 bg-surface-container-highest w-full ">
