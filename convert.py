@@ -25,6 +25,8 @@ def convert_to_jsx(html_str):
     html_str = re.sub(r'<style.*?>.*?</style>', '', html_str, flags=re.DOTALL)
     # replace class= with className=
     html_str = html_str.replace('class="', 'className="')
+    # Prevent cutoff issues by removing explicit overflow-hidden
+    html_str = html_str.replace('overflow-hidden', '')
     # replace style="..."
     def style_replacer(match):
         return 'style=' + style_to_dict(match.group(1))
@@ -89,7 +91,7 @@ for i, slide_dir in enumerate(slides):
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         """
     
-    jsx_code = f"""import React from 'react';\nimport {{ motion }} from 'framer-motion';\n\nexport default function {comp_name}() {{\n    return (\n        <motion.div\n{motion_props}\n            className="relative w-full h-full"\n        >\n            {jsx_content}\n        </motion.div>\n    );\n}}\n"""
+    jsx_code = f"""import React from 'react';\nimport {{ motion }} from 'framer-motion';\n\nexport default function {comp_name}() {{\n    return (\n        <motion.div\n{motion_props}\n            className="relative w-full min-h-screen"\n        >\n            {jsx_content}\n        </motion.div>\n    );\n}}\n"""
     
     with open(out_file, 'w', encoding='utf-8') as f:
         f.write(jsx_code)

@@ -10,7 +10,7 @@ export default function Slide8() {
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         
-            className="relative w-full h-full"
+            className="relative w-full min-h-screen"
         >
             
 <div className="grain-overlay"></div>
@@ -78,7 +78,7 @@ export default function Slide8() {
 <main className="pl-64 pt-20 pb-16 min-h-screen">
 <div className="max-w-7xl mx-auto px-12 py-20">
 {/*  Tactical Metadata Ticker  */}
-<div className="mb-12 overflow-hidden whitespace-nowrap border-y border-[#D32F2F]/20 py-2 bg-black/40">
+<div className="mb-12  whitespace-nowrap border-y border-[#D32F2F]/20 py-2 bg-black/40">
 <div className="inline-block animate-marquee-slower text-[10px] font-mono text-[#D32F2F] tracking-[0.3em] uppercase">
                 SYS_LOG: 0x442A_ERR // PACKET_LOSS: 0.003% // ENCRYPTION: AES-256-GCM // TRACE_STATUS: ACTIVE // SESSION_ID: 9982-X-2024 // TRACE_STATUS: ACTIVE // SESSION_ID: 9982-X-2024 // 
             </div>
@@ -98,12 +98,12 @@ export default function Slide8() {
 {/*  Lessons Grid  */}
 <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 border border-outline-variant/30">
 {/*  Lesson 01  */}
-<div className="relative group bg-[#0A0A0A] p-12 border-r border-outline-variant/30 flex flex-col justify-between aspect-square lesson-card overflow-hidden">
+<div className="relative group bg-[#0A0A0A] p-12 border-r border-outline-variant/30 flex flex-col justify-between aspect-square lesson-card ">
 <div className="flex justify-between items-start z-10">
 <span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">01_CORE</span>
 <span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="security">security</span>
 </div>
-<div className="bg-[#D32F2F] p-8 relative overflow-hidden group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.1s' }}>
+<div className="bg-[#D32F2F] p-8 relative  group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.1s' }}>
 <div className="absolute top-0 right-0 w-16 h-16 bg-white/5 -mr-8 -mt-8 rotate-45"></div>
 <h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase leading-none">
                         Cybersecurity <br/> is no longer <br/> optional.
@@ -119,12 +119,12 @@ export default function Slide8() {
 </div>
 </div>
 {/*  Lesson 02  */}
-<div className="relative group bg-[#111111] p-12 border-r border-outline-variant/30 flex flex-col justify-between aspect-square lesson-card overflow-hidden">
+<div className="relative group bg-[#111111] p-12 border-r border-outline-variant/30 flex flex-col justify-between aspect-square lesson-card ">
 <div className="flex justify-between items-start z-10">
 <span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">02_GATE</span>
 <span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="fingerprint">fingerprint</span>
 </div>
-<div className="bg-[#D32F2F] p-8 relative overflow-hidden group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.3s' }}>
+<div className="bg-[#D32F2F] p-8 relative  group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.3s' }}>
 <div className="absolute bottom-0 left-0 w-24 h-2 bg-white/20"></div>
 <h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase leading-none">
                         Identity is <br/> the new <br/> perimeter.
@@ -140,12 +140,12 @@ export default function Slide8() {
                 </div>
 </div>
 {/*  Lesson 03  */}
-<div className="relative group bg-[#0A0A0A] p-12 flex flex-col justify-between aspect-square lesson-card overflow-hidden">
+<div className="relative group bg-[#0A0A0A] p-12 flex flex-col justify-between aspect-square lesson-card ">
 <div className="flex justify-between items-start z-10">
 <span className="text-[10px] font-headline text-[#D32F2F] font-bold tracking-widest">03_VULN</span>
 <span className="material-symbols-outlined text-[#D32F2F]/30 group-hover:text-[#D32F2F] transition-colors" data-icon="mail">mail</span>
 </div>
-<div className="bg-[#D32F2F] p-8 relative overflow-hidden group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.5s' }}>
+<div className="bg-[#D32F2F] p-8 relative  group-hover:shadow-[0_0_50px_rgba(211,47,47,0.4)] transition-all animate-slam z-10" style={{ animationDelay: '0.5s' }}>
 <h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase leading-none">
                         One email <br/> can break <br/> a company.
                     </h2>
@@ -162,7 +162,7 @@ export default function Slide8() {
 {/*  Asymmetric Design Elements  */}
 <div className="mt-20 grid grid-cols-12 gap-6">
 <div className="col-span-12 lg:col-span-8">
-<div className="p-8 bg-[#1A1A1A] border-l-4 border-[#D32F2F] relative overflow-hidden">
+<div className="p-8 bg-[#1A1A1A] border-l-4 border-[#D32F2F] relative ">
 <div className="absolute top-0 right-0 p-2 font-mono text-[8px] text-white/10 uppercase">classification: level_05</div>
 <p className="text-lg text-on-surface font-body leading-relaxed mb-6 relative z-10">
                         The breach at Sony wasn't just a technical failure; it was a socio-technical collapse. We must redefine our defensive posture from 'preventative' to 'resilient'. The data is gone, but the lesson remains etched in the digital ruins.

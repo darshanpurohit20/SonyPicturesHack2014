@@ -10,7 +10,7 @@ export default function Slide5() {
             exit={{ opacity: 0, filter: 'blur(10px)', x: -100, scale: 0.9 }}
             transition={{ duration: 0.4, type: 'spring', bounce: 0.5 }}
         
-            className="relative w-full h-full"
+            className="relative w-full min-h-screen"
         >
             
 <div className="grain-overlay fixed inset-0 z-[100]"></div>
@@ -126,13 +126,13 @@ export default function Slide5() {
 </div>
 {/*  Connector 2  */}
 <div className="hidden md:flex md:col-span-3 items-center justify-end pr-8">
-<div className="w-full h-[1px] bg-outline/20 relative overflow-hidden">
+<div className="w-full h-[1px] bg-outline/20 relative ">
 <div className="absolute inset-0 bg-primary/40 draw-connector h-full" id="connector-2"></div>
 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rotate-45 opacity-0 reveal-step" id="node-2"></div>
 </div>
 </div>
 {/*  Step 3: MOVEMENT  */}
-<div className="md:col-span-7 bg-surface-container-highest p-8 relative border-t-2 border-primary/40 overflow-hidden reveal-step opacity-0" id="step-3">
+<div className="md:col-span-7 bg-surface-container-highest p-8 relative border-t-2 border-primary/40  reveal-step opacity-0" id="step-3">
 <div className="absolute -top-4 right-8 bg-primary-container px-3 py-1 font-headline text-[10px] text-on-primary-container">03_LATERAL</div>
 <div className="grid md:grid-cols-2 gap-8 items-center">
 <div className="space-y-4">
@@ -170,7 +170,7 @@ export default function Slide5() {
 </div>
 </div>
 {/*  Step 5: DESTRUCTION (Aggressive Reveal)  */}
-<div className="md:col-span-12 bg-[#0A0A0A] border border-[#D32F2F]/30 p-10 relative overflow-hidden group reveal-step opacity-0" id="step-5">
+<div className="md:col-span-12 bg-[#0A0A0A] border border-[#D32F2F]/30 p-10 relative  group reveal-step opacity-0" id="step-5">
 <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
 <div className="absolute -top-4 right-12 bg-primary px-4 py-1 font-headline text-xs text-white font-bold">05_TERMINATE</div>
 <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -187,7 +187,7 @@ export default function Slide5() {
 <div className="px-4 py-2 bg-surface-container-highest font-mono text-[10px] text-primary border border-primary/20">OS_TARGET: WIN_NT</div>
 </div>
 </div>
-<div className="w-full md:w-96 aspect-video bg-surface-container flex items-center justify-center border border-white/5 relative overflow-hidden" id="destruction-viz">
+<div className="w-full md:w-96 aspect-video bg-surface-container flex items-center justify-center border border-white/5 relative " id="destruction-viz">
 <img className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7w0DJ9PYO3k0qjYjSJbqnEH6PnDuWxe-2caDWgyhJ08A_0IAefozO_PjDb0wtcKX_j34ZcH5673gxd6aPaUKxXmhScAWrJTxppGjiTplUu19vwWWAparsL-sX3iD6qyysiluzPwWrByOlXpyGvcsZk44J7ZHZe72bGPiPnrBikEecvFCX1w73ssJPhzsBnY8-mBrrPEhbociZs4ZX87Toq1P-QD1tmRViU7mgW-oPfEgkRlkvri9_8-EF5naWeqjv925yu1dXVrY"/>
 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
 <div className="relative z-10 text-center space-y-2">

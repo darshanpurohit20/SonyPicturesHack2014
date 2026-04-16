@@ -10,7 +10,7 @@ export default function Slide7() {
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         
-            className="relative w-full h-full"
+            className="relative w-full min-h-screen"
         >
             
 <div className="fixed inset-0 digital-noise z-[9999]"></div>
@@ -85,7 +85,7 @@ export default function Slide7() {
 {/*  Bento Grid Intelligence Layout  */}
 <div className="grid grid-cols-12 gap-6">
 {/*  Main Investigation Module  */}
-<div className="col-span-12 lg:col-span-7 bg-surface-container-low p-8 relative overflow-hidden group">
+<div className="col-span-12 lg:col-span-7 bg-surface-container-low p-8 relative  group">
 <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
 <span className="material-symbols-outlined text-[120px] text-primary translate-x-12 -translate-y-12">policy</span>
 </div>
@@ -146,7 +146,7 @@ export default function Slide7() {
 </div>
 </div>
 {/*  DOJ Alert Card  */}
-<div className="col-span-12 md:col-span-6 bg-primary-container p-8 relative overflow-hidden">
+<div className="col-span-12 md:col-span-6 bg-primary-container p-8 relative ">
 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
 <div className="relative z-10">
 <span className="material-symbols-outlined text-white text-5xl mb-6">gavel</span>

@@ -10,11 +10,11 @@ export default function Slide4() {
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         
-            className="relative w-full h-full"
+            className="relative w-full min-h-screen"
         >
             
 {/*  Cyber-Noir Background Layer  */}
-<div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+<div className="fixed inset-0 z-0 pointer-events-none ">
 {/*  Scrolling Forensic Logs  */}
 <div className="absolute right-10 top-0 h-[200%] w-48 opacity-[0.03] font-mono text-[10px] whitespace-nowrap leading-none animate-data-scroll">
 <div className="flex flex-col gap-1">
@@ -56,7 +56,7 @@ export default function Slide4() {
 <aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#050505] border-r border-[#D32F2F]/20 w-64 pt-24">
 <div className="px-6 mb-12">
 <div className="flex items-center gap-3 mb-2">
-<div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center border border-[#D32F2F]/30 group overflow-hidden">
+<div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center border border-[#D32F2F]/30 group ">
 <span className="material-symbols-outlined text-primary group-hover:scale-125 transition-transform" data-icon="skull">skull</span>
 </div>
 <div>
@@ -91,7 +91,7 @@ export default function Slide4() {
 </div>
 </aside>
 {/*  Main Content Canvas  */}
-<main className="pl-64 pt-20 pb-16 h-screen relative z-10 overflow-hidden bg-transparent">
+<main className="pl-64 pt-20 pb-16 h-screen relative z-10  bg-transparent">
 <div className="relative h-full px-16 flex flex-col justify-center">
 {/*  Header Section  */}
 <div className="mb-14 opacity-0 animate-reveal">

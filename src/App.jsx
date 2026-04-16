@@ -75,9 +75,15 @@ export default function App() {
     };
 
     const handleWheel = (e) => {
+      const isAtBottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 10;
+      const isAtTop = window.scrollY <= 10;
+      
       if (Math.abs(e.deltaY) > 30) {
-        if (e.deltaY > 0) nextSlide();
-        else prevSlide();
+        if (e.deltaY > 0) {
+          if (isAtBottom) nextSlide();
+        } else {
+          if (isAtTop) prevSlide();
+        }
       }
     };
 
@@ -93,7 +99,7 @@ export default function App() {
   const CurrentSlideComponent = slides[currentSlide];
 
   return (
-    <div className="w-screen h-screen bg-black overflow-hidden relative">
+    <div className="w-full min-h-screen bg-black overflow-x-hidden relative">
       <AnimatePresence mode="wait">
         <Suspense fallback={<SlideLoadingFallback />}>
           <CurrentSlideComponent key={currentSlide} />

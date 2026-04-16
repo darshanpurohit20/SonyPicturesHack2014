@@ -10,7 +10,7 @@ export default function Slide9() {
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         
-            className="relative w-full h-full"
+            className="relative w-full min-h-screen"
         >
             
 <div className="grain-overlay"></div>
@@ -75,15 +75,15 @@ export default function Slide9() {
 {/*  Main Content Canvas  */}
 <main className="md:ml-64 pt-20 pb-24 min-h-screen relative flex flex-col">
 {/*  Hero Section  */}
-<section className="flex-grow flex flex-col items-center justify-center p-8 md:p-12 relative overflow-hidden">
+<section className="flex-grow flex flex-col items-center justify-center p-8 md:p-12 relative ">
 {/*  Tactical Metadata Ticker  */}
-<div className="absolute top-0 left-0 w-full bg-surface-container-low/50 py-1 px-8 overflow-hidden whitespace-nowrap border-b border-white/5">
+<div className="absolute top-0 left-0 w-full bg-surface-container-low/50 py-1 px-8  whitespace-nowrap border-b border-white/5">
 <div className="inline-block text-[10px] text-[#D32F2F] font-mono tracking-tighter opacity-50 uppercase">
                     PKT_RECV: 192.168.1.104 // AUTH_FAILURE // SYS_LOCKDOWN_INITIATED // ENCRYPTION_KEY_EXPIRED // TOTAL_EXFIL: 100TB // PKT_RECV: 192.168.1.104 // AUTH_FAILURE // SYS_LOCKDOWN_INITIATED
                 </div>
 </div>
 {/*  Main Visual Container  */}
-<div className="w-full max-w-6xl aspect-video relative group border border-white/10 bg-black/80 overflow-hidden shadow-2xl reveal-delay-1 opacity-0 animate-fade-in-blur">
+<div className="w-full max-w-6xl aspect-video relative group border border-white/10 bg-black/80  shadow-2xl reveal-delay-1 opacity-0 animate-fade-in-blur">
 <img alt="Cinematic theater screen" className="w-full h-full object-cover opacity-30 mix-blend-luminosity animate-flicker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1qAeeoCYXb1jn8vjcGBYdvDHvcvpB_i0EOsSPU7JL465FbibTQ8BXWzO-_EXTGL2E3WOoNuBRwBFnT7svt1-8FRvHblcMdDT9wfatIXYivSCzxUmUGuw3-l71IO_m02A3ZdX9g21xEV48lA1UjG6Mlnqi0f5StKnjizYfkfnwKIt-3Ng4GSttQjYF7eoIxqPukkOvLx4JlX9D8NwZyaO0Y1IMJoV0n9lh92XfbNXWudAxCPVtUu2Q70uhQ0KBoc0nm-pxGvsTtvs"/>
 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-[#050505]"></div>
 <div className="absolute inset-0 bg-[#D32F2F]/5 mix-blend-overlay"></div>

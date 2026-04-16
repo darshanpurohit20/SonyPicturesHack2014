@@ -10,7 +10,7 @@ export default function Slide1() {
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         
-            className="relative w-full h-full"
+            className="relative w-full min-h-screen"
         >
             
 {/*  Red Flash Overlay Trigger  */}
@@ -19,7 +19,7 @@ export default function Slide1() {
 <div className="fixed inset-0 z-[100] grain-overlay"></div>
 {/*  Digital Void Background  */}
 <div className="fixed inset-0 z-0 tech-grid"></div>
-<div className="fixed inset-0 z-0 opacity-10 flex overflow-hidden pointer-events-none">
+<div className="fixed inset-0 z-0 opacity-10 flex  pointer-events-none">
 <div className="code-scroller font-mono text-[9px] text-[#D32F2F] leading-tight space-y-1 w-full px-4">
 <p>0x45 0x78 0x65 0x63 0x75 0x74 0x69 0x6e 0x67 0x20 0x53 0x63 0x72 0x69 0x70 0x74...</p>
 <p>&gt; CONNECTING TO SONY-HQ-GW01... SUCCESS</p>
@@ -108,9 +108,9 @@ export default function Slide1() {
 </div>
 </aside>
 {/*  Main Content Canvas  */}
-<main className="ml-64 pt-20 pb-12 min-h-screen relative flex items-center justify-center bg-black overflow-hidden">
+<main className="ml-64 pt-20 pb-12 min-h-screen relative flex items-center justify-center bg-black ">
 {/*  Tactical Metadata Ticker  */}
-<div className="absolute top-20 right-0 left-64 overflow-hidden py-1 bg-white/[0.02] border-b border-white/5">
+<div className="absolute top-20 right-0 left-64  py-1 bg-white/[0.02] border-b border-white/5">
 <div className="flex whitespace-nowrap gap-12 text-[10px] text-[#D32F2F]/40 font-mono uppercase tracking-[0.3em] animate-marquee">
 <span>Packet Log: 192.168.1.104 &gt;&gt; EXFILTRATION DETECTED</span>
 <span>Timestamp: 2014-11-24 08:15:22 EST</span>

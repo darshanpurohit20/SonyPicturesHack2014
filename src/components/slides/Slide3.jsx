@@ -10,7 +10,7 @@ export default function Slide3() {
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         
-            className="relative w-full h-full"
+            className="relative w-full min-h-screen"
         >
             
 <div className="grain-overlay"></div>
@@ -78,7 +78,7 @@ export default function Slide3() {
 </h1>
 </div>
 {/*  The Triple Threat Grid  */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/15 overflow-hidden backdrop-blur-sm bg-black/40">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-outline-variant/15  backdrop-blur-sm bg-black/40">
 {/*  DATA BREACH  */}
 <div className="stagger-reveal group relative p-8 md:p-12 border-b md:border-b-0 md:border-r border-outline-variant/15 hover:bg-[#D32F2F]/5 transition-colors" style={{ animation: 'reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards', animationDelay: '0.2s' }}>
 <div className="mb-10 transform group-hover:scale-110 transition-transform duration-500">
@@ -151,7 +151,7 @@ export default function Slide3() {
 <div className="flex justify-between"><span>[2014-11-24 08:22:12]</span> <span>EXFIL_THREAD_01_ACTIVE</span></div>
 </div>
 </div>
-<div className="relative h-full min-h-[160px] overflow-hidden bg-[#0A0A0A]/80 backdrop-blur-md">
+<div className="relative h-full min-h-[160px]  bg-[#0A0A0A]/80 backdrop-blur-md">
 <img alt="Cybersecurity node graph" className="w-full h-full object-cover opacity-20 grayscale contrast-150" data-alt="Abstract cinematic visualization of digital network data flowing through server nodes with high contrast red and dark grey lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT6ilT0ko0q5reJ1yNtRM25dK6mxrNYGERmj4xbzi-M0rYHY30KHRmiIblx1dLlL6sTj3U33MPNCagJZJqswaRBWAUeOIedqx40_sOnNJOgRZ6J_3NamiLdnygdcnJ2G4DxsoQGvynCJ4l0L3XtzLG0RztOdRA60F0bt9aXV4iS4yU4K8rocDYpRS8aLblw36WGWIF6Z8Oi3UuchnLlBc1OPOxP9k9uVNeTp2MH4ompX_ub4KZ-FEbJkb4q0U8dqjcsjCuesVkCyE"/>
 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent"></div>
 <div className="absolute bottom-4 left-4">

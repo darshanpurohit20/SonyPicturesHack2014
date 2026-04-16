@@ -10,7 +10,7 @@ export default function Slide2() {
             exit={{ opacity: 0, filter: 'blur(10px)', x: -100, scale: 0.9 }}
             transition={{ duration: 0.4, type: 'spring', bounce: 0.5 }}
         
-            className="relative w-full h-full"
+            className="relative w-full min-h-screen"
         >
             
 {/*  Terminal Background Content  */}
@@ -28,7 +28,7 @@ TRACE: 127.0.0.1 -&gt; 10.0.2.15 -&gt; 203.0.113.4
 <div className="login-overlay fixed inset-0 z-[200] bg-black flex items-center justify-center font-mono">
 <div className="w-80 space-y-4">
 <div className="text-[#D32F2F] text-xs font-black tracking-widest mb-1">INTEL_BOOT_SEQUENCE</div>
-<div className="h-1 bg-surface-container-highest w-full overflow-hidden">
+<div className="h-1 bg-surface-container-highest w-full ">
 <div className="h-full bg-[#D32F2F] animate-[typeIn_1.5s_ease-in-out_forwards]"></div>
 </div>
 <div className="text-[10px] text-white/40 space-y-1">
@@ -99,10 +99,10 @@ TRACE: 127.0.0.1 -&gt; 10.0.2.15 -&gt; 203.0.113.4
 {/*  Main Content Canvas  */}
 <main className="ml-64 pt-16 pb-12 px-12 min-h-screen">
 {/*  Hero Section  */}
-<section className="mt-12 mb-16 relative h-[614px] overflow-hidden group border border-white/5">
+<section className="mt-12 mb-16 relative h-[614px]  group border border-white/5">
 <img className="w-full h-full object-cover filter grayscale contrast-125 brightness-50 transition-transform duration-[4000ms]" data-alt="Sony Pictures studio gates at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVeZkAnrFYih6esJfhfClULmqDOR5esGhzrFpl05fkOP1Mvm6tARQylhD-9T1GJZQo7_pceWSEGBWLbM5bpqh-REsB7C8T6JVCxAgswJIFocM6eIxKpvhiPTCqlkJQ5e207YAwWpHfpdaAE3fgRW6ZxtM4SfZMj47YEl34MI1OKpi7Lflj_BxT1NHRpiaUJg390xexCIIJKJu7P3muwEJT_ft6uXqMHbPRkBh8vxxYW6bfsvf38HUefT1kidQ65tQrKcjBQwxGV_I"/>
 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-black/60"></div>
-<div className="absolute inset-0 flex flex-col justify-end p-12 overflow-hidden">
+<div className="absolute inset-0 flex flex-col justify-end p-12 ">
 <div className="max-w-4xl parallax-hero">
 <div className="inline-block bg-[#D32F2F] text-white px-3 py-1 text-[10px] font-black tracking-[0.3em] uppercase mb-4 animate-bounce-short">DOSSIER // INTRODUCTION</div>
 <h1 className="font-headline text-7xl font-black text-white leading-none tracking-tighter uppercase mb-6">
@@ -126,7 +126,7 @@ TRACE: 127.0.0.1 -&gt; 10.0.2.15 -&gt; 203.0.113.4
 <div className="grid grid-cols-12 gap-8">
 {/*  Left Narrative Column  */}
 <div className="col-span-12 lg:col-span-7 space-y-12">
-<div className="bg-surface-container-low p-10 border-l-4 border-primary-container relative overflow-hidden group">
+<div className="bg-surface-container-low p-10 border-l-4 border-primary-container relative  group">
 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
 <span className="material-symbols-outlined text-8xl" style={{ fontVariationSettings: '\'FILL\' 1' }}>warning</span>
 </div>
@@ -183,7 +183,7 @@ TRACE: 127.0.0.1 -&gt; 10.0.2.15 -&gt; 203.0.113.4
 </div>
 <h4 className="font-headline text-xl font-bold text-white uppercase mb-4 tracking-tighter">Forensic Signature</h4>
 <div className="space-y-1 font-mono text-[10px] text-primary/70">
-<p className="animate-[typeIn_2s_steps(40)_infinite] overflow-hidden whitespace-nowrap">&gt; DECRYPTING_LOADER_STUB...</p>
+<p className="animate-[typeIn_2s_steps(40)_infinite]  whitespace-nowrap">&gt; DECRYPTING_LOADER_STUB...</p>
 <p>&gt; OFFSET 0x00401000 - SECTOR_SIZE: 512</p>
 <p className="text-[#D32F2F] font-bold">&gt; ALERT: WIPER_SIGNATURE_DETECTED</p>
 <p className="text-white/20">&gt; 00101101 11011001 00111001 10101010</p>

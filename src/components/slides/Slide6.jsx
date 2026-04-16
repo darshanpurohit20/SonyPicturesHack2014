@@ -10,11 +10,11 @@ export default function Slide6() {
             exit={{ opacity: 0, filter: 'blur(10px)', x: -100, scale: 0.9 }}
             transition={{ duration: 0.4, type: 'spring', bounce: 0.5 }}
         
-            className="relative w-full h-full"
+            className="relative w-full min-h-screen"
         >
             
 {/*  Moving Particle Background Container  */}
-<div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+<div className="fixed inset-0 z-0  pointer-events-none">
 <div className="absolute inset-0 bg-[#0A0A0A]"></div>
 <div className="particle w-1 h-1 top-[10%] left-[20%] animate-particle-move"></div>
 <div className="particle w-[2px] h-[2px] top-[30%] left-[80%] animate-particle-move" style={{ animationDelay: '-5s' }}></div>
@@ -75,9 +75,9 @@ export default function Slide6() {
 </div>
 </aside>
 {/*  MAIN CANVAS  */}
-<main className="ml-64 pt-20 pb-12 min-h-screen relative overflow-hidden">
+<main className="ml-64 pt-20 pb-12 min-h-screen relative ">
 {/*  Background Asset  */}
-<div className="absolute inset-0 z-0 overflow-hidden">
+<div className="absolute inset-0 z-0 ">
 <div className="absolute inset-0 bg-[#131313] opacity-80"></div>
 <img className="w-full h-full object-cover mix-blend-overlay grayscale opacity-40" data-alt="Abstract digital background with glowing red binary code streaming over dark server rack shapes, grainy film texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwQUL_SGcXDnQarJqVZUeCfUftm5B4Z-24XnlMvCqdBuzUH-YbFjIKDL5_ypNVvmtCjAYGGMY_Ede8dy6XKDkusS-1XRNUF75ir1HO4BMI3ez2Sht0QS8R8fhHdkRsyEoa2rVE9Wt6mfNu5FbGK0RteawrQRAww9KFsfzSNL2nTbIWHKKV6YFNNpfzS2sHManZTTiRtF_aQWSP2JrkQ_fuWeXsAiOjMj-_17iI_1wEhV1syrU0Be263-Z95IsWa8ht_ksbS-ecWRY"/>
 <div className="grain-overlay absolute inset-0"></div>
@@ -108,7 +108,7 @@ export default function Slide6() {
 {/*  Bento Grid Impact Analysis  */}
 <div className="grid grid-cols-12 gap-px bg-[#D32F2F]/15 border border-[#D32F2F]/15">
 {/*  Category: EMPLOYEES  */}
-<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-1 relative overflow-hidden scanline-effect">
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-1 relative  scanline-effect">
 <div className="flex justify-between items-start">
 <span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>badge</span>
 <div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_01</div>
@@ -128,7 +128,7 @@ export default function Slide6() {
 </div>
 </div>
 {/*  Category: CORPORATE  */}
-<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-2 relative overflow-hidden scanline-effect">
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-2 relative  scanline-effect">
 <div className="flex justify-between items-start">
 <span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>business_center</span>
 <div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_02</div>
@@ -148,7 +148,7 @@ export default function Slide6() {
 </div>
 </div>
 {/*  Category: MOVIES  */}
-<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-3 relative overflow-hidden scanline-effect">
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-3 relative  scanline-effect">
 <div className="flex justify-between items-start">
 <span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>movie</span>
 <div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_03</div>
@@ -168,7 +168,7 @@ export default function Slide6() {
 </div>
 </div>
 {/*  Category: GEOPOLITICS  */}
-<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-4 relative overflow-hidden scanline-effect">
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-4 relative  scanline-effect">
 <div className="flex justify-between items-start">
 <span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>language</span>
 <div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_04</div>
@@ -190,7 +190,7 @@ export default function Slide6() {
 </div>
 {/*  Visual Evidence Section  */}
 <div className="mt-px grid grid-cols-12 gap-px bg-[#D32F2F]/15 border border-[#D32F2F]/15 border-t-0">
-<div className="col-span-12 lg:col-span-8 p-12 bg-surface-container-lowest overflow-hidden relative group">
+<div className="col-span-12 lg:col-span-8 p-12 bg-surface-container-lowest  relative group">
 <div className="absolute top-4 right-4 z-20 flex gap-2">
 <div className="bg-[#D32F2F] px-2 py-1 text-[8px] font-bold uppercase tracking-tighter">Live Capture</div>
 <div className="bg-white/10 px-2 py-1 text-[8px] font-bold uppercase tracking-tighter">Cam_ID: 9942</div>

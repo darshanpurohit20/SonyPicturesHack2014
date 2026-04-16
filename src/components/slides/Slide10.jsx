@@ -10,7 +10,7 @@ export default function Slide10() {
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         
-            className="relative w-full h-full"
+            className="relative w-full min-h-screen"
         >
             
 <div className="fixed inset-0 grain-overlay z-[100]"></div>
@@ -83,7 +83,7 @@ export default function Slide10() {
 {/*  Main Content Canvas  */}
 <main className="flex-1 ml-64 mt-16 p-12 overflow-y-auto no-scrollbar relative flex flex-col justify-center">
 {/*  Background Elements  */}
-<div className="absolute inset-0 z-0 overflow-hidden pointer-events-none opacity-20">
+<div className="absolute inset-0 z-0  pointer-events-none opacity-20">
 <div className="absolute top-1/4 left-1/4 w-96 h-96 border border-[#D32F2F]/20 rotate-45"></div>
 <div className="absolute bottom-1/4 right-1/4 w-64 h-64 border border-tertiary/20 -rotate-12"></div>
 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[1px] bg-gradient-to-r from-transparent via-[#D32F2F]/30 to-transparent"></div>
@@ -128,7 +128,7 @@ export default function Slide10() {
 </ul>
 </div>
 {/*  Forensic Logo Module  */}
-<div className="bg-surface-container-lowest p-8 flex flex-col items-center justify-center border border-outline-variant/30 text-center relative overflow-hidden">
+<div className="bg-surface-container-lowest p-8 flex flex-col items-center justify-center border border-outline-variant/30 text-center relative ">
 <div className="absolute inset-0 opacity-10 flex items-center justify-center">
 <span className="material-symbols-outlined text-[120px]" data-icon="gpp_maybe">gpp_maybe</span>
 </div>
@@ -141,7 +141,7 @@ export default function Slide10() {
 </div>
 </div>
 {/*  Terminal Ticker Tape (Custom Component)  */}
-<div className="absolute bottom-16 left-0 right-0 overflow-hidden bg-[#D32F2F]/5 py-3 border-y border-[#D32F2F]/10">
+<div className="absolute bottom-16 left-0 right-0  bg-[#D32F2F]/5 py-3 border-y border-[#D32F2F]/10">
 <div className="flex whitespace-nowrap animate-marquee gap-8">
 <span className="text-[10px] font-headline text-[#D32F2F] uppercase tracking-[0.3em]">END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // </span>
 <span className="text-[10px] font-headline text-[#D32F2F] uppercase tracking-[0.3em]">END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // END_OF_TRANSMISSION // STANDBY FOR USER_INPUT // SECURE_CHANNEL_TERMINATING // [SYSTEM_STATUS: IDLE] // </span>
