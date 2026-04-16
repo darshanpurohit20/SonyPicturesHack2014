@@ -75,7 +75,7 @@ export default function Slide6() {
 </div>
 </aside>
 {/*  MAIN CANVAS  */}
-<main className="ml-64 pt-20 pb-12 min-h-screen relative ">
+<main className="ml-64 pt-10 xl:pt-20 pb-6 xl:pb-12 h-full relative ">
 {/*  Background Asset  */}
 <div className="absolute inset-0 z-0 ">
 <div className="absolute inset-0 bg-[#131313] opacity-80"></div>
@@ -84,7 +84,7 @@ export default function Slide6() {
 </div>
 <div className="relative z-10 px-12 py-8">
 {/*  Header Section  */}
-<div className="mb-16">
+<div className="mb-8 xl:mb-16">
 <div className="flex items-center gap-4 mb-2">
 <span className="h-px w-12 bg-[#D32F2F]"></span>
 <span className="text-[#D32F2F] font-mono text-xs tracking-widest uppercase">Investigation Phase 06</span>

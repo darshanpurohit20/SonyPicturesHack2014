@@ -34,7 +34,7 @@ export default function Slide5() {
         </div>
 </header>
 {/*  SideNavBar  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] border-r border-[#D32F2F]/15 w-64 pt-20 hidden lg:flex">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] border-r border-[#D32F2F]/15 w-64 pt-10 xl:pt-20 hidden lg:flex">
 <div className="px-6 py-8 border-b border-[#D32F2F]/10">
 <div className="flex items-center gap-3 mb-4">
 <div className="w-10 h-10 bg-surface-container-high flex items-center justify-center">
@@ -80,7 +80,7 @@ export default function Slide5() {
 </div>
 </aside>
 {/*  Main Content Canvas  */}
-<main className="lg:pl-64 pt-24 pb-24 px-6 min-h-screen relative z-10">
+<main className="lg:pl-64 pt-24 pb-24 px-6 h-full relative z-10">
 <div className="max-w-7xl mx-auto space-y-12">
 {/*  Header Section  */}
 <section className="space-y-4">

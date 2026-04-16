@@ -37,7 +37,7 @@ export default function Slide10() {
 </div>
 </header>
 {/*  SideNavBar  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] dark:bg-[#0A0A0A] w-64 border-r border-[#D32F2F]/15 pt-20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] dark:bg-[#0A0A0A] w-64 border-r border-[#D32F2F]/15 pt-10 xl:pt-20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
 <div className="px-6 py-4 mb-6">
 <div className="flex items-center gap-3 mb-2">
 <div className="w-10 h-10 bg-surface-container-highest border border-outline-variant flex items-center justify-center">
@@ -81,7 +81,7 @@ export default function Slide10() {
 </div>
 </aside>
 {/*  Main Content Canvas  */}
-<main className="flex-1 ml-64 mt-16 p-12 overflow-y-auto no-scrollbar relative flex flex-col justify-center">
+<main className="flex-1 ml-64 mt-8 xl:mt-16 p-12 overflow-y-auto no-scrollbar relative flex flex-col justify-center">
 {/*  Background Elements  */}
 <div className="absolute inset-0 z-0  pointer-events-none opacity-20">
 <div className="absolute top-1/4 left-1/4 w-96 h-96 border border-[#D32F2F]/20 rotate-45"></div>
@@ -95,7 +95,7 @@ export default function Slide10() {
 <div className="h-[2px] w-12 bg-[#D32F2F]"></div>
 <span className="font-headline text-xs tracking-[0.4em] text-[#D32F2F] uppercase">System Exit Protocol</span>
 </div>
-<h1 className="font-headline text-7xl md:text-9xl font-black tracking-tighter uppercase leading-none glitch-effect" data-text="ANY QUESTIONS?">
+<h1 className="font-headline text-7xl md:text-[8vw] xl:text-[7vw] font-black tracking-tighter uppercase leading-none glitch-effect" data-text="ANY QUESTIONS?">
                     ANY <span className="text-[#D32F2F] italic">QUESTIONS</span>?
                 </h1>
 <div className="mt-8 flex flex-wrap gap-8 items-center border-l-4 border-[#D32F2F] pl-8 py-4">

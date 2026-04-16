@@ -31,7 +31,7 @@ export default function Slide8() {
     </div>
 </header>
 {/*  SideNavBar  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col w-64 bg-[#0A0A0A] border-r border-[#D32F2F]/15 pt-20 shadow-[20px_0_50px_rgba(0,0,0,0.8)]">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col w-64 bg-[#0A0A0A] border-r border-[#D32F2F]/15 pt-10 xl:pt-20 shadow-[20px_0_50px_rgba(0,0,0,0.8)]">
 <div className="px-6 py-8">
 <div className="flex items-center gap-3 mb-6">
 <div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center border border-outline-variant">
@@ -75,7 +75,7 @@ export default function Slide8() {
 </div>
 </aside>
 {/*  Main Content  */}
-<main className="pl-64 pt-20 pb-16 min-h-screen">
+<main className="pl-64 pt-10 xl:pt-20 pb-16 h-full">
 <div className="max-w-7xl mx-auto px-12 py-20">
 {/*  Tactical Metadata Ticker  */}
 <div className="mb-12  whitespace-nowrap border-y border-[#D32F2F]/20 py-2 bg-black/40">
@@ -160,7 +160,7 @@ export default function Slide8() {
 </div>
 </div>
 {/*  Asymmetric Design Elements  */}
-<div className="mt-20 grid grid-cols-12 gap-6">
+<div className="mt-10 xl:mt-20 grid grid-cols-12 gap-6">
 <div className="col-span-12 lg:col-span-8">
 <div className="p-8 bg-[#1A1A1A] border-l-4 border-[#D32F2F] relative ">
 <div className="absolute top-0 right-0 p-2 font-mono text-[8px] text-white/10 uppercase">classification: level_05</div>

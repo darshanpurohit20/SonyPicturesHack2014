@@ -108,7 +108,7 @@ export default function Slide1() {
 </div>
 </aside>
 {/*  Main Content Canvas  */}
-<main className="ml-64 pt-20 pb-12 min-h-screen relative flex items-center justify-center bg-black ">
+<main className="ml-64 pt-10 xl:pt-20 pb-6 xl:pb-12 h-full relative flex items-center justify-center bg-black ">
 {/*  Tactical Metadata Ticker  */}
 <div className="absolute top-20 right-0 left-64  py-1 bg-white/[0.02] border-b border-white/5">
 <div className="flex whitespace-nowrap gap-12 text-[10px] text-[#D32F2F]/40 font-mono uppercase tracking-[0.3em] animate-marquee">
@@ -121,10 +121,10 @@ export default function Slide1() {
 </div>
 <div className="max-w-6xl w-full px-12 flex flex-col items-center text-center z-10">
 {/*  High-Impact Visual: Hacker Skull  */}
-<div className="relative mb-16 skull-breach">
+<div className="relative mb-8 xl:mb-16 skull-breach">
 <div className="absolute inset-0 bg-[#D32F2F] blur-[120px] opacity-20"></div>
 <div className="relative p-12 border border-[#D32F2F]/40 bg-black/40 backdrop-blur-3xl pulse-glow-red">
-<span className="material-symbols-outlined text-[180px] text-[#D32F2F] leading-none select-none" data-icon="skull" data-weight="fill" style={{ fontVariationSettings: '\'FILL\' 1' }}>skull</span>
+<span className="material-symbols-outlined text-[12vh] xl:text-[180px] text-[#D32F2F] leading-none select-none" data-icon="skull" data-weight="fill" style={{ fontVariationSettings: '\'FILL\' 1' }}>skull</span>
 {/*  Glitch Decorative Elements  */}
 <div className="absolute -top-6 -left-6 w-12 h-12 border-t-4 border-l-4 border-[#D32F2F]"></div>
 <div className="absolute -bottom-6 -right-6 w-12 h-12 border-b-4 border-r-4 border-[#D32F2F]"></div>
@@ -133,24 +133,24 @@ export default function Slide1() {
 {/*  Cinematic Hook Text  */}
 <div className="space-y-8 max-w-5xl">
 <div className="reveal-step-1">
-<h1 className="font-headline font-black text-6xl md:text-9xl tracking-tight leading-[0.85] text-white uppercase italic">
+<h1 className="font-headline font-black text-6xl md:text-[8vw] xl:text-[7vw] tracking-tight leading-[0.85] text-white uppercase italic">
                         A normal <span className="text-[#D32F2F] drop-shadow-[0_0_15px_rgba(211,47,47,0.5)]">Monday morning</span> at Sony… 
                     </h1>
 <div className="h-1 w-64 bg-[#D32F2F]/60 mx-auto mt-8 blur-[1px]"></div>
 </div>
 <div className="reveal-step-2">
-<h2 className="font-headline font-black text-5xl md:text-8xl tracking-tighter text-white/80 uppercase">
+<h2 className="font-headline font-black text-4xl md:text-5xl xl:text-7xl tracking-tighter text-white/80 uppercase">
                         suddenly every screen <br/>
 <span className="bg-white text-black px-8 py-4 mt-8 inline-block font-black shadow-[15px_15px_0_rgba(211,47,47,0.7)] transform -rotate-1">TURNS BLACK.</span>
 </h2>
 </div>
 </div>
 {/*  Tactical CTA  */}
-<div className="mt-20 flex gap-6 opacity-0 animate-[fadeIn_1s_ease-out_4s_forwards]">
-<button className="btn-glow px-12 py-5 bg-[#D32F2F] text-white font-headline font-black text-sm uppercase tracking-[0.2em] hover:bg-red-700 transition-all active:scale-95 border border-white/20">
+<div className="mt-10 xl:mt-20 flex gap-6 opacity-0 animate-[fadeIn_1s_ease-out_4s_forwards]">
+<button className="btn-glow px-12 py-3 xl:py-5 bg-[#D32F2F] text-white font-headline font-black text-sm uppercase tracking-[0.2em] hover:bg-red-700 transition-all active:scale-95 border border-white/20">
                     INITIATE FORENSICS _
                 </button>
-<button className="btn-glow px-12 py-5 border border-white/20 text-white/60 font-headline font-bold text-sm uppercase tracking-[0.2em] hover:bg-white/5 hover:text-white transition-all bg-black/40 backdrop-blur-md">
+<button className="btn-glow px-12 py-3 xl:py-5 border border-white/20 text-white/60 font-headline font-bold text-sm uppercase tracking-[0.2em] hover:bg-white/5 hover:text-white transition-all bg-black/40 backdrop-blur-md">
                     VIEW TIMELINE
                 </button>
 </div>

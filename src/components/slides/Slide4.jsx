@@ -91,7 +91,7 @@ export default function Slide4() {
 </div>
 </aside>
 {/*  Main Content Canvas  */}
-<main className="pl-64 pt-20 pb-16 h-screen relative z-10  bg-transparent">
+<main className="pl-64 pt-10 xl:pt-20 pb-16 h-screen relative z-10  bg-transparent">
 <div className="relative h-full px-16 flex flex-col justify-center">
 {/*  Header Section  */}
 <div className="mb-14 opacity-0 animate-reveal">
@@ -122,7 +122,7 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Cinematic Timeline Component  */}
-<div className="relative w-full overflow-x-auto no-scrollbar pb-12">
+<div className="relative w-full overflow-x-auto no-scrollbar pb-6 xl:pb-12">
 {/*  Central Data Line  */}
 <div className="absolute top-[148px] left-0 w-[2000px] h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
 <div className="flex gap-0 min-w-[1700px] py-12 items-start relative">

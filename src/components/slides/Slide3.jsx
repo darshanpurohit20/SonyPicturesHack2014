@@ -68,12 +68,12 @@ export default function Slide3() {
 </div>
 </aside>
 {/*  Main Content  */}
-<main className="lg:pl-64 pt-24 pb-16 min-h-screen px-6 md:px-12 relative z-10">
+<main className="lg:pl-64 pt-24 pb-16 h-full px-6 md:px-12 relative z-10">
 <div className="max-w-6xl mx-auto">
 {/*  Header Section  */}
 <div className="mb-12 border-l-4 border-[#D32F2F] pl-6 py-2 animate-reveal">
 <span className="text-[#D32F2F] font-headline text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Background Analysis</span>
-<h1 className="font-headline text-5xl md:text-7xl font-black text-white tracking-tighter uppercase leading-none">
+<h1 className="font-headline text-5xl md:text-5xl xl:text-6xl font-black text-white tracking-tighter uppercase leading-none">
                     UNDERSTANDING <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">THE ARSENAL</span>
 </h1>
 </div>

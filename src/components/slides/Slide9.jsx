@@ -73,7 +73,7 @@ export default function Slide9() {
 </div>
 </aside>
 {/*  Main Content Canvas  */}
-<main className="md:ml-64 pt-20 pb-24 min-h-screen relative flex flex-col">
+<main className="md:ml-64 pt-10 xl:pt-20 pb-24 h-full relative flex flex-col">
 {/*  Hero Section  */}
 <section className="flex-grow flex flex-col items-center justify-center p-8 md:p-12 relative ">
 {/*  Tactical Metadata Ticker  */}
@@ -89,7 +89,7 @@ export default function Slide9() {
 <div className="absolute inset-0 bg-[#D32F2F]/5 mix-blend-overlay"></div>
 {/*  Content Overlay  */}
 <div className="absolute bottom-12 left-12 right-12 z-10">
-<h1 className="font-headline text-6xl md:text-9xl font-black tracking-[-0.05em] uppercase text-white leading-none mb-4 drop-shadow-lg">
+<h1 className="font-headline text-6xl md:text-[8vw] xl:text-[7vw] font-black tracking-[-0.05em] uppercase text-white leading-none mb-4 drop-shadow-lg">
                         A FINAL <span className="text-primary-container relative glitch-text-container inline-block">MESSAGE</span>
 </h1>
 <div className="flex items-center gap-4 opacity-0 animate-fade-in-blur reveal-delay-2">
@@ -137,10 +137,10 @@ export default function Slide9() {
 <div className="mb-12 opacity-20 animate-pulse">
 <span className="material-symbols-outlined text-8xl" data-icon="keyboard_command_key">keyboard_command_key</span>
 </div>
-<blockquote className="font-headline text-4xl md:text-7xl font-black text-white italic max-w-5xl tracking-tight uppercase leading-none opacity-0 animate-reveal-quote">
+<blockquote className="font-headline text-4xl md:text-5xl xl:text-6xl font-black text-white italic max-w-5xl tracking-tight uppercase leading-none opacity-0 animate-reveal-quote">
                     “This wasn’t just a hack. It was a <span className="text-[#D32F2F] animate-pulse-glow relative glitch-text inline-block">MESSAGE</span>.”
                 </blockquote>
-<div className="mt-16 w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-[#D32F2F]/60 to-transparent shadow-[0_0_15px_rgba(211,47,47,0.4)] opacity-0 animate-fade-in-blur reveal-delay-2"></div>
+<div className="mt-8 xl:mt-16 w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-[#D32F2F]/60 to-transparent shadow-[0_0_15px_rgba(211,47,47,0.4)] opacity-0 animate-fade-in-blur reveal-delay-2"></div>
 {/*  Connection Lost Indicator  */}
 <div className="mt-8 flex flex-col items-center gap-2 opacity-0 animate-fade-in-blur reveal-delay-3">
 <div className="flex items-center gap-2 text-[#D32F2F] font-mono text-sm tracking-[0.3em] font-bold">

@@ -27,6 +27,25 @@ def convert_to_jsx(html_str):
     html_str = html_str.replace('class="', 'className="')
     # Prevent cutoff issues by removing explicit overflow-hidden
     html_str = html_str.replace('overflow-hidden', '')
+    
+    # Make typography and spacing strictly responsive so it fits in 100vh on laptop screens
+    html_str = html_str.replace('md:text-9xl', 'md:text-[8vw] xl:text-[7vw]')
+    html_str = html_str.replace('text-6xl md:text-9xl', 'text-5xl md:text-6xl xl:text-8xl')
+    html_str = html_str.replace('text-5xl md:text-8xl', 'text-4xl md:text-5xl xl:text-7xl')
+    html_str = html_str.replace('md:text-7xl', 'md:text-5xl xl:text-6xl')
+    html_str = html_str.replace('text-[180px]', 'text-[12vh] xl:text-[180px]')
+    
+    # Compress vertical margins/paddings
+    html_str = re.sub(r'\bmt-20\b', 'mt-10 xl:mt-20', html_str)
+    html_str = re.sub(r'\bmt-16\b', 'mt-8 xl:mt-16', html_str)
+    html_str = re.sub(r'\bmb-16\b', 'mb-8 xl:mb-16', html_str)
+    html_str = re.sub(r'\bpt-20\b', 'pt-10 xl:pt-20', html_str)
+    html_str = re.sub(r'\bpb-12\b', 'pb-6 xl:pb-12', html_str)
+    html_str = re.sub(r'\bpy-5\b', 'py-3 xl:py-5', html_str)
+
+    # Convert min-h-screen to h-full so it fits the App wrapper precisely
+    html_str = html_str.replace('min-h-screen', 'h-full')
+    
     # replace style="..."
     def style_replacer(match):
         return 'style=' + style_to_dict(match.group(1))

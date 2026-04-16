@@ -56,7 +56,7 @@ TRACE: 127.0.0.1 -&gt; 10.0.2.15 -&gt; 203.0.113.4
         </div>
 </header>
 {/*  SideNavBar  */}
-<aside className="fixed left-0 top-0 h-full z-40 w-64 bg-[#050505] border-r border-[#D32F2F]/15 flex flex-col pt-20 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+<aside className="fixed left-0 top-0 h-full z-40 w-64 bg-[#050505] border-r border-[#D32F2F]/15 flex flex-col pt-10 xl:pt-20 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
 <div className="px-6 py-8 border-b border-[#D32F2F]/10">
 <div className="flex items-center gap-3 mb-2">
 <div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center border border-primary/20">
@@ -97,9 +97,9 @@ TRACE: 127.0.0.1 -&gt; 10.0.2.15 -&gt; 203.0.113.4
 </div>
 </aside>
 {/*  Main Content Canvas  */}
-<main className="ml-64 pt-16 pb-12 px-12 min-h-screen">
+<main className="ml-64 pt-16 pb-6 xl:pb-12 px-12 h-full">
 {/*  Hero Section  */}
-<section className="mt-12 mb-16 relative h-[614px]  group border border-white/5">
+<section className="mt-12 mb-8 xl:mb-16 relative h-[614px]  group border border-white/5">
 <img className="w-full h-full object-cover filter grayscale contrast-125 brightness-50 transition-transform duration-[4000ms]" data-alt="Sony Pictures studio gates at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVeZkAnrFYih6esJfhfClULmqDOR5esGhzrFpl05fkOP1Mvm6tARQylhD-9T1GJZQo7_pceWSEGBWLbM5bpqh-REsB7C8T6JVCxAgswJIFocM6eIxKpvhiPTCqlkJQ5e207YAwWpHfpdaAE3fgRW6ZxtM4SfZMj47YEl34MI1OKpi7Lflj_BxT1NHRpiaUJg390xexCIIJKJu7P3muwEJT_ft6uXqMHbPRkBh8vxxYW6bfsvf38HUefT1kidQ65tQrKcjBQwxGV_I"/>
 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-black/60"></div>
 <div className="absolute inset-0 flex flex-col justify-end p-12 ">

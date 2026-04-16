@@ -30,7 +30,7 @@ export default function Slide7() {
         </div>
 </header>
 {/*  SideNavBar Shell  */}
-<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] dark:bg-[#0A0A0A] w-64 border-r border-[#D32F2F]/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] pt-20">
+<aside className="fixed left-0 top-0 h-full z-40 flex flex-col bg-[#0A0A0A] dark:bg-[#0A0A0A] w-64 border-r border-[#D32F2F]/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] pt-10 xl:pt-20">
 <div className="px-6 py-4 mb-4">
 <div className="flex items-center gap-3">
 <div className="w-8 h-8 bg-surface-container-highest flex items-center justify-center">
@@ -71,10 +71,10 @@ export default function Slide7() {
 </div>
 </aside>
 {/*  Main Content Canvas  */}
-<main className="pl-64 pt-20 pb-16 min-h-screen">
+<main className="pl-64 pt-10 xl:pt-20 pb-16 h-full">
 <div className="max-w-7xl mx-auto px-12 py-12">
 {/*  Hero Title Section  */}
-<div className="mb-16">
+<div className="mb-8 xl:mb-16">
 <div className="inline-block bg-secondary-container px-3 py-1 mb-4">
 <span className="text-[10px] font-mono font-bold text-on-secondary-container tracking-[0.2em] uppercase">Phase 04 // Counter-Intelligence</span>
 </div>
@@ -161,7 +161,7 @@ export default function Slide7() {
 </div>
 </div>
 {/*  Footer Meta Text  */}
-<div className="mt-20 flex justify-between items-end border-t border-white/5 pt-8">
+<div className="mt-10 xl:mt-20 flex justify-between items-end border-t border-white/5 pt-8">
 <div className="max-w-md">
 <span className="text-[10px] font-mono text-primary uppercase block mb-2 tracking-[0.2em]">Forensic Conclusion</span>
 <p className="text-xs text-white/40 leading-relaxed uppercase">The response marked a turning point in international cyber policy, blending traditional law enforcement with elite cyber forensics to attribute the attack to state entities.</p>
