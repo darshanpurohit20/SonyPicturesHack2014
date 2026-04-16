@@ -74,26 +74,10 @@ export default function App() {
       }
     };
 
-    const handleWheel = (e) => {
-      // Smart scroll: Only transition if we are at the top or bottom of the scrollable slide
-      const isAtBottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 10;
-      const isAtTop = window.scrollY <= 10;
-      
-      if (Math.abs(e.deltaY) > 30) {
-        if (e.deltaY > 0) {
-          if (isAtBottom) nextSlide();
-        } else {
-          if (isAtTop) prevSlide();
-        }
-      }
-    };
-
     window.addEventListener('keydown', handleKeyDown);
-    window.addEventListener('wheel', handleWheel, { passive: true });
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
-      window.removeEventListener('wheel', handleWheel);
     };
   }, []);
 
@@ -107,22 +91,41 @@ export default function App() {
         </Suspense>
       </AnimatePresence>
 
-      {/* Global Navigation HUD overlay */}
-      <div className="fixed bottom-4 right-4 z-[9999] bg-black/50 backdrop-blur-md border border-[#D32F2F]/20 px-3 py-1 flex items-center gap-4 text-xs font-mono select-none">
+      {/* Left Navigation HUD */}
+      <div className="fixed bottom-4 left-4 z-[9999] bg-black/50 backdrop-blur-md border border-[#D32F2F]/20 px-3 py-2 flex items-center gap-4 text-xs font-mono select-none">
         <button
           onClick={prevSlide}
-          className={`hover:text-[#D32F2F] transition-colors ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'text-white/60'}`}
+          className={`hover:text-[#D32F2F] transition-colors px-2 py-1 border border-white/10 hover:border-[#D32F2F]/50 ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'text-white/60'}`}
         >
-          &lt;_PREV
+          <span className="material-symbols-outlined text-sm">arrow_back</span>
         </button>
         <span className="text-[#D32F2F]/60">
           {'['} {(currentSlide + 1).toString().padStart(2, '0')} / {slides.length.toString().padStart(2, '0')} {']'}
         </span>
         <button
           onClick={nextSlide}
-          className={`hover:text-[#D32F2F] transition-colors ${currentSlide === slides.length - 1 ? 'opacity-30 cursor-not-allowed' : 'text-white/60'}`}
+          className={`hover:text-[#D32F2F] transition-colors px-2 py-1 border border-white/10 hover:border-[#D32F2F]/50 ${currentSlide === slides.length - 1 ? 'opacity-30 cursor-not-allowed' : 'text-white/60'}`}
         >
-          NEXT_&gt;
+          <span className="material-symbols-outlined text-sm">arrow_forward</span>
+        </button>
+      </div>
+
+      {/* Right Navigation HUD (Matching Style) */}
+      <div className="fixed bottom-4 right-4 z-[9999] bg-black/50 backdrop-blur-md border border-[#D32F2F]/20 px-3 py-2 flex items-center gap-4 text-xs font-mono select-none">
+        <button
+          onClick={prevSlide}
+          className={`hover:text-[#D32F2F] transition-colors px-2 py-1 border border-white/10 hover:border-[#D32F2F]/50 ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'text-white/60'}`}
+        >
+          <span className="material-symbols-outlined text-sm">arrow_back</span>
+        </button>
+        <span className="text-[#D32F2F]/60">
+          {'['} {(currentSlide + 1).toString().padStart(2, '0')} / {slides.length.toString().padStart(2, '0')} {']'}
+        </span>
+        <button
+          onClick={nextSlide}
+          className={`hover:text-[#D32F2F] transition-colors px-2 py-1 border border-white/10 hover:border-[#D32F2F]/50 ${currentSlide === slides.length - 1 ? 'opacity-30 cursor-not-allowed' : 'text-white/60'}`}
+        >
+          <span className="material-symbols-outlined text-sm">arrow_forward</span>
         </button>
       </div>
     </div>
