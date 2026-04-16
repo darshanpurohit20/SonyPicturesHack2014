@@ -80,9 +80,11 @@ export default function Slide9() {
                     </div>
                     {/*  Main Visual Container  */}
                     <div className="w-full max-w-6xl aspect-video relative group border border-white/10 bg-black/80  shadow-2xl reveal-delay-1 opacity-0 animate-fade-in-blur">
-                        <img alt="Cinematic theater screen" className="w-full h-full object-cover opacity-30 mix-blend-luminosity animate-flicker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1qAeeoCYXb1jn8vjcGBYdvDHvcvpB_i0EOsSPU7JL465FbibTQ8BXWzO-_EXTGL2E3WOoNuBRwBFnT7svt1-8FRvHblcMdDT9wfatIXYivSCzxUmUGuw3-l71IO_m02A3ZdX9g21xEV48lA1UjG6Mlnqi0f5StKnjizYfkfnwKIt-3Ng4GSttQjYF7eoIxqPukkOvLx4JlX9D8NwZyaO0Y1IMJoV0n9lh92XfbNXWudAxCPVtUu2Q70uhQ0KBoc0nm-pxGvsTtvs" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-[#050505]"></div>
-                        <div className="absolute inset-0 bg-[#D32F2F]/5 mix-blend-overlay"></div>
+                        {/*  Cinematic CSS Visual Elements (Replaces broken image)  */}
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#2a0808_0%,_#000000_100%)] opacity-80 animate-pulse-slow"></div>
+                        <div className="absolute inset-0 opacity-20 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]"></div>
+                        <div className="absolute inset-0 bg-[#D32F2F]/10 mix-blend-overlay animate-flicker"></div>
                         {/*  Content Overlay  */}
                         <div className="absolute bottom-12 left-12 right-12 z-10">
                             <h1 className="font-headline text-6xl md:text-[8vw] xl:text-[7vw] font-black tracking-[-0.05em] uppercase text-white leading-none mb-4 drop-shadow-lg">
