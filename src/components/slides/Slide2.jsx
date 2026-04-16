@@ -264,28 +264,6 @@ export default function Slide2() {
             </div>
         </div>
     </main>
-    {/*  Footer  */}
-    <footer
-        className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#050505]/90 backdrop-blur-md border-t border-[#D32F2F]/15">
-        <div className="flex items-center gap-4">
-            <span className="w-2 h-2 bg-primary-container animate-ping"></span>
-            <span className="font-['Inter'] text-[10px] uppercase tracking-widest text-[#D32F2F] font-black">CONFIDENTIAL //
-                CLASSIFIED INTEL</span>
-        </div>
-        <nav className="flex gap-8">
-            <a className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-all hover:tracking-widest"
-                href="#">TIMELINE</a>
-            <a className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-all hover:tracking-widest"
-                href="#">SOURCES</a>
-            <a className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30 hover:text-white transition-all hover:tracking-widest"
-                href="#">RECOVERY</a>
-        </nav>
-        <div className="text-[10px] font-mono text-white/20">
-            SEC_LEVEL: 05 // NODE_ID: 1044-X
-        </div>
-    </footer>
-    
-
         </motion.div>
     );
 }
