@@ -297,7 +297,7 @@
         }
 
         .login-overlay {
-            animation: fadeOut 0.8s ease-in-out forwards 2s;
+            animation: fadeOut 0.3s ease-in-out forwards 0.3s;
         }
 
         @keyframes fadeOut {

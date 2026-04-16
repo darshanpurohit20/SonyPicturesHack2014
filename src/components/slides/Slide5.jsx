@@ -8,7 +8,7 @@ export default function Slide5() {
             initial={{ opacity: 0, filter: 'blur(10px)', skewX: '20deg', scale: 1.1 }}
             animate={{ opacity: 1, filter: 'blur(0px)', skewX: '0deg', scale: 1 }}
             exit={{ opacity: 0, filter: 'blur(10px)', x: -100, scale: 0.9 }}
-            transition={{ duration: 0.4, type: 'spring', bounce: 0.5 }}
+            transition={{ duration: 0.2, type: 'spring', bounce: 0.5 }}
         
             className="relative w-full min-h-screen"
         >
@@ -80,22 +80,22 @@ export default function Slide5() {
 <div className="max-w-7xl mx-auto space-y-12">
 {/*  Header Section  */}
 <section className="space-y-4">
-<div className="flex items-center gap-3 text-primary animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+<div className="flex items-center gap-3 text-primary animate-reveal" style={{ animationDelay: '0.1s' }}>
 <span className="text-[10px] font-mono tracking-[0.4em] uppercase">Phase_Analysis_005</span>
 <div className="h-[1px] w-12 bg-primary/30"></div>
 </div>
 <h1 className="text-6xl md:text-8xl font-headline font-black tracking-tighter uppercase leading-none group cursor-default">
-<span className="inline-block animate-fade-in-up hover:animate-glitch" style={{ animationDelay: '0.2s' }}>THE KILL</span>
-<span className="text-primary inline-block animate-fade-in-up hover:animate-glitch" style={{ animationDelay: '0.3s' }}>CHAIN</span>
+<span className="inline-block animate-reveal hover:animate-glitch" style={{ animationDelay: '0.2s' }}>THE KILL</span>
+<span className="text-primary inline-block animate-reveal hover:animate-glitch" style={{ animationDelay: '0.3s' }}>CHAIN</span>
 </h1>
-<p className="max-w-2xl text-on-surface-variant font-body text-lg leading-relaxed border-l-2 border-primary/20 pl-6 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+<p className="max-w-2xl text-on-surface-variant font-body text-lg leading-relaxed border-l-2 border-primary/20 pl-6 animate-reveal" style={{ animationDelay: '0.4s' }}>
                     A multi-stage intrusion strategy executed with clinical precision. This forensic timeline decomposes the Sony breach into five distinct tactical vectors.
                 </p>
 </section>
 {/*  Kill Chain Visual Flow  */}
 <div className="grid grid-cols-1 md:grid-cols-12 gap-1 gap-y-8">
 {/*  Step 1: PHISHING  */}
-<div className="md:col-span-4 bg-surface-container-low p-8 relative border-t-2 border-primary/40 reveal-step opacity-0" id="step-1">
+<div className="md:col-span-4 bg-surface-container-low p-8 relative border-t-2 border-primary/40 animate-reveal" style={{ animationDelay: "0.5s" }} id="step-1">
 <div className="absolute -top-4 right-8 bg-surface-container-highest px-3 py-1 font-headline text-[10px] text-primary-fixed-dim border border-primary/10">01_INIT</div>
 <div className="space-y-4">
 <span className="material-symbols-outlined text-primary text-4xl" data-icon="mail" style={{ fontVariationSettings: '\'FILL\' 1' }}>mail</span>
@@ -110,7 +110,7 @@ export default function Slide5() {
 <span className="material-symbols-outlined text-outline/30 text-3xl draw-connector" id="connector-1">arrow_forward_ios</span>
 </div>
 {/*  Step 2: ACCESS  */}
-<div className="md:col-span-4 bg-surface-container-high p-8 relative border-t-2 border-primary/40 reveal-step opacity-0" id="step-2">
+<div className="md:col-span-4 bg-surface-container-high p-8 relative border-t-2 border-primary/40 animate-reveal" style={{ animationDelay: "0.7s" }} id="step-2">
 <div className="absolute -top-4 right-8 bg-surface-container-highest px-3 py-1 font-headline text-[10px] text-primary-fixed-dim border border-primary/10">02_ENTRY</div>
 <div className="space-y-4">
 <span className="material-symbols-outlined text-primary text-4xl" data-icon="key">key</span>
@@ -128,7 +128,7 @@ export default function Slide5() {
 </div>
 </div>
 {/*  Step 3: MOVEMENT  */}
-<div className="md:col-span-7 bg-surface-container-highest p-8 relative border-t-2 border-primary/40  reveal-step opacity-0" id="step-3">
+<div className="md:col-span-7 bg-surface-container-highest p-8 relative border-t-2 border-primary/40 animate-reveal" style={{ animationDelay: "0.9s" }} id="step-3">
 <div className="absolute -top-4 right-8 bg-primary-container px-3 py-1 font-headline text-[10px] text-on-primary-container">03_LATERAL</div>
 <div className="grid md:grid-cols-2 gap-8 items-center">
 <div className="space-y-4">
@@ -149,7 +149,7 @@ export default function Slide5() {
 </div>
 </div>
 {/*  Step 4: EXFILTRATION  */}
-<div className="md:col-span-5 bg-surface-container-low p-8 relative border-t-2 border-primary/40 reveal-step opacity-0" id="step-4">
+<div className="md:col-span-5 bg-surface-container-low p-8 relative border-t-2 border-primary/40 animate-reveal" style={{ animationDelay: "1.1s" }} id="step-4">
 <div className="absolute -top-4 right-8 bg-surface-container-highest px-3 py-1 font-headline text-[10px] text-primary-fixed-dim border border-primary/10">04_DATA</div>
 <div className="space-y-4">
 <div className="flex justify-between items-start">
@@ -166,7 +166,7 @@ export default function Slide5() {
 </div>
 </div>
 {/*  Step 5: DESTRUCTION (Aggressive Reveal)  */}
-<div className="md:col-span-12 bg-[#0A0A0A] border border-[#D32F2F]/30 p-10 relative  group reveal-step opacity-0" id="step-5">
+<div className="md:col-span-12 bg-[#0A0A0A] border border-[#D32F2F]/30 p-10 relative  group animate-reveal" style={{ animationDelay: "1.3s" }} id="step-5">
 <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
 <div className="absolute -top-4 right-12 bg-primary px-4 py-1 font-headline text-xs text-white font-bold">05_TERMINATE</div>
 <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -195,7 +195,7 @@ export default function Slide5() {
 </div>
 </div>
 {/*  Forensic Context Footer  */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 reveal-step opacity-0" id="forensic-footer">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 animate-reveal" style={{ animationDelay: "1.5s" }} id="forensic-footer">
 <div className="p-6 bg-surface-container-low border-l border-primary/20">
 <h4 className="text-[10px] font-mono uppercase tracking-widest text-white/40 mb-2">Target_Infrastructure</h4>
 <p className="font-headline text-sm font-bold">CROSS-CONTINENT HYBRID CLOUD</p>

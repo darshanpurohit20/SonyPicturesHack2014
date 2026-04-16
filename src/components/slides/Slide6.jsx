@@ -8,7 +8,7 @@ export default function Slide6() {
             initial={{ opacity: 0, filter: 'blur(10px)', skewX: '20deg', scale: 1.1 }}
             animate={{ opacity: 1, filter: 'blur(0px)', skewX: '0deg', scale: 1 }}
             exit={{ opacity: 0, filter: 'blur(10px)', x: -100, scale: 0.9 }}
-            transition={{ duration: 0.4, type: 'spring', bounce: 0.5 }}
+            transition={{ duration: 0.2, type: 'spring', bounce: 0.5 }}
         
             className="relative w-full min-h-screen"
         >
@@ -89,10 +89,10 @@ export default function Slide6() {
                 THE <span className="text-[#D32F2F]">FALLOUT</span>
 </h1>
 <div className="flex items-center gap-6">
-<p className="text-on-surface-variant max-w-xl font-light text-lg border-l-2 border-[#D32F2F] pl-6 py-2 opacity-0 animate-reveal-up reveal-delay-1">
+<p className="text-on-surface-variant max-w-xl font-light text-lg border-l-2 border-[#D32F2F] pl-6 py-2 animate-reveal-up reveal-delay-1">
                     System-wide compromise has transitioned from digital breach to real-world devastation. Intelligence analysis indicates irreversible kinetic and brand damage.
                 </p>
-<div className="bg-error-container/20 border border-error/30 p-4 inline-flex flex-col gap-1 max-w-[240px] opacity-0 animate-reveal-up reveal-delay-2">
+<div className="bg-error-container/20 border border-error/30 p-4 inline-flex flex-col gap-1 max-w-[240px] animate-reveal-up reveal-delay-2">
 <div className="flex items-center gap-2 text-error font-bold text-xs tracking-widest uppercase animate-flicker">
 <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: '\'FILL\' 1' }}>warning</span>
                         Critical Irreversible Damage
@@ -104,7 +104,7 @@ export default function Slide6() {
 {/*  Bento Grid Impact Analysis  */}
 <div className="grid grid-cols-12 gap-px bg-[#D32F2F]/15 border border-[#D32F2F]/15">
 {/*  Category: EMPLOYEES  */}
-<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-1 relative  scanline-effect">
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 animate-reveal-up reveal-delay-1 relative  scanline-effect">
 <div className="flex justify-between items-start">
 <span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>badge</span>
 <div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_01</div>
@@ -124,7 +124,7 @@ export default function Slide6() {
 </div>
 </div>
 {/*  Category: CORPORATE  */}
-<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-2 relative  scanline-effect">
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 animate-reveal-up reveal-delay-2 relative  scanline-effect">
 <div className="flex justify-between items-start">
 <span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>business_center</span>
 <div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_02</div>
@@ -144,7 +144,7 @@ export default function Slide6() {
 </div>
 </div>
 {/*  Category: MOVIES  */}
-<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-3 relative  scanline-effect">
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 animate-reveal-up reveal-delay-3 relative  scanline-effect">
 <div className="flex justify-between items-start">
 <span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>movie</span>
 <div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_03</div>
@@ -164,7 +164,7 @@ export default function Slide6() {
 </div>
 </div>
 {/*  Category: GEOPOLITICS  */}
-<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 opacity-0 animate-reveal-up reveal-delay-4 relative  scanline-effect">
+<div className="col-span-12 md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 flex flex-col gap-12 group transition-all duration-300 hover:bg-[#D32F2F]/5 animate-reveal-up reveal-delay-4 relative  scanline-effect">
 <div className="flex justify-between items-start">
 <span className="material-symbols-outlined text-4xl text-[#D32F2F] group-hover:animate-pulse" style={{ fontVariationSettings: '\'FILL\' 1' }}>language</span>
 <div className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">NODE_04</div>
@@ -204,7 +204,7 @@ export default function Slide6() {
 </div>
 </div>
 </div>
-<div className="col-span-12 lg:col-span-4 bg-surface-container-lowest p-12 flex flex-col justify-center opacity-0 animate-reveal-up reveal-delay-4">
+<div className="col-span-12 lg:col-span-4 bg-surface-container-lowest p-12 flex flex-col justify-center animate-reveal-up reveal-delay-4">
 <div className="space-y-8">
 <div>
 <div className="text-[10px] text-[#D32F2F] font-mono mb-2">METRIC_IMPACT_RATING</div>

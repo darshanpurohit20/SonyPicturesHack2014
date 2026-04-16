@@ -8,7 +8,7 @@ export default function Slide2() {
             initial={{ opacity: 0, filter: 'blur(10px)', skewX: '20deg', scale: 1.1 }}
             animate={{ opacity: 1, filter: 'blur(0px)', skewX: '0deg', scale: 1 }}
             exit={{ opacity: 0, filter: 'blur(10px)', x: -100, scale: 0.9 }}
-            transition={{ duration: 0.4, type: 'spring', bounce: 0.5 }}
+            transition={{ duration: 0.2, type: 'spring', bounce: 0.5 }}
         
             className="relative w-full min-h-screen"
         >

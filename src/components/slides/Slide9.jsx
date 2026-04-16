@@ -8,7 +8,7 @@ export default function Slide9() {
             initial={{ opacity: 0, scale: 0.98, x: 50 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
 
             className="relative w-full min-h-screen"
         >
@@ -133,7 +133,7 @@ export default function Slide9() {
                         <div className="mb-12 opacity-20 animate-pulse">
                             <span className="material-symbols-outlined text-8xl" data-icon="keyboard_command_key">keyboard_command_key</span>
                         </div>
-                        <blockquote className="font-headline text-4xl md:text-5xl xl:text-6xl font-black text-white italic max-w-5xl tracking-tight uppercase leading-none opacity-0 animate-reveal-quote">
+                        <blockquote className="font-headline text-4xl md:text-5xl xl:text-6xl font-black text-white italic max-w-5xl tracking-tight uppercase leading-none animate-reveal-quote">
                             “This wasn’t just a hack. It was a <span className="text-[#D32F2F] animate-pulse-glow relative glitch-text inline-block">MESSAGE</span>.”
                         </blockquote>
                         <div className="mt-8 xl:mt-16 w-full max-w-2xl h-px bg-gradient-to-r from-transparent via-[#D32F2F]/60 to-transparent shadow-[0_0_15px_rgba(211,47,47,0.4)] opacity-0 animate-fade-in-blur reveal-delay-2"></div>

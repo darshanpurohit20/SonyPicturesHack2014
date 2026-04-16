@@ -46,7 +46,7 @@ export default function App() {
     setCurrentSlide((prev) => {
       if (prev < slides.length - 1) {
         isTransitioningRef.current = true;
-        setTimeout(() => { isTransitioningRef.current = false; }, 800);
+        setTimeout(() => { isTransitioningRef.current = false; }, 300);
         return prev + 1;
       }
       return prev;
@@ -58,7 +58,7 @@ export default function App() {
     setCurrentSlide((prev) => {
       if (prev > 0) {
         isTransitioningRef.current = true;
-        setTimeout(() => { isTransitioningRef.current = false; }, 800);
+        setTimeout(() => { isTransitioningRef.current = false; }, 300);
         return prev - 1;
       }
       return prev;

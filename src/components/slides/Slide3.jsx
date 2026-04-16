@@ -6,13 +6,13 @@ const cardVariants = {
   visible: (i) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+    transition: { delay: i * 0.2, duration: 0.2, ease: [0.16, 1, 0.3, 1] },
   }),
 };
 
 const logVariants = {
   hidden: { opacity: 0, x: -20 },
-  visible: { opacity: 1, x: 0, transition: { delay: 0.8, duration: 0.6 } },
+  visible: { opacity: 1, x: 0, transition: { delay: 0.8, duration: 0.2 } },
 };
 
 export default function Slide3() {
@@ -21,7 +21,7 @@ export default function Slide3() {
       initial={{ opacity: 0, scale: 0.98, x: 50 }}
       animate={{ opacity: 1, scale: 1, x: 0 }}
       exit={{ opacity: 0, scale: 1.02, x: -50 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
       className="relative w-full min-h-screen"
     >
       {/* Background layers */}
@@ -83,7 +83,7 @@ export default function Slide3() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="mb-12 border-l-4 border-[#D32F2F] pl-6 py-2"
           >
             <span className="text-[#D32F2F] font-headline text-xs font-bold tracking-[0.2em] uppercase mb-2 block">Background Analysis</span>

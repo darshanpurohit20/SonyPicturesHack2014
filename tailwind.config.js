@@ -62,6 +62,26 @@ export default {
         "headline": ["Space Grotesk", "sans-serif"],
         "body": ["Inter", "sans-serif"],
         "label": ["Inter", "sans-serif"]
+      },
+      animation: {
+        'reveal': 'fadeInUp 0.8s ease-out both',
+        'fade-in-up': 'fadeInUp 0.8s ease-out both',
+        'data-scroll': 'dataScroll 40s linear infinite',
+        'scanline': 'scanline 8s linear infinite',
+      },
+      keyframes: {
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        dataScroll: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-50%)' },
+        },
+        scanline: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100%)' },
+        }
       }
     },
   },

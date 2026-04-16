@@ -8,7 +8,7 @@ export default function Slide4() {
             initial={{ opacity: 0, scale: 0.98, x: 50 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1.02, x: -50 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
         
             className="relative w-full min-h-screen"
         >
@@ -90,7 +90,7 @@ export default function Slide4() {
 <main className="pl-64 pt-10 xl:pt-20 pb-16 h-screen relative z-10  bg-transparent">
 <div className="relative h-full px-16 flex flex-col justify-center">
 {/*  Header Section  */}
-<div className="mb-14 opacity-0 animate-reveal">
+<div className="mb-14 animate-reveal">
 <div className="text-primary font-headline tracking-[0.6em] mb-4 uppercase flex items-center gap-4 text-[10px] font-black">
 <span className="h-[2px] w-12 bg-primary"></span>
                 Intelligence Sequence 04
@@ -123,7 +123,7 @@ export default function Slide4() {
 <div className="absolute top-[148px] left-0 w-[2000px] h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
 <div className="flex gap-0 min-w-[1700px] py-12 items-start relative">
 {/*  Event 01: September (Phishing)  */}
-<div className="w-80 group flex flex-col gap-8 opacity-0 animate-reveal reveal-delay-1">
+<div className="w-80 group flex flex-col gap-8 animate-reveal reveal-delay-1">
 <div className="h-32 flex items-end pr-8">
 <div className="p-6 bg-[#0A0A0A] border-l-[3px] border-white/20 w-full relative transition-all duration-500 group-hover:border-primary group-hover:bg-[#120606]">
 <div className="text-[9px] font-headline text-white/40 mb-2 tracking-[0.2em] uppercase font-bold">Log_001 // Recon</div>
@@ -142,7 +142,7 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Event 02: November 24 (Access)  */}
-<div className="w-80 group flex flex-col-reverse gap-8 opacity-0 animate-reveal reveal-delay-2">
+<div className="w-80 group flex flex-col-reverse gap-8 animate-reveal reveal-delay-2">
 <div className="h-32 pr-8">
 <div className="p-6 bg-[#0A0A0A] border-l-[3px] border-primary w-full relative group-hover:bg-[#1a0a0a] transition-all">
 <div className="absolute top-4 right-4 animate-pulse">
@@ -164,7 +164,7 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Event 03: December 17 (Data Theft)  */}
-<div className="w-80 group flex flex-col gap-8 opacity-0 animate-reveal reveal-delay-3">
+<div className="w-80 group flex flex-col gap-8 animate-reveal reveal-delay-3">
 <div className="h-32 flex items-end pr-8">
 <div className="p-6 bg-[#0A0A0A] border-l-[3px] border-white/20 w-full transition-all duration-500 group-hover:border-primary">
 <div className="text-[9px] font-headline text-white/40 mb-2 tracking-[0.2em] uppercase font-bold">Log_003 // Payload</div>
@@ -183,7 +183,7 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Event 04: December 19 (Attack / Exfil)  */}
-<div className="w-80 group flex flex-col-reverse gap-8 opacity-0 animate-reveal reveal-delay-4">
+<div className="w-80 group flex flex-col-reverse gap-8 animate-reveal reveal-delay-4">
 <div className="h-32 pr-8">
 <div className="p-6 bg-primary border-l-[3px] border-white w-full shadow-[0_0_40px_rgba(211,47,47,0.4)] relative">
 <div className="absolute -top-3 -right-3 w-10 h-10 bg-white flex items-center justify-center rotate-12 shadow-xl">
@@ -205,7 +205,7 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Event 05: January (Leaks / Fallout)  */}
-<div className="w-80 group flex flex-col gap-8 opacity-0 animate-reveal reveal-delay-5">
+<div className="w-80 group flex flex-col gap-8 animate-reveal reveal-delay-5">
 <div className="h-32 flex items-end pr-8">
 <div className="p-6 bg-[#0A0A0A] border-l-[3px] border-white/10 w-full opacity-60 group-hover:opacity-100 transition-opacity">
 <div className="text-[9px] font-headline text-white/40 mb-2 tracking-[0.2em] uppercase font-bold">Log_005 // Fallout</div>
@@ -226,7 +226,7 @@ export default function Slide4() {
 </div>
 </div>
 {/*  Tactical Metadata Ticker  */}
-<div className="mt-auto border-t border-white/10 py-8 flex items-center justify-between opacity-0 animate-reveal reveal-delay-5">
+<div className="mt-auto border-t border-white/10 py-8 flex items-center justify-between animate-reveal reveal-delay-5">
 <div className="flex gap-16">
 <div className="flex flex-col">
 <div className="text-[9px] font-headline text-primary tracking-[0.4em] uppercase mb-2 font-black">Packet Stream</div>
