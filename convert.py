@@ -31,6 +31,12 @@ def convert_to_jsx(html_str):
     # Fix excessively long animation delays from the original HTML
     html_str = html_str.replace('4s_forwards', '1s_forwards')
     
+    # Remove DOWNLOAD EVIDENCE block from the sidebar
+    html_str = re.sub(r'<div[^>]*>\s*<button[^>]*>\s*DOWNLOAD EVIDENCE\s*</button>\s*</div>', '', html_str, flags=re.DOTALL|re.IGNORECASE)
+    
+    # Push the skull visual down to avoid overlapping the tactical ticker on shorter screens
+    html_str = html_str.replace('skull-breach', 'skull-breach mt-16 xl:mt-24')
+    
     # Make typography and spacing strictly responsive so it fits in 100vh on laptop screens
     html_str = html_str.replace('md:text-9xl', 'md:text-[8vw] xl:text-[7vw]')
     html_str = html_str.replace('text-6xl md:text-9xl', 'text-5xl md:text-6xl xl:text-8xl')
