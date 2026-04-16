@@ -67,12 +67,6 @@ export default function Slide8() {
 </a>
 </div>
 </nav>
-<div className="p-6">
-<button className="w-full py-3 bg-primary-container text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest hover:bg-[#ffb3ac] hover:text-[#680008] transition-colors duration-75 flex items-center justify-center gap-2 border border-white/10">
-<span className="material-symbols-outlined text-sm">download</span>
-            DOWNLOAD EVIDENCE
-        </button>
-</div>
 </aside>
 {/*  Main Content  */}
 <main className="pl-64 pt-10 xl:pt-20 pb-16 min-h-screen">

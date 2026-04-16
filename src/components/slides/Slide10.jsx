@@ -73,12 +73,6 @@ export default function Slide10() {
 </a>
 </div>
 </nav>
-<div className="p-6">
-<button className="w-full bg-primary-container text-white py-3 px-4 font-headline text-[10px] font-black uppercase tracking-widest hover:bg-primary transition-colors flex items-center justify-center gap-2">
-<span className="material-symbols-outlined text-sm" data-icon="download">download</span>
-                DOWNLOAD EVIDENCE
-            </button>
-</div>
 </aside>
 {/*  Main Content Canvas  */}
 <main className="flex-1 ml-64 mt-8 xl:mt-16 p-12 overflow-y-auto no-scrollbar relative flex flex-col justify-center">
