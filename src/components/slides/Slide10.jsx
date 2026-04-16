@@ -104,17 +104,6 @@ export default function Slide10() {
 </div>
 </div>
 </main>
-{/*  Footer  */}
-<footer className="fixed bottom-0 w-full z-50 flex justify-between items-center px-8 py-2 bg-[#0A0A0A]/80 backdrop-blur-md border-t border-[#D32F2F]/15">
-<div className="flex items-center gap-4">
-<span className="material-symbols-outlined text-xs text-[#D32F2F]" data-icon="lock">lock</span>
-<span className="font-['Inter'] text-[10px] uppercase tracking-widest text-white/30">CONFIDENTIAL // CLASSIFIED INTEL</span>
-</div>
-<div className="flex items-center gap-4">
-<span className="text-[10px] font-['Inter'] text-white/30">v4.0.2_BETA</span>
-<div className="w-2 h-2 bg-[#D32F2F] rounded-full animate-pulse"></div>
-</div>
-</footer>
 {/*  Decorative Corner Accents  */}
 <div className="fixed top-24 right-6 pointer-events-none text-right z-30">
 <p className="font-headline text-[10px] text-white/20 uppercase tracking-[0.5em] rotate-90 origin-right">CLASSIFIED_FILE_X09</p>
